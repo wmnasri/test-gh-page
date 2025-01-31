@@ -1,0 +1,313 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7 oct. 2014, 15:02:36
+    Author     : abouadja & bdaubord
+*/
+
+/*modification by BDA*/
+
+body{
+    margin:0;
+    height:100%;
+}
+
+p, div{
+    font-family: Arial Regular, Arial, sans-serif; 
+}
+
+
+
+html{
+    padding:0;
+    margin:0;
+}
+
+ul{
+    list-style-type: none;
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+    display:block;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+
+
+.observatory_title{
+    font-size: 20px;
+    color: rgb(0,175,223);
+    font-family: "PT Sans";
+    text-align: left;
+    padding-bottom:10px;
+}
+
+.observatory{
+    background-color: rgb(229,229,229);
+    line-height:40px;
+    min-height:45px;
+}
+
+.sublist{
+    padding-left: 5%;
+}
+
+.elt{
+    margin-bottom: 5px;
+}
+
+.right{
+    float:right;
+}
+
+.town_link_center{
+    margin-top: 10px;
+}
+
+.department{
+    background-color: rgb(243,243,243);
+    min-height: 25px;
+    padding: 10px 10px 10px 40px;
+    margin: 0 0 5px 0;
+}
+
+.town{
+    line-height:40px;
+    border-bottom: 2px solid rgb(229,229,229);
+}
+
+.last{
+    border:inherit;
+}
+
+.nb_commune{
+    font-style: italic;
+    font-size: 12px;
+}
+
+.ael-nav-arrow {
+    position:absolute;
+    height: 26px;
+    vertical-align: middle;
+    margin: 6px 8px 0px 14px;
+}
+
+.select{
+    border-left: 3px solid rgb(0,175,223);
+    color:rgb(0,175,223);
+}
+
+.GDE_footer{
+    background-color:rgb(0,175,223);
+    color:white;
+    text-align: center;
+    padding:10px 10px 10px 10px;
+    margin: 20px 3% 0px 3%;
+}
+
+#results{
+    background-color: white;
+    width:43.8%;
+    margin-top:35px;
+    position:absolute;
+    line-height:27px;
+}
+#results div{
+    padding-left:10px;
+}
+
+.result_focus{
+    background-color:rgb(229,229,229);
+}
+
+.error{
+    color:firebrick;
+}
+.observatoryName{
+    padding: 10px 10px 10px 38px;
+    line-height: normal;
+}
+
+/*Mobile*/
+@media screen and (max-width: 650px){
+
+
+
+    p,div{
+        font-size:12px;
+    }
+    
+    .GDE_search_observatory_text{
+        width : 100% !important;
+    }
+    .GDE_search_observatory_submit{
+        width : 100% !important;
+        float:left !important;
+    }
+    #results{
+        width:73%;
+    }
+    
+    .ael-nav-arrow {
+        margin: 8px 0px 0px 6px;
+    }
+    .GDE_maincontent {
+        padding: 20px 15px 20px 15px !important;
+    }
+    .town{
+        font-size:12px;
+    }
+    #GDE_intro{
+        padding-left: 5%;
+        padding-right: 5%;
+        
+    }
+    #obs_info {
+        font-size: 16px !important;
+    }
+    .obseravatoryName{
+        font-size:14px;
+    }
+    #GDE_search_observatory form label{
+        font-size:12px;
+    }
+    
+    
+}
+/*Fin Mobile*/
+
+/*Fin*/
+
+
+#GDE_website_body {
+    text-align: center;
+    margin:1% 1% 0 1%;
+    height: 98%;
+    /*
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;*/
+    font-family:"Tahoma";
+}
+
+#GDE_title {
+    margin-top:2%;
+    font-family:"PT Sans";
+    font-size:35px;
+    color:rgb(102,102,102);
+	text-align:center;
+
+}
+
+#GDE_intro {
+    padding-left: 13%;
+    padding-right: 13%;
+    font-size:14px;
+    text-align: center;
+}
+
+#GDE_search_observatory {
+    margin: 1.4% 2% 3%;
+    background-color:rgb(0,175,223);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top:20px;
+    padding-bottom:20px;
+    
+}
+
+#GDE_search_observatory form{
+    text-align: left;
+}
+
+#GDE_search_observatory form label{
+    font-size:14px;
+}
+
+#GDE_search_observatory form input{
+    height:35px;
+}
+.GDE_search_observatory_text{
+    width:60%;
+    float:left;
+    margin-bottom: 10px;
+}
+.GDE_search_observatory_submit{
+    width:35%;
+    float:right;
+}
+
+#obs_info {
+    font-size: 24px;
+    color: white;
+    font-family: "sansaNormal", sans-serif;
+    float: left;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.twoColumnLayout {
+    margin-top:	20px;
+    display: table;
+    width: 100%;
+}
+
+.GDE_maincontent {
+    height:50%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding:20px 40px 20px 40px;/*BDA*/
+    font-family: "sansaNormal",sans-serif;/*BDA*/
+    font-weight: lighter;
+    text-align: left;
+}
+
+.boxShadow{
+    border: solid 1px #e6e6e6;
+    -webkit-box-shadow: 0 0 29px rgba(0,0,0,.12);
+    -moz-box-shadow: 0 0 29px rgba(0,0,0,.12);
+    box-shadow: 0 0 29px rgba(0,0,0,.12);
+}
+.boxShadow {
+    box-shadow: 0 0 29px #e0e0e0;
+    behavior: url('/bundles/lderiuc/css/PIE.htc');
+    background-color: #fff;
+    
+}
+
+.boxShadow:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.contient:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+
+.continueBtn {
+    background-color: #FCB900;
+    -webkit-border-radius: 15px;
+    -moz-bordeshear-radius: 15px;
+    border-radius: 15px;
+    text-align: center;
+    border:0;
+    cursor: pointer;
+    color: black;
+}
+
+.formBtnArrow {
+    content: "\00A0\00A0\00A0";
+    background-image: url('/assets/legacy/build/img/ico_arrow_black.png');
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    padding-left: 25px;
+}

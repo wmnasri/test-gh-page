@@ -1,0 +1,4 @@
+.pl-body {
+  max-height: 35em;
+  overflow: auto;
+}

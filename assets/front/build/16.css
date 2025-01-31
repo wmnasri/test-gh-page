@@ -1,0 +1,31 @@
+.payments-manage-block {
+  max-width: 750px;
+  margin: auto;
+}
+.payments-manage-block .error-red-message {
+  background-color: #F5C4CC;
+  border: 2px solid #EB4A65;
+}
+.payments-manage-block .icon-error {
+  color: #EB4A65;
+}
+
+.summary-payment-block {
+  min-height: 128px;
+}
+
+.promotionBlock .top-grey-line {
+  border-top: 1px solid #E9ECEF;
+}
+.promotionBlock .promotion-info-icon {
+  font-size: medium;
+  color: #6C757D;
+}
+.promotionBlock .promotion-info-text {
+  font-size: small;
+}
+
+.text-link {
+  color: inherit;
+  text-decoration: inherit;
+}

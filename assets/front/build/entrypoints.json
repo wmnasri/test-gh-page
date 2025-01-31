@@ -1,0 +1,138 @@
+{
+  "entrypoints": {
+    "ssr": {
+      "js": [
+        "/assets/front/build/runtime.js",
+        "/assets/front/build/ssr.js"
+      ],
+      "css": [
+        "/assets/front/build/ssr.css"
+      ]
+    },
+    "app": {
+      "js": [
+        "/assets/front/build/runtime.js",
+        "/assets/front/build/app.js"
+      ],
+      "css": [
+        "/assets/front/build/app.css"
+      ]
+    },
+    "intranet": {
+      "js": [
+        "/assets/front/build/runtime.js",
+        "/assets/front/build/intranet.js"
+      ],
+      "css": [
+        "/assets/front/build/intranet.css"
+      ]
+    },
+    "consentEmbed": {
+      "js": [
+        "/assets/front/build/runtime.js",
+        "/assets/front/build/consentEmbed.js"
+      ],
+      "css": [
+        "/assets/front/build/consentEmbed.css"
+      ]
+    },
+    "managePayment": {
+      "js": [
+        "/assets/front/build/runtime.js",
+        "/assets/front/build/managePayment.js"
+      ],
+      "css": [
+        "/assets/front/build/managePayment.css"
+      ]
+    },
+    "etipPayment": {
+      "js": [
+        "/assets/front/build/runtime.js",
+        "/assets/front/build/etipPayment.js"
+      ],
+      "css": [
+        "/assets/front/build/etipPayment.css"
+      ]
+    },
+    "header_client": {
+      "js": [
+        "/assets/front/build/runtime.js",
+        "/assets/front/build/header_client.js"
+      ],
+      "css": [
+        "/assets/front/build/header_client.css"
+      ]
+    },
+    "footer_client": {
+      "js": [
+        "/assets/front/build/runtime.js",
+        "/assets/front/build/footer_client.js"
+      ],
+      "css": [
+        "/assets/front/build/footer_client.css"
+      ]
+    },
+    "header_ssr": {
+      "js": [
+        "/assets/front/build/runtime.js",
+        "/assets/front/build/header_ssr.js"
+      ],
+      "css": [
+        "/assets/front/build/header_ssr.css"
+      ]
+    },
+    "footer_ssr": {
+      "js": [
+        "/assets/front/build/runtime.js",
+        "/assets/front/build/footer_ssr.js"
+      ],
+      "css": [
+        "/assets/front/build/footer_ssr.css"
+      ]
+    },
+    "shareConsumption": {
+      "js": [
+        "/assets/front/build/runtime.js",
+        "/assets/front/build/shareConsumption.js"
+      ],
+      "css": [
+        "/assets/front/build/shareConsumption.css"
+      ]
+    },
+    "welcome_page": {
+      "js": [
+        "/assets/front/build/runtime.js",
+        "/assets/front/build/welcome_page.js"
+      ],
+      "css": [
+        "/assets/front/build/welcome_page.css"
+      ]
+    },
+    "app_js": {
+      "js": [
+        "/assets/front/build/runtime.js",
+        "/assets/front/build/app_js.js"
+      ],
+      "css": [
+        "/assets/front/build/app_js.css"
+      ]
+    },
+    "app_styles": {
+      "js": [
+        "/assets/front/build/runtime.js",
+        "/assets/front/build/app_styles.js"
+      ],
+      "css": [
+        "/assets/front/build/app_styles.css"
+      ]
+    },
+    "override": {
+      "js": [
+        "/assets/front/build/runtime.js"
+      ],
+      "css": [
+        "/assets/front/build/override.css"
+      ]
+    }
+  }
+}

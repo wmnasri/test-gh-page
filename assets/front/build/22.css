@@ -1,0 +1,65 @@
+.rounded-img-1 {
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  border-radius: 50%;
+  width: 147px;
+  height: 147px;
+  position: absolute;
+  z-index: 0;
+  right: -1.5rem;
+  bottom: -4.4rem;
+}
+.rounded-img-1.diag-ass {
+  background-image: url(/assets/front/build/men-computer.png);
+}
+.rounded-img-1.payback {
+  background-image: url(/assets/front/build/woman-laptop.jpg);
+}
+.rounded-img-1.payment {
+  background-image: url(/assets/front/build/men-bill.png);
+}
+.rounded-img-1.login-reset {
+  background-image: url(/assets/front/build/help-laptop.png);
+}
+@media (min-width: 992px) {
+  .rounded-img-1 {
+    width: 434px;
+    height: 434px;
+    top: 6.5rem;
+    right: unset;
+    left: -1.2rem;
+    bottom: unset;
+  }
+}
+
+.rounded-img-2 {
+  display: block;
+  background-image: url(/assets/front/build/water_flow.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 0;
+  bottom: -3rem;
+  left: 3rem;
+}
+@media (min-width: 992px) {
+  .rounded-img-2 {
+    width: 143px;
+    height: 143px;
+    top: 21.8rem;
+    right: 0.5rem;
+    bottom: unset;
+    left: unset;
+  }
+}
+.digit-form .form-group-outlined .input-group > .form-control {
+  width: 39px;
+  height: 48px;
+  padding: 0 !important;
+  text-align: center;
+}

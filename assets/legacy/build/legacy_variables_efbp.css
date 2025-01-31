@@ -1,0 +1,8 @@
+:root {
+  --default-secondary-color: #5894cf;
+  --default-info-color: #87d1d4;
+  --color-button-minor: #030f40;
+  --button-primary-background: var(--default-secondary-color);
+  --button-primary-color: white;
+  --button-secondary-background: var(--default-info-color);
+}

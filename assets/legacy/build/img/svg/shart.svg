@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="45px" viewBox="0 0 41 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>iconmonstr-chart-6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 41 0 41 45 0 45"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="Page-/-Souscription-E-Facture-/-Desktop" transform="translate(-710.000000, -474.000000)">
+            <g id="iconmonstr-chart-6" transform="translate(710.000000, 474.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M41,0 L29.8181818,2.289375 L33.0161818,5.49375 L20.2502727,18.118125 L14.6575,12.4875 L0.0447272727,27.106875 L2.67431818,29.765625 L14.6500455,17.784375 L20.2241818,23.39625 L35.6569545,8.139375 L38.7636364,11.251875 L41,0 Z M29.8181818,45 L41,45 L41,20.625 L29.8181818,20.625 L29.8181818,45 Z M33.5454545,41.25 L37.2727273,41.25 L37.2727273,24.375 L33.5454545,24.375 L33.5454545,41.25 Z M14.9090909,45 L26.0909091,45 L26.0909091,28.125 L14.9090909,28.125 L14.9090909,45 Z M18.6363636,41.25 L22.3636364,41.25 L22.3636364,31.875 L18.6363636,31.875 L18.6363636,41.25 Z M0,45 L11.1818182,45 L11.1818182,33.75 L0,33.75 L0,45 Z M3.72727273,41.25 L7.45454545,41.25 L7.45454545,37.5 L3.72727273,37.5 L3.72727273,41.25 Z" id="Fill-1" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,428 @@
+/**
+ * Dans ce fichier, il est possible de changer la totalité des styles appliqués aux différents éléments.
+ * Cependant, le nom des classes utilisées ne doit absolument pas être changé.
+ * Sinon, les styles ne pourront plus s'appliquer aux différents éléments.
+ *
+ *
+ * COULEURS UTILISEES
+ *
+ * AUTOCOMPLETE
+ * Couleur par défaut du texte...........................................#424242
+ * Couleur de la bordure des listes de propositions......................#424242
+ * Couleur d'un élément de la liste lors du survol de la souris..........#607d8b
+ *
+ * POPUP
+ * Couleur par défaut du texte...........................................#424242
+ * Couleur de fond de l'entête de la popup...............................#607d8b
+ * Couleur de fond de la croix permettant de fermer la popup.............#607d8b
+ * Couleur de fond de la croix lors du survol de la souris...............#546e7a
+ * Couleur de fond de la croix lorsqu'on clique dessus...................#455a64
+ * Couleur du texte des boutons en bas de la popup.......................#607d8b
+ * Couleur de fond des boutons lors du survol de la souris...............rgba(158, 158, 158, .2)
+ * Couleur de fond des boutons lorsqu'on clique dessus...................rgba(158, 158, 158, .4)
+ *
+ * ERREUR
+ * Couleur du texte......................................................#C62828
+ */
+
+/*------------------------------------*\
+  #AUTOCOMPLETE
+\*------------------------------------*/
+/* Conteneur */
+.ui-autocomplete {
+  /* Couleur par défaut du texte */
+  color: #424242;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 1em;
+
+  background-color: white;
+
+  /* Couleur de la bordure des listes de propositions */
+  border: 1px solid #424242;
+  cursor: default;
+  display: none;
+  float: left;
+  list-style: none outside none;
+  margin: 2px 0 0 0;
+  padding: 4px 0;
+
+  position: absolute;
+  left: 0;
+  top: 100%;
+
+  min-width: 160px;
+  _width: 160px;
+
+  z-index: 9999999999999;
+}
+
+  /* Couleur par défaut des éléments de la liste */
+  .ui-autocomplete .ui-menu-item {
+    display: block;
+    padding: 2px 12px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.5em;
+
+    max-width: 650px;
+  }
+
+    /* Couleur des éléments de la liste lors du survol de la souris */
+    .ui-autocomplete .ui-menu-item.ui-state-focus {
+      background-color: #607d8b;
+      color: white;
+    }
+
+
+/**
+ * Élément utilisé pour l'accessibilité aux personnes mal/non voyantes
+ * On le masque mais sans le mettre en display: none;
+ * Car l'accessibilité serait perdue
+ */
+.ui-helper-hidden-accessible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+
+
+/*------------------------------------*\
+  #POPUP
+\*------------------------------------*/
+/* Conteneur */
+.ui-dialog {
+  /* Couleur de l'arrière plan */
+  background: none repeat scroll 0 0 white;
+
+  font-family: Arial,"Helvetica",sans-serif;
+
+  z-index: 9999;
+}
+
+
+/* Aplat noir */
+.ui-widget-overlay {
+  /* Couleur de l'aplat */
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9998;
+}
+
+
+/* Entête */
+.ui-dialog-titlebar {
+    /* Couleur du texte */
+    background-color: #607d8b;
+    color: white;
+
+    font-size: 1.25em;
+    font-weight: bold;
+
+    /* Taille de l'entête */
+    line-height: 26px;
+
+    padding: 14px;
+    text-align: center;
+}
+  .ui-dialog-titlebar:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+
+  /* Bouton pour fermer la popup (petite croix) */
+  .ui-dialog-titlebar > .ui-button {
+    border: medium none;
+
+    /* Couleur du texte */
+    background-color: #607d8b;
+    color: white;
+
+    float: right;
+
+    /* Taille du bouton */
+    height: 26px;
+  }
+
+    /* Couleur du bouton pour fermer la popup (petite croix) lors du survol de la souris */
+    .ui-dialog-titlebar > .ui-button.ui-state-hover {
+      background-color: #546e7a;
+    }
+
+    /* Couleur du bouton pour fermer la popup (petite croix) lorsqu'on clique dessus */
+    .ui-dialog-titlebar > .ui-button.ui-state-active {
+      background-color: #455a64;
+    }
+
+
+/* Contenu */
+.ui-dialog-content {
+  /* Couleur du texte */
+  color: #424242;
+
+  font-size: 14px;
+  font-weight: normal;
+
+  margin-top: 16px;
+  padding: 0 24px;
+
+  text-align: center;
+}
+
+
+/* Conteneur des boutons */
+.ui-dialog-buttonset {
+  text-align: center;
+  padding-bottom: 8px;
+  margin-top: 16px;
+}
+
+  /* Bouton Oui / Non / Ok */
+  .ui-dialog-buttonset .ui-button {
+    /* Couleur des boutons */
+    background: none repeat scroll 0 0 white;
+
+    border: 0 none;
+
+    /* Couleur du texte */
+    color: #607d8b;
+
+    display: inline-block;
+    font-family: "Raleway",Arial,"Helvetica",sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+
+    /* Taille des boutons */
+    height: 36px;
+    line-height: 36px;
+    margin: 0 4px;
+    padding: 0 8px;
+
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+
+    /* Couleur lorsqu'on passe la souris sur un bouton */
+    .ui-dialog-buttonset .ui-button.ui-state-hover {
+      background: none repeat scroll 0 0 rgba(158, 158, 158, .2);
+    }
+
+    /* Couleur lorsqu'on clique sur un bouton */
+    .ui-dialog-buttonset .ui-button.ui-state-active {
+      background: none repeat scroll 0 0 rgba(158, 158, 158, .4);
+    }
+
+
+/* Vérification des adresses postales */
+
+#cap-popup-form-adresse {
+  text-align: left;
+}
+
+.cap-popup__txt--highlight {
+  color: #607d8b;
+  font-weight: bold;
+}
+
+.cap-popup__header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  padding-bottom: 15px;
+}
+
+  .cap-popup__header-title {
+    margin-bottom: 10px;
+  }
+
+  .cap-popup__header-item {
+    font-style: italic;
+    text-indent: 20px;
+  }
+
+
+.cap-popup__title {
+  color: #424242;
+  font-family: Arial,"Helvetica",sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0 0 6px;
+  text-transform: none;
+}
+
+
+.cap-popup__input-input {
+  border: 1px solid rgba(158, 158, 158, .4);
+  padding: 3px;
+  vertical-align: middle;
+  width: 65px;
+}
+
+
+.cap-popup__input-select {
+  padding: 3px;
+  width: 65px;
+}
+
+
+.cap-popup__radio {
+  margin-right: 5px;
+  margin-top: 5px;
+  float: right;
+}
+
+.cap-popup__radio--shiftdown {
+  margin-top: 14px;
+}
+
+
+.cap-popup__user-input {
+  margin-bottom: 16px;
+  margin-top: 12px;
+  padding-bottom: 16px;
+}
+
+
+.cap-popup__result {
+  height: auto;
+  overflow: auto;
+}
+
+  .cap-popup__result-adresses {
+
+  }
+
+  .cap-popup__result-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    cursor: default;
+    list-style: none;
+    padding: 8px 0;
+  }
+
+  .cap-popup__result-item:hover {
+    background-color: rgba(153, 153, 153, .2);
+  }
+
+    .cap-popup__result-item--selected, .cap-popup__result-item--selected:hover {
+      background-color: rgba(153, 153, 153, .4);
+    }
+
+
+.cap-popup__adresse {
+  display: inline-block;
+  font-weight: bold;
+  line-height: 17px;
+  margin-left: 10px;
+  max-width: 500px;
+  vertical-align: middle;
+}
+
+
+.cap-popup__button {
+  /* Couleur des boutons */
+  background: #607d8b;
+  border: none;
+  color: white;
+}
+
+  .cap-popup__button.ui-state-hover {
+    /* Couleur lorsqu'on passe la souris sur un bouton */
+    background-color: rgba(158, 158, 158, .2);
+  }
+
+  .cap-popup__button.ui-state-active {
+    /* Couleur lorsqu'on clique sur un bouton */
+    background-color: rgba(158, 158, 158, .4);
+  }
+
+.cap-popup__button-confirm {
+  /* Couleur des boutons */
+  background: white;
+  border: 1px solid #607d8b;
+  color: #607d8b;
+}
+
+  .cap-popup__button.ui-state-hover {
+    /* Couleur lorsqu'on passe la souris sur un bouton */
+    background-color: rgba(158, 158, 158, .2);
+    border-color: rgba(158, 158, 158, .2);
+    color: white;
+  }
+
+  .cap-popup__button.ui-state-active {
+    /* Couleur lorsqu'on clique sur un bouton */
+    background-color: rgba(158, 158, 158, .4);
+    border-color: rgba(158, 158, 158, .4);
+    color: white;
+  }
+
+
+/*------------------------------------*\
+  #ERREUR
+\*------------------------------------*/
+/* Conteneur */
+.cap__error {
+  display: inline-block;
+  width: 70%;
+}
+
+/* Lorsque les messages sont affichés en dessous du champ */
+.cap__error--bottom {
+  vertical-align: top;
+}
+
+  /* Message d'erreur */
+  .cap__error-msg {
+    display: block;
+    color: #C62828;
+    margin-left: 2px;
+    width: 70%;
+  }
+
+
+/* Contours et puces */
+.cap__input-success {
+  border: 1px solid #4CAF50;
+}
+
+.cap__input-warning {
+  border: 1px solid #EF6C00;
+}
+
+.cap__input-error {
+ border: 1px solid #C62828;
+}
+
+.cap__puce {
+  display: inline-block;
+  margin-left: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+  .cap__puce-success {
+    background-color: #4CAF50;
+  }
+
+  .cap__puce-warning {
+    background-color: #EF6C00;
+  }
+
+  .cap__puce-error {
+    background-color: #C62828;
+  }

@@ -1,0 +1,165 @@
+.navbar-header a {
+    text-decoration: none;
+    color: #030f40;
+}
+
+.navbar-header h3 {
+    font-weight: bold;
+    font-size: 3.0em;
+    line-height: 1em;
+    letter-spacing: 0.03em;
+}
+
+td.details-control {
+    background: url('/assets/legacy/build/img/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+
+tr.shown td.details-control {
+    background: url('/assets/legacy/build/img/details_close.png') no-repeat center center;
+}
+
+#content-tracking-payment-action div:first-child {
+    padding-top: 48px;
+}
+
+#content-tracking-account-action div,
+#content-tracking-payment-action div {
+    margin-left: 89px;
+}
+
+.form-login-intranet div.alert {
+    background-color: white;
+}
+
+.form-login-intranet div.alert p {
+    margin-top: 17px;
+}
+
+.g-recaptcha {
+    margin-bottom: 13px;
+}
+
+#content-tracking-account-action p.clear,
+#content-tracking-payment-action p.clear {
+    clear:both;
+    float:none
+}
+
+.content-maj-tracking button {
+    float: right;
+}
+
+#content-tracking-account-action div{
+    float: left;
+    width: 55%;
+}
+
+#content-tracking-account-action div:first-child{
+    float: left;
+    width: 26%;
+}
+
+#content-tracking-payment-action div {
+    float: left;
+    width: 40%;
+}
+
+#content-tracking-account-action div:last-child,
+#content-tracking-payment-action div:last-child{
+    float: left;
+}
+
+.title-tracking-account-action {
+    margin-left: -80px;
+}
+
+.title-tracking-account-action span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.icon-loading {
+    background: url('/assets/legacy/build/img/loading.gif') no-repeat center center;
+    height: 22px;
+    width: 22px;
+}
+
+.navbar-header img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    margin: 15px auto;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10000;
+}
+
+.navbar-header .separator {
+    height: 35px;
+    width: 1px;
+    margin: 13px 7px;
+    background-color: #030f40;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#content {
+    background-color: #fff;
+}
+
+#search-box {
+    background-color: #f1f1f1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#login-box {
+    background-color: #f1f1f1;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.message-intranet {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.username {
+    color: #9bcd41;
+    font-weight: bold;
+}
+
+#result {
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.rounded {
+    border-radius: 6px
+}
+
+.btn.btn-primary {
+    color: #030f40;
+    background: #9bcd41;
+    border-color: #9bcd41;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    background-color: #9bcd41;
+    border-color: #9bcd41;
+}
+
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+    color: #9bcd41;
+}

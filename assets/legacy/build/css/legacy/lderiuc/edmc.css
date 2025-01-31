@@ -1,0 +1,101 @@
+div.quick-access {
+    padding: 0 20px 20px;
+    margin: 20px 0;
+}
+
+div.quick-access h2 {
+    font-size: 20px;
+    font-family: "sansaBold", sans-serif;
+    color: #646464;
+    border-bottom: 1px solid #C8D200;
+    display: block;
+    margin-bottom: 10px;
+}
+
+div.quick-access h2 .highlighted {
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    color: #C8D200;
+}
+
+div.quick-access p {
+    color: #666;
+    margin: 0;
+}
+
+div.quick-access form input[type="text"] {
+    text-align: center;
+    font-size: 12px;
+    color: #666666;
+    padding: 3px;
+    width: 90px;
+    height: 18px;
+    background-color: #fff;
+    border-color: #e0e0e0;
+}
+
+div.quick-access form input[type="submit"] {
+    font-size: 14px;
+    background-color: #C8D200;
+    border: none;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    padding: 4px 8px 5px 5px;
+}
+
+div.quick-access form img.quick-loader {
+    height: 20px;
+    display: none;
+    vertical-align: middle;
+}
+
+div.quick-access a.quick-button {
+    background: #666;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 15px;
+    min-width: 120px;
+    display: inline-block;
+    text-align: center;
+    margin: 6px 10px 0px 0px;
+}
+
+div.quick-access.edmc {
+    overflow: hidden;
+    width: 94%;
+}
+
+@media screen and (max-width: 650px){
+	div.quick-access.edmc {
+		width: 93%;
+	}
+}
+
+@media screen and (max-width: 550px){
+	div.quick-access.edmc {
+		width: 92%;
+	}
+}
+
+@media screen and (max-width: 450px){
+	div.quick-access.edmc {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 380px){
+	div.quick-access.edmc {
+		width: 88%;
+	}
+	div.quick-access.edmc form input[type="text"]{
+		width: 125px;
+	}
+}
+
+@media screen and (max-width: 300px){
+	div.quick-access.edmc {
+		width: 85%;
+	}
+}

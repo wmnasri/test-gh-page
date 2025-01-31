@@ -1,0 +1,380 @@
+@media screen and (max-height:481px){
+    .div-maps #map{
+        height:360px;
+    }
+}
+@media screen and (max-height:570px) and (min-height: 482px){
+    .div-maps #map{
+        height:450px;
+    }
+}
+@media screen and (max-height:670px) and (min-height: 571px){
+    .div-maps #map{
+        height:550px;
+    }
+}
+@media screen and (max-height:740px) and (min-height: 671px){
+    .div-maps #map{
+        height:620px;
+    }
+}
+#map{
+    height:700px; 
+}
+
+.beach_table-details-label{
+	color:#365b92;
+	width: 302px;
+	/*font:12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;*/
+}
+
+
+.map-container {
+    height: 95%;
+    /*margin: 20px;*/
+    padding: 0;
+    position: relative;
+    @media (max-width: 650px) {
+        margin: 0 !important;
+        width: 100%;
+        height: 100%;
+        float: right;
+        /*position: absolute;*/
+    }
+}
+
+.map-and-legend-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.map-container-all > .map-and-legend-container {
+    padding-bottom: 20px;
+    @media (max-width: 650px) {
+        padding-bottom: 0;
+    }
+}
+
+.home-map-container > .map-and-legend-container {
+  padding-bottom: 0px;
+}
+
+.map-container-all {
+    clear: both;
+    @media (max-width: 650px) {
+        top: 0;
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        height: auto;
+        width: auto;
+        margin: 0 !important;
+    }
+}
+
+.map-legend-container {
+    height: 98%;
+    width: 0px;
+    position: absolute;
+    right: 0;
+    top: 1%;
+    z-index: 10;
+	display: none;
+    @media (max-width: 650px) {
+    }
+}
+
+.map-legend {
+    width: 0px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.78);
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.btn-map-legend {
+    position: absolute;
+    top: 10px;
+    left: -40px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 10px 0 0 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.map-legend-title {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.map-legend-close {
+    display: inline-block;
+    float: right;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: none;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.map-legend-row {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    clear: both;
+}
+
+.map-legend-category {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    clear: both;
+}
+
+.map-legend-icon {
+    width: 30px;
+    height: 35px;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.map-legend-label {
+    width: 140px;
+    display: inline-block;
+    color: #4a5364;
+    line-height: 16px;
+    font-weight: normal;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+a.map-legend-section-title {
+    color: #333333;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 0;
+    width: 100%;
+    text-decoration: none;
+}
+
+a.map-legend-section-title:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.map-legend-section-title > i {
+    float: right;
+    margin-right: 8px;
+}
+
+.map-legend-icon img {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.tsms-cluster {
+    width: 40px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    text-align: center;
+    line-height:40px;
+    font-size: 20px;
+    color: #365b92;
+    border: 3px solid rgba(82, 139, 222, 0.5);
+}
+
+.tsms-cluster:hover {
+    border: 3px solid rgba(82, 139, 222, 1);
+}
+
+.loader {
+    background: none repeat scroll 0 0 rgba(100, 100, 100, 0.3);
+    height: 100%;
+    line-height: 100%;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 10000;
+}
+
+.loader i {
+    position: relative;
+    top: 45%;
+}
+
+.map-container-all #map {
+    @media (max-width: 650px) {
+        border-top: 4px solid #FFFFFF;
+        z-index: 1;
+    }
+}
+
+.main-box-with-map {
+    overflow-y: auto;
+    overflow-x: hidden;
+    @media (max-width: 650px) {
+        margin: 0 !important;
+        float: right;
+        width: 100%;
+        bottom: 0;
+        position: absolute;
+        z-index: 10;
+        opacity: 0.9;
+    }
+}
+
+.map-container .map-info {
+    font-size: 14px;
+    color: #6b798e;
+    line-height: 40px;
+    @media (max-width: 650px) {
+        position: absolute;
+        bottom: 0;
+        z-index: 10;
+        width: 100%;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+.map-container .map-info .map-info-count {
+    float: left;
+    font-style: italic;
+    margin-left: 15px;
+}
+
+.map-container .map-info .map-info-lastupdate {
+    float: right;
+    margin-right: 15px;
+    @media (max-width: 650px) {
+        float: left;
+        margin-left: 15px;
+    }
+}
+
+/* Bloc carte Home page */
+
+.home-map-container {
+    width: auto;
+    background-clip: content-box;
+
+    position: relative;
+    left: 370px;
+    right: 0;
+}
+
+.home-map-container > #map {
+    height: 100%;
+}
+
+.home-map-container > #map > i {
+    color: black;
+    margin-top: 100px;
+    opacity: 0.3;
+    z-index: 10;
+    position: relative;
+}
+
+/* Fin Bloc carte home page */
+
+/**   jslider  **/
+
+.layout-slider {
+    padding-top: 40px;
+    padding-bottom: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.jslider_round_plastic .jslider-pointer {
+    background-image: url(/bundles/tsmsmaps/images/Jslider/jslider.tsms.pointer.png);
+    background-position: 0 0;
+    width: 22px;
+    height: 22px;
+    top: -7px;
+    margin-left: -8px;
+}
+
+.jslider_round_plastic .jslider-pointer-hover {
+    background-image: url(/bundles/tsmsmaps/images/Jslider/jslider.tsms.pointer.hover.png);
+}
+
+.jslider .jslider-value {
+    top: -38px;
+    font-family: Arial;
+    font-size: 15px;
+    background-color: #d0dce5;
+    padding: 6px;
+    border-radius: 3px;
+    border-left: 3px solid #4a5364;
+}
+
+.jslider .jslider-value-to {
+    border-left: none;
+    border-right: 3px solid #4a5364;
+}
+
+.jslider .jslider-bg .l {
+    background-image: url(/bundles/tsmsmaps/images/Jslider/jslider.tsms.bar.border.png);
+    background-position: 0 0;
+}
+
+.jslider .jslider-bg .r {
+    background-image: url(/bundles/tsmsmaps/images/Jslider/jslider.tsms.bar.border.png);
+    background-position: right 0;
+}
+
+.jslider .jslider-bg .f {
+    background-image: url(/bundles/tsmsmaps/images/Jslider/jslider.tsms.bar.background.png);
+    background-position: 0 0;
+}
+
+.jslider .jslider-bg .v {
+    background-image: url(/bundles/tsmsmaps/images/Jslider/jslider.tsms.bar.selected.png);
+    background-position: 0 0;
+}
+
+.jslider .jslider-scale span {
+    top: 10px;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #d0dce5;
+    border: none;
+}
+
+.jslider .jslider-scale ins {
+    font-size: 14px;
+    color: #4a5364;
+    width: 40px;
+    top: 10px;
+}
+
+.jslider .jslider-scale span.jslider-mid-scale ins {
+    font-weight: bold;
+    left: -10px;
+}

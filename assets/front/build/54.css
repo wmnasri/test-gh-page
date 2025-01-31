@@ -1,0 +1,65 @@
+.card-pedago {
+  height: 180px;
+  overflow-x: clip;
+  z-index: 0;
+}
+.card-pedago.card-detail {
+  height: 375px;
+  max-height: 291px;
+}
+@media (min-width: 992px) {
+  .card-pedago.card-detail {
+    max-height: initial;
+  }
+}
+.card-pedago .card-content h4,
+.card-pedago .card-content h3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: break-spaces;
+}
+.card-pedago .card-content .sz-typo-body {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: break-spaces;
+  color: var(--dark);
+  font-size: 1rem;
+}
+.card-pedago .wave-container {
+  z-index: -1;
+}
+.card-pedago .wave-container .wave, .card-pedago .wave-container .wave.wave-4, .card-pedago .wave-container .wave.wave-3, .card-pedago .wave-container .wave.wave-2, .card-pedago .wave-container .wave.wave-1 {
+  position: relative;
+  width: 100%;
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  background-color: var(--blue-electric-light);
+}
+.card-pedago .wave-container .wave.wave-1 {
+  height: 63px;
+  mask-image: url(/assets/front/build/wave1.svg);
+  -webkit-mask-image: url(/assets/front/build/wave1.svg);
+}
+.card-pedago .wave-container .wave.wave-2 {
+  height: 63px;
+  mask-image: url(/assets/front/build/wave2.svg);
+  -webkit-mask-image: url(/assets/front/build/wave2.svg);
+}
+.card-pedago .wave-container .wave.wave-3 {
+  height: 109px;
+  mask-image: url(/assets/front/build/wave3.svg);
+  -webkit-mask-image: url(/assets/front/build/wave3.svg);
+}
+.card-pedago .wave-container .wave.wave-4 {
+  height: 109px;
+  mask-image: url(/assets/front/build/wave4.svg);
+  -webkit-mask-image: url(/assets/front/build/wave4.svg);
+}
