@@ -1,0 +1,116 @@
+.mapPoi_ThematicSubtitle{
+    font-size: 13px;
+    padding: 0px 0px 10px 38px;
+    line-height: 14px;
+}
+
+.mapPoiInfobulleShowmore{
+    color: #0A87D7;
+    font-family: "garagegothic-boldbold";
+    font-size: 20px;
+}
+.mapPoiInfobulle_grey{
+    color: #656565;
+    display: block;
+    line-height: 14px;
+    width: auto;
+}
+.mapPoiInfobulle{
+    font-size:11px;
+    padding: 10px 12px 0px 12px; 
+    color:#656565;
+}
+
+.mapPoiInfobulleTitle{
+    color: #0A87D7;
+    font-size: 20px;
+    padding: 15px 0px 15px 0px;
+}
+
+.mapPoiLegendeTitle{
+    color: #0A87D7;
+    font-size: 15px;
+    padding: 14px 0px 0px 0px;
+}
+
+.mapPoiLegendeTexte{
+    color:#656565;
+}
+
+
+.mapPoiTexte
+{
+    padding: 15px 0px 5px 0px;
+    line-height: 18px;
+}
+
+#map_poi{
+    width: 100%; 
+    height: 470px;
+}
+
+.mapPoi{
+    padding: 18px 7px 7px 19px;
+    font-size: 13px;
+    margin:20px 0;
+}
+
+.mapPoiFeaturesFilters{
+    padding: 0px 0px 20px 0px;
+}
+
+.mapPoiLink{
+    font-size: 14px;
+    color: #009ee0;
+}
+
+.mapPoiLink:hover{
+    text-decoration: underline;
+}
+
+.greySeparator_poi{
+    margin:10px 15px 10px 0px;
+    height:1px;
+    background-color: #e7e7e7;
+}
+
+.mapApiTitle{
+    font-size: 20px;
+}
+
+.mapPoiSeparator{
+    margin:17px 15px 8px 0px;
+    height:1px;
+    background-color: #c0c0c0;
+}
+
+.mapPoiLineField{
+    margin-top: 10px;
+}
+
+.mapPoiLineFieldFeature td{
+    padding-right: 35px;
+}
+
+.mapPoiLineFieldThematic td{
+    padding-top: 15px;
+    width: 300px;
+}
+
+.mapPoiLineField label{
+    display: inline-block;
+    width: auto;
+}
+
+div[class^=" _ibani_"]{
+    margin-top: 22px;
+    -moz-box-shadow: 0px 0px 4px 0px #656565;
+    -webkit-box-shadow: 0px 0px 4px 0px #656565;
+    -o-box-shadow: 0px 0px 4px 0px #656565;
+    box-shadow: 0px 0px 4px 0px #656565;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=4);
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    z-index: 101;
+}

@@ -1,0 +1,27 @@
+.PhoneInputCountryIcon svg {
+  display: block;
+  width: 100%;
+}
+
+.PhoneInputInput {
+  flex: 1;
+  min-width: 0;
+  padding: 0 0.5rem;
+  border: 1px var(--blue-4) solid;
+  line-height: 3;
+  background-color: var(--gray-0);
+  transition: border-color 0.15s ease-in-out;
+}
+.PhoneInputInput::placeholder {
+  font-family: "DINPro-Regular";
+  color: var(--expert-blue);
+}
+.PhoneInputInput:focus {
+  border-color: var(--gray-600) !important;
+  color: var(--expert-blue);
+  background-color: white;
+}
+.iban-icon {
+  width: 48px;
+  height: 48px;
+}

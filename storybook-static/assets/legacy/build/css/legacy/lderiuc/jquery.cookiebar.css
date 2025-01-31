@@ -1,0 +1,56 @@
+#cookie-bar {background:#999999; height:auto; line-height:24px; color:#eeeeee; text-align:center; padding:3px 0;}
+#cookie-bar.fixed {position:fixed; top:0; left:0; opacity: 0.9;padding-left: 25%;padding-right: 5%;text-align: left;width: 70%;}
+#cookie-bar.fixed.bottom {bottom:0; top:auto;}
+#cookie-bar p {margin:0; padding:0;font-size: 15px;margin-left: -100px;max-width: 88%;color: white;}
+#cookie-bar a {color:#ffffff; display:inline-block; border-radius:3px; text-decoration:none; padding:0 6px; text-transform:uppercase;font-weight:bold;text-decoration: underline;position: absolute;margin-left: 50px;}
+#cookie-bar .cb-enable {background:#A4C314;text-decoration: none;position: relative;margin-left: 10px;}
+#cookie-bar .cb-enable:hover {background:#009900;}
+#cookie-bar .cb-disable {background:#990000;}
+#cookie-bar .cb-disable:hover {background:#bb0000;}
+#cookie-bar .cb-policy {background:#0033bb;}
+#cookie-bar .cb-policy:hover {background:#0055dd;}
+
+@media screen and (max-width: 650px) {
+	#cookie-bar p {
+		margin-left: 0px;
+		width : 500px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	#cookie-bar.fixed {
+		width: 100%;
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	#cookie-bar p {
+		margin-left: 0px;
+		width : 380px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	#cookie-bar p {
+		width : 320px;
+		margin-left: 0px;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	#cookie-bar p {
+		width : 260px;
+		margin-left: 0px;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	#cookie-bar p {
+		width : 135px;
+		margin-left: 0px;
+	}
+}

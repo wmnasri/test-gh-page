@@ -1,0 +1,735 @@
+:root {
+  --color-blue-02: #D7D8DF;
+  --color-blue-03: #030f40;
+  --color-purple-01: #867C97;
+  --default-color-header: #F0F1F6;
+  --color-grey-01: #F9F9F9;
+  --color-grey-02: #333;
+  --color-purple-02: #909AB1;
+  --color-red-00: #cb0048;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: white !important;
+  height: 100%;
+  position: relative;
+}
+
+footer {
+  width: 100%;
+  margin-top: 27px;
+}
+footer a {
+  text-decoration: none;
+  color: var(--color-grey-02);
+}
+footer a:hover {
+  color: var(--color-grey-02);
+  text-decoration: none;
+}
+footer .container-fluid {
+  text-align: center;
+}
+
+@media screen and (min-width: 651px) {
+  footer .links .line:not(:last-child)::after {
+    content: " | ";
+  }
+}
+.responsive-icons {
+  display: none;
+}
+
+.global-container {
+  padding-top: 30px;
+  color: var(--default-secondary-color) !important;
+}
+.global-container a {
+  text-decoration: underline;
+}
+.global-container h1 {
+  color: var(--default-secondary-color);
+  font-size: 30px;
+  font-family: DINPro-Medium;
+  text-transform: uppercase;
+  line-height: 35px;
+  border-bottom: 2px solid var(--default-secondary-color);
+  margin: 0 0 35px;
+}
+.global-container h2 {
+  color: var(--default-secondary-color);
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 28px;
+  height: 42px;
+  margin: 0 0 25px;
+}
+.global-container h2 p {
+  text-transform: none;
+  margin: 0;
+  padding-bottom: 4px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.global-container .alert-error p {
+  margin: 14px 0 14px 0;
+}
+.global-container .container-download-ticket span {
+  line-height: 23px;
+}
+.global-container .nopadding {
+  padding: 0;
+}
+.global-container .text-right {
+  text-align: right;
+}
+.global-container .border-bottom-02 {
+  border-bottom: 2px solid var(--color-blue-02);
+}
+.global-container .icon-download {
+  width: 23px;
+  vertical-align: middle;
+  margin-left: 6px;
+  fill: var(--default-info-color);
+}
+.global-container .icon-arrow-letter {
+  fill: var(--default-info-color);
+  width: 52%;
+  height: 62%;
+  z-index: 2;
+  position: absolute;
+  top: -18%;
+  left: 14%;
+}
+.global-container .icon-letter {
+  position: relative;
+}
+.global-container .icon-close {
+  height: 37.5px;
+  width: 37.5px;
+  color: var(--default-info-color);
+  font: 35px Arial, sans-serif;
+  position: relative;
+  top: -5px;
+}
+.global-container .icon-interrogation {
+  text-transform: initial;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: white;
+  background-color: var(--default-info-color);
+  text-align: center;
+  font: 25px Arial, sans-serif;
+  border: 2px solid var(--default-info-color);
+  box-sizing: border-box;
+  margin: 0 auto 6px;
+  display: none;
+}
+.global-container .label-show-bill {
+  color: var(--default-secondary-color);
+  font-size: 15px;
+  line-height: 38px;
+  text-transform: initial;
+}
+.global-container .img-show-bill {
+  display: inline-block;
+  width: 38px;
+  vertical-align: top;
+}
+.global-container .item-details-2 {
+  color: var(--default-secondary-color);
+  font-size: 17px;
+  line-height: 22px;
+  text-align: left;
+  padding-left: 40px;
+}
+.global-container .accrued {
+  margin-bottom: 46px;
+}
+.global-container .icon-size-1 {
+  width: 115px;
+}
+.global-container .series-icons svg {
+  width: 40px;
+}
+.global-container .series-icons svg .cls-1 {
+  color: var(--default-info-color) !important;
+  stroke: var(--default-info-color) !important;
+}
+.global-container .text-center {
+  text-align: center;
+}
+.global-container .text-description {
+  color: var(--default-secondary-color);
+  font-size: 15px;
+  line-height: 20px;
+}
+.global-container div.alert div.alert-icon.big-error-icon i[class*=icon-] {
+  font-size: 6em;
+}
+.global-container label {
+  color: var(--default-secondary-color);
+  font-size: 16px;
+  line-height: 21px;
+  height: 28px;
+}
+.global-container .button-third {
+  background-color: white;
+}
+.global-container form.form-suez a.button {
+  margin-top: 30px;
+}
+.global-container form.form-suez label {
+  margin: 0;
+}
+.global-container div.main-dashboard.account-dashboard div.item div.item-details,
+.global-container div.main-dashboard div.item div.item-details {
+  color: var(--default-secondary-color);
+  font-size: 18px;
+  line-height: 26px;
+  text-align: left;
+  padding-left: 40px;
+}
+.global-container div.main-dashboard.account-dashboard div.item div.item-description div.item-image,
+.global-container div.main-dashboard div.item div.item-description div.item-image {
+  line-height: 6.2em;
+  background-size: 162px;
+  height: 187px;
+  font-size: 2em;
+}
+.global-container div.main-dashboard.account-dashboard div.item p:nth-child(2),
+.global-container div.main-dashboard div.item p:nth-child(2) {
+  margin-top: 33px;
+}
+.global-container div.main-dashboard.account-dashboard div.item,
+.global-container div.main-dashboard div.item {
+  padding: 0;
+}
+.global-container div.main-dashboard.account-dashboard .item-buttons,
+.global-container div.main-dashboard .item-buttons {
+  margin-top: 30px;
+}
+.global-container #login-direct-payment {
+  position: relative;
+  font-size: 1.6rem !important;
+}
+.global-container #login-direct-payment .form-control {
+  font-size: 1rem !important;
+  height: 3rem;
+}
+.global-container #login-direct-payment .asterix {
+  margin-bottom: 28px;
+}
+.global-container #login-direct-payment .w-error {
+  font-size: 1rem;
+}
+.global-container #login-direct-payment .rectangle {
+  border: solid 1px var(--blue-3);
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-right: 15px;
+  padding-bottom: 11px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+.global-container .button:after {
+  content: "";
+}
+.global-container a.button {
+  padding-top: 15px;
+}
+.global-container .form-suez .text-secondary-color {
+  color: var(--default-secondary-color);
+  font-size: 16px;
+  line-height: 21px;
+}
+.global-container .form-suez .group-email {
+  margin-top: 0;
+}
+.global-container .form-suez .group-email #mon_solde_email {
+  font-size: 1rem;
+}
+.global-container .form-suez a.button.cancel-button {
+  position: absolute;
+  margin-top: 0;
+}
+
+#bloc_solde {
+  margin-bottom: 0;
+}
+
+.button-third {
+  background: white;
+  color: var(--color-button-minor);
+  height: 60px;
+  width: 100%;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.header {
+  background-color: var(--default-color-header);
+  height: 60px;
+  padding: 0 36px;
+}
+.header .logo-suez {
+  margin-top: 12px;
+  height: 30px;
+}
+
+.text-to-mensu {
+  margin-top: 25px;
+  margin-bottom: 28px;
+}
+
+paragraph {
+  display: block;
+  margin-bottom: 11px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.banner-to-mensu {
+  background-color: var(--color-purple-02);
+}
+.banner-to-mensu img {
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+.banner-to-mensu .banner-to-mensu-message {
+  margin-top: 31px;
+  margin-bottom: 31px;
+  padding-left: 31px;
+}
+.banner-to-mensu .banner-to-mensu-message p {
+  margin: 0;
+}
+
+.asterix {
+  color: var(--color-purple-01);
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 0;
+}
+
+.title-01 {
+  height: 40px;
+  width: 394px;
+  color: var(--default-secondary-color);
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.title-02 {
+  color: var(--default-secondary-color);
+  font-size: 27px;
+  line-height: 40px;
+}
+
+.title-03 {
+  color: var(--default-secondary-color);
+  font-size: 19px;
+  line-height: 26px;
+}
+
+.title-04 {
+  color: var(--default-secondary-color);
+  font-size: 22px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.title-05 {
+  color: var(--color-blue-03);
+  font-size: 27px;
+  line-height: 40px;
+}
+
+.title-06 {
+  color: var(--color-blue-03);
+  font-size: 19px;
+  line-height: 26px;
+}
+
+.bg-color-01 {
+  background-color: var(--color-grey-01);
+}
+
+.alert.container-error {
+  background-color: white;
+  margin-top: 80px;
+}
+
+.container-icons {
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-top: 16px;
+}
+
+.series-icons {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 29px;
+}
+.series-icons .icon-img {
+  border-left: 2px solid var(--color-blue-02);
+}
+.series-icons .no-border {
+  border: none;
+}
+.series-icons .icon-label {
+  height: 36px;
+  width: 164px;
+  color: #333;
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+}
+
+.steps {
+  position: relative;
+  margin-bottom: 30px;
+}
+.steps:after {
+  content: "";
+  height: 2px;
+  background-color: var(--default-info-color);
+  width: 100%;
+  position: absolute;
+  top: 23px;
+  left: 0;
+  z-index: -1;
+}
+.steps ul {
+  display: table;
+  width: 100%;
+  padding: 0;
+}
+.steps ul li {
+  list-style-type: none;
+  text-align: center;
+  display: table-cell;
+  width: 33.33%;
+}
+.steps ul li:first-child {
+  text-align: left;
+}
+.steps ul li:last-child {
+  text-align: right;
+}
+.steps .step {
+  display: inline-block;
+  text-align: center;
+  background-color: white;
+  padding: 0 20px;
+}
+.steps .step .step-number {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding: 4px;
+  color: var(--default-info-color);
+  text-align: center;
+  font: 32px Arial, sans-serif;
+  border: 2px solid var(--default-info-color);
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto 6px;
+}
+.steps .step .step-label {
+  height: 23px;
+  width: 47px;
+  color: var(--default-info-color);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 23px;
+}
+.steps .step .step-label.color-red {
+  color: red;
+}
+.steps .step.active .step-number {
+  color: white;
+  background-color: var(--default-info-color);
+}
+.steps .step.error .step-number {
+  color: white;
+  border: none;
+  background-color: var(--color-red-00);
+}
+.steps .alert.container-error {
+  margin: 0;
+}
+.steps div.alert {
+  padding: 0;
+}
+
+#open-ticket-payment {
+  cursor: pointer;
+}
+#open-ticket-payment label {
+  cursor: pointer;
+}
+
+.header .logo-suez {
+  height: 30px;
+}
+
+.direct-payment-status {
+  text-align: center;
+  border: none !important;
+}
+
+.direct-payment {
+  border: 1px solid #ededed;
+  padding: 10px;
+}
+.direct-payment a.button {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  text-transform: uppercase;
+  height: 60px;
+}
+.direct-payment .item-buttons {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.direct-payment .item-buttons a {
+  width: 95%;
+}
+
+.text-cellphone {
+  width: auto;
+  height: auto;
+}
+
+.step-1-bis {
+  width: auto;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form.form-suez .d-phone {
+  margin: 10px 0;
+  font-size: 22px;
+}
+
+.bloc-ref-cli {
+  width: 100%;
+}
+.bloc-ref-cli .line-ref {
+  display: flex;
+}
+.bloc-ref-cli input {
+  width: 300px !important;
+}
+.bloc-ref-cli a.edit-ref {
+  font-size: 0.7em;
+  margin-left: 10px;
+}
+
+.alert-box-container {
+  font-size: 1rem;
+}
+
+#button_submit_direct_payment {
+  font-size: 22px;
+  text-transform: uppercase;
+  height: 60px;
+}
+
+a.sz-form-group__input-icon {
+  right: 0 !important;
+  align-items: flex-end;
+  cursor: pointer;
+}
+a.sz-form-group__input-icon i.sz-icon-line.pencil-write {
+  font-size: 1.5rem;
+}
+
+.hide-alert {
+  display: none;
+}
+
+.show-alert {
+  display: flex !important;
+}
+
+a.edit-reference {
+  position: absolute;
+  left: inherit;
+  right: 5px;
+}
+
+.bloc-cell-phone,
+.bloc-w-email {
+  margin-top: 30px;
+}
+
+#wrapper-button {
+  min-height: 80px;
+  justify-content: center;
+}
+
+#wrapper-directpayment {
+  margin-left: 0;
+  margin-right: 0;
+  justify-content: center;
+}
+
+#button_submit {
+  font-size: inherit;
+}
+
+@media (max-width: 1000px) {
+  #wrapper-button {
+    height: 150px;
+  }
+  .direct-payment .item-buttons {
+    width: 95%;
+  }
+}
+/* ========================================== *\
+    MOBILE
+\* ========================================== */
+@media (max-width: 1000px) {
+  footer {
+    position: initial;
+  }
+  .global-container {
+    padding-top: 3px;
+  }
+  .global-container .form-suez a.button.cancel-button {
+    position: initial;
+    top: 0;
+  }
+  .global-container h1 {
+    margin: 0 0 15px;
+  }
+  .global-container .icon-interrogation {
+    display: block;
+  }
+  .global-container .step-label {
+    display: none;
+  }
+  .global-container .logo-suez {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .global-container div.main-dashboard.account-dashboard div.item div.item-details {
+    text-align: center;
+  }
+  .global-container div.main-dashboard div.item div.item-description div.item-image {
+    display: block;
+  }
+  .global-container div.main-dashboard div.item div.item-description div.item-details {
+    display: block;
+  }
+  .global-container .label-show-bill {
+    display: none;
+  }
+  .global-container .label-show-bill:after {
+    display: inline-block;
+  }
+  .global-container .accrued {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .global-container .accrued .item-details-2 {
+    text-align: center;
+  }
+  .sticky-active {
+    position: fixed;
+    bottom: -5px;
+    margin-left: -37px;
+    width: 109%;
+    z-index: 2;
+  }
+  .sticky-active .button.button-primary {
+    padding-top: 15px;
+  }
+  .icon {
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+  }
+  #show-popin-letter {
+    display: block;
+    z-index: 10;
+  }
+  .popin-letter {
+    background-color: white;
+  }
+  .popin-letter .title {
+    text-align: center;
+  }
+  .popin-letter .img-letter {
+    width: 100%;
+  }
+  .popin-letter > div:first-child {
+    padding: 0;
+  }
+  .container-download-ticket label {
+    display: none;
+  }
+  .banner-to-mensu .responsive-icons {
+    text-align: center;
+  }
+  .banner-to-mensu .banner-to-mensu-message {
+    margin-top: 12px;
+    margin-bottom: 25px;
+  }
+  .responsive-icons {
+    display: block;
+  }
+  .series-icons {
+    margin-bottom: 0;
+  }
+  .series-icons .icon-label {
+    display: inline-block;
+  }
+  .series-icons .icon-img {
+    border: none;
+  }
+  .series-icons .icon {
+    padding-bottom: 22px;
+  }
+  .series-icons .border-bottom {
+    border-bottom: 2px solid var(--color-blue-02);
+    width: 97%;
+    padding-top: 29px;
+    margin: 0 auto;
+  }
+  div.alert div.alert-icon i[class*=icon-] {
+    font-size: 2.5em;
+  }
+  .steps {
+    margin: 0;
+  }
+  .steps:after {
+    top: 16px;
+  }
+  .steps .step {
+    height: 30px;
+  }
+  .steps .step .step-number {
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+    padding: 3px;
+  }
+}

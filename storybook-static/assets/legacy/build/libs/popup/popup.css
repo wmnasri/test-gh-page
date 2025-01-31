@@ -1,0 +1,122 @@
+.popup-container {
+    display: inline-block;
+    margin: 10px 6px;
+}
+
+.helpPopup{
+    background-color:#fff;
+    z-index:10000;
+    width:350px;
+    padding:10px;
+    border: solid 1px #dbdbda;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-box-shadow: 0 0 2px rgba(0,0,0,.12);
+    -moz-box-shadow: 0 0 2px rgba(0,0,0,.12);
+    box-shadow: 0 0 2px rgba(0,0,0,.12);
+}
+
+@media screen and (max-width: 650px) {
+    .helpPopup {
+        width: calc(100% - 30px) !important;
+        left: 15px !important;
+    }
+}
+
+.compatibility .helpPopup {
+    box-shadow: 0 0 2px #e0e0e0;
+    behavior: url('/bundles/lderiuc/css/PIE.htc');
+}
+
+#arrowpopuplinkPopup {
+    z-index: 10001;
+}
+
+input + span[id*="Popup"] {
+    margin: 10px 0;
+}
+
+span[id*="Popup"] {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ael-form-group span[id*="Popup"]{
+    margin-left: 8px;
+    margin-top: 11px;
+}
+
+#linkPopup img {
+    vertical-align: middle;
+}
+.titlePopup{
+    font-size: 14px;
+    color: #666;
+    font-family: "sansaNormal", sans-serif;
+    line-height: 37px;
+    margin-left: 10px;
+}
+.popupIcon{
+    float:left;
+    margin: 6px 0 0 7px;
+}
+.popupCloser{
+    float:right;
+    margin:2px;
+    cursor: pointer;
+}
+.textPopup{
+    margin:10px;
+    font-family: "sansaNormal", sans-serif;
+    color: #666;
+    font-size: 12px;
+}
+
+.ezxmltext-field {
+    font-family: Arial Regular, Arial;
+    color: #323232;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.ezxmltext-field p{
+    line-height: 15px;
+}
+
+.ezxmltext-field p {
+    -webkit-margin-before: 0em;
+}
+
+.ezxmltext-field a {
+    text-decoration: underline;
+    color: #00a;
+}
+
+.ezxmltext-field ul {
+    padding-left: 0px;
+}
+
+.ezxmltext-field ol {
+    padding-left: 0px;
+}
+
+.ezxmltext-field li {
+    list-style-position: outside; /*[LYONNAISEDESEAUXRIUC-347]*/
+    margin-left: 1.5em; /*bullet point size*/
+    margin-bottom: 2px;
+}
+
+.ezxmltext-field h2 {
+    font-size: 22px;
+    font-family: "sansaNormal", sans-serif;
+    font-weight: normal;
+}
+
+.ezxmltext-field h2 b {
+    font-weight: normal;
+}
+
+.ezxmltext-field h3 {
+    -webkit-margin-before:0.4em;
+}

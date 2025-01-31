@@ -1,0 +1,316 @@
+{
+  "entrypoints": {
+    "rtc-main": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/rtc-main.css"
+      ]
+    },
+    "legacy_consent": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/legacy_consent.css"
+      ]
+    },
+    "css_app_stylesheet": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/css_app_stylesheet.css"
+      ]
+    },
+    "css_intranet_layout": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/css_intranet_layout.css"
+      ]
+    },
+    "css_map_layout": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/css_map_layout.css"
+      ]
+    },
+    "css_lderiuc_layout": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/css_lderiuc_layout.css"
+      ]
+    },
+    "css_requestpath_layout": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/css_requestpath_layout.css"
+      ]
+    },
+    "css_payment": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/css_payment.css"
+      ]
+    },
+    "css_quizzes": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/css_quizzes.css"
+      ]
+    },
+    "css_requestpath": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/css_requestpath.css"
+      ]
+    },
+    "css_app_mixbootstrap3vs4": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/css_app_mixbootstrap3vs4.css"
+      ]
+    },
+    "legacy_variables_suez": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/legacy_variables_suez.css"
+      ]
+    },
+    "css_app_suez": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/css_app_suez.css"
+      ]
+    },
+    "legacy_variables_dole": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/legacy_variables_dole.css"
+      ]
+    },
+    "css_app_dole": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/css_app_dole.css"
+      ]
+    },
+    "legacy_variables_ebdm": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/legacy_variables_ebdm.css"
+      ]
+    },
+    "css_app_ebdm": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/css_app_ebdm.css"
+      ]
+    },
+    "legacy_variables_edbl": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/legacy_variables_edbl.css"
+      ]
+    },
+    "css_app_edbl": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/css_app_edbl.css"
+      ]
+    },
+    "legacy_variables_eddk": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/legacy_variables_eddk.css"
+      ]
+    },
+    "css_app_eddk": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/css_app_eddk.css"
+      ]
+    },
+    "legacy_variables_edtm": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/legacy_variables_edtm.css"
+      ]
+    },
+    "css_app_edtm": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/css_app_edtm.css"
+      ]
+    },
+    "legacy_variables_efbp": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/legacy_variables_efbp.css"
+      ]
+    },
+    "css_app_efbp": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/css_app_efbp.css"
+      ]
+    },
+    "legacy_variables_odiv": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/legacy_variables_odiv.css"
+      ]
+    },
+    "css_app_odiv": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/css_app_odiv.css"
+      ]
+    },
+    "legacy_variables_sees": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/legacy_variables_sees.css"
+      ]
+    },
+    "css_app_sees": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/css_app_sees.css"
+      ]
+    },
+    "legacy_variables_seop": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/legacy_variables_seop.css"
+      ]
+    },
+    "css_app_seop": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/css_app_seop.css"
+      ]
+    },
+    "legacy_variables_seve": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/legacy_variables_seve.css"
+      ]
+    },
+    "css_app_seve": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/css_app_seve.css"
+      ]
+    },
+    "legacy_variables_side": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/legacy_variables_side.css"
+      ]
+    },
+    "css_app_side": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/css_app_side.css"
+      ]
+    },
+    "legacy_variables_tmtp": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/legacy_variables_tmtp.css"
+      ]
+    },
+    "css_app_tmtp": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/css_app_tmtp.css"
+      ]
+    },
+    "legacy_variables_sest": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/legacy_variables_sest.css"
+      ]
+    },
+    "css_app_sest": {
+      "js": [
+        "/assets/legacy/build/runtime.js"
+      ],
+      "css": [
+        "/assets/legacy/build/css_app_sest.css"
+      ]
+    }
+  }
+}

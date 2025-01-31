@@ -1,0 +1,3 @@
+body .cgu-only .modal-content p:not(.cgu-only-title), body .cgu-only .modal-content li {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}

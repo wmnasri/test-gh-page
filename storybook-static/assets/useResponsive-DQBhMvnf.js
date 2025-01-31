@@ -1,0 +1,1 @@
+import{u as e}from"./index-BzhTyqaY.js";function o(){if(window.ssrRender)return window.isDesktop;const{lg:s}=e();return s}function r(){if(window.ssrRender)return window.isMobile;const{lg:s}=e();return!s}export{o as a,r as u};

@@ -1,0 +1,802 @@
+/*
+ * Global variable definitions.
+ * Variables can be redefined in the brand-specific sass file.
+ *
+ * 1. Global values
+ * 2. Layout elements
+ * 3. Page structure
+ * 4. Blocks
+ * 5. Dashboard items
+ */
+.rp-select {
+  border: 2px solid var(--default-info-color);
+  width: 100%;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  background: transparent url("https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") no-repeat;
+  background-position-x: 97%;
+  background-position-y: 44%;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-request .sz-button-group__btn-choose {
+  margin-right: 5px;
+}
+.btn-request .sz-button-group__btn-choose:hover, .btn-request .sz-button-group__btn-choose.active, .btn-request .sz-button-group__btn-choose.focus {
+  background-color: var(--default-info-color) !important;
+}
+
+.open-connection-section .not-connection-message {
+  border: #f98f72 1px solid;
+}
+.open-connection-section .not-connection-message .icon-not-infos {
+  color: #f98f72;
+  font-size: 30px;
+}
+.open-connection-section .connection-message-infos {
+  border: #ACE2FF 1px solid;
+}
+.open-connection-section .connection-message-infos .icon-not-infos {
+  color: #ACE2FF;
+  font-size: 30px;
+}
+
+.sanitation-section .title-sanitation {
+  color: #767C97;
+  font-family: "DINPro-Bold";
+  height: 43px;
+  border-bottom: 1px solid #e2e4eb;
+  padding: 0 0 0 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.sanitation-section .sanitation-button .sz-button-group__btn-choose {
+  margin-bottom: 15px !important;
+  width: 100%;
+  padding: 16px 0 !important;
+}
+.sanitation-section .sanitation-button .sz-button-group__btn-choose:hover, .sanitation-section .sanitation-button .sz-button-group__btn-choose.active {
+  background-color: var(--default-info-color) !important;
+}
+@media (min-width: 992px) {
+  .sanitation-section .sanitation-button .sz-button-group__btn-choose {
+    width: 50%;
+  }
+}
+
+.upload-attachement-files {
+  margin-top: 2%;
+}
+.upload-attachement-files .line-file-down-up {
+  border-top: 2px solid #E2E4EB;
+}
+.upload-attachement-files .line-file-down-up:last-child {
+  border-bottom: 2px solid #E2E4EB;
+}
+.upload-attachement-files .data-file {
+  font-family: "DINPro";
+  font-size: 16px;
+}
+.upload-attachement-files .data-file .title {
+  font-size: 18px;
+}
+.upload-attachement-files .data-file .title.required-file:after {
+  content: "*";
+  color: #EB4A65;
+}
+.upload-attachement-files .icon-download {
+  fill: var(--default-info-color);
+}
+.upload-attachement-files .link-download a {
+  color: #666666;
+  font-family: "DINPro-Bold";
+}
+
+.label-size-max {
+  font-family: DINPro-Medium;
+  font-size: 16px;
+  color: #3D466C;
+}
+.label-size-max:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  border-top: 2px solid #E2E4EB;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#bloc-attachements .bloc-messages {
+  margin-bottom: 15px;
+}
+
+#agenda-form #dates-selected {
+  margin-top: 4%;
+  margin-bottom: 3%;
+}
+#agenda-form #dates-selected .date {
+  margin-right: 44px;
+  padding-top: 4px;
+  margin-bottom: 6%;
+  padding-bottom: 4px;
+  background-color: #D4D5DD;
+  border-radius: 5px;
+  font-family: DINPro-Bold;
+}
+#agenda-form #dates-selected .date .close {
+  font-size: 32px;
+}
+#agenda-form #dates-selected .date .bloc-close {
+  padding-top: 3px;
+}
+#agenda-form #agenda-bloc {
+  overflow: hidden;
+  height: 360px;
+}
+#agenda-form .cgu-agenda {
+  font-family: DINPro-Medium;
+  font-size: 13px;
+  color: #767C97;
+}
+#agenda-form .cgu-agenda label {
+  margin: 0 0 0 11px;
+}
+
+.no-height-over-flow {
+  height: 0;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 651px) {
+  #agenda-form #dates-selected {
+    margin: 0;
+  }
+  #agenda-form #dates-selected .date {
+    margin-right: 0;
+  }
+}
+.billing-address-section input[type=radio] {
+  margin-right: 15px !important;
+}
+.billing-address-section .custom-radio label {
+  cursor: pointer;
+}
+.billing-address-section .list-group-item:first-child {
+  border-bottom: 4px solid rgba(0, 0, 0, 0.125);
+}
+.billing-address-section .list-group-item:nth-child(2) {
+  border-top: 0px;
+}
+
+#agenda-form #dates-selected {
+  margin-top: 4%;
+  margin-bottom: 3%;
+}
+#agenda-form #dates-selected .date {
+  margin-right: 44px;
+  padding-top: 4px;
+  margin-bottom: 6%;
+  padding-bottom: 4px;
+  background-color: #D4D5DD;
+  border-radius: 5px;
+  font-family: DINPro-Bold;
+}
+#agenda-form #dates-selected .date .close {
+  font-size: 32px;
+}
+#agenda-form #dates-selected .date .bloc-close {
+  padding-top: 3px;
+}
+#agenda-form #agenda-bloc {
+  overflow: hidden;
+  height: 360px;
+}
+#agenda-form .cgu-agenda {
+  font-family: DINPro-Medium;
+  font-size: 13px;
+  color: #767C97;
+}
+#agenda-form .cgu-agenda label {
+  margin: 0 0 0 11px;
+}
+
+.no-height-over-flow {
+  height: 0;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 651px) {
+  #agenda-form #dates-selected {
+    margin: 0;
+  }
+  #agenda-form #dates-selected .date {
+    margin-right: 0;
+  }
+}
+#form-summary .agenda-sum .div-header-vertical:last-child,
+#form-summary .attachement-sum .div-header-vertical:last-child {
+  display: none;
+}
+
+.confirmation-section .text-confirmation {
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+.confirmation-section .text-grey {
+  font-size: 1.1rem;
+  line-height: 1.1;
+  color: grey;
+}
+
+#ma-content .fc-event-container .fc-day-grid-event {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.content-layout-ma {
+  padding-top: 33px;
+}
+
+.label-info-client-font {
+  font-size: 12px;
+}
+
+.info-client-font {
+  font-size: 14px;
+}
+
+.content-icon-info-client {
+  padding-top: 17px;
+}
+
+body.ma-body {
+  color: #030f40;
+  background-color: #F4F8FF !important;
+}
+body.ma-body .info-custumer-bloc {
+  margin-top: 14px;
+}
+body.ma-body .menu-ma {
+  background-color: #FFFFFF;
+}
+body.ma-body .menu-ma .title {
+  background: #3D466C;
+  color: white;
+  font-family: DINPro;
+  font-weight: bold;
+  letter-spacing: 1px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  padding-top: 14px;
+}
+body.ma-body .menu-ma .row .col-md-2 .ma-menu-icon {
+  font-size: 24px;
+  height: 24px;
+  width: 24px;
+}
+body.ma-body .menu-ma .row .col-md-10 .label-menu {
+  color: #767C97;
+  font-size: 12px;
+}
+body.ma-body .content-layout {
+  background-color: #FFFFFF;
+}
+body.ma-body .content-layout .content-ma {
+  margin-top: -64px;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.ma-confirmation-page .title-01 {
+  font-size: 1.4em;
+}
+.ma-confirmation-page .message-content {
+  height: max-content;
+  padding: 2%;
+  background-color: #FFFFFF;
+}
+.ma-confirmation-page .message-content .title-content {
+  font-family: "DINPro Condensed Regular";
+  font-size: 24px;
+}
+.ma-confirmation-page .message-content .body-content {
+  color: #767C97;
+}
+.ma-confirmation-page .bloc-confirm {
+  padding: 2%;
+  background-color: #FFFFFF;
+}
+.ma-confirmation-page .bloc-confirm .row .label-menu {
+  color: #767C97;
+}
+
+.page-rdv-error .container .message-error-ma {
+  background-color: white;
+  padding: 20px;
+}
+.page-rdv-error .container .message-error-ma .customer-service-link {
+  text-decoration: none;
+}
+.page-rdv-error .container .message-error-ma .btn-back {
+  margin-top: 15px;
+  border-color: var(--button-primary-background) !important;
+}
+
+.making-appointments-calandar .fc-event-container {
+  text-align: center;
+}
+
+.ma-slot-block .ma-close-slot-icon {
+  font-size: 10px;
+}
+
+.ma-message-info {
+  margin-top: 10px;
+}
+
+.container-agenda {
+  height: auto;
+  overflow: hidden;
+}
+.container-agenda .fc-title {
+  font-size: 10px;
+}
+
+#agenda-form #dates-selected .date .close {
+  font-size: 10px;
+}
+#agenda-form #dates-selected .date .bloc-close {
+  padding-top: 3px;
+}
+
+.ma-form-group-cgu input {
+  margin-left: 10px;
+}
+
+.ma-btn-confirm button {
+  font-size: 12px;
+}
+
+.content-layout {
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+.rp-pointer {
+  cursor: pointer;
+}
+
+.rp-not-allowed {
+  cursor: not-allowed !important;
+}
+
+.content-ma {
+  padding-top: 65px;
+}
+
+.infos-ma-text {
+  color: #767C97;
+  font-family: DINPro;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 18px;
+  display: flex;
+  align-items: flex-start;
+}
+.infos-ma-text input[type=checkbox] {
+  margin-top: 5px;
+}
+
+#message-warning-agenda .infos-ma-text {
+  display: block;
+}
+
+.fc-day-grid-event {
+  text-align: center;
+}
+
+#mainWrapper .row .header {
+  background-color: white;
+  margin-bottom: 2.5%;
+  border-bottom: 2px solid;
+  width: 100%;
+  height: 60px;
+  border-color: #3D466C;
+  padding: 0 36px;
+}
+
+#ma-recaptcha {
+  padding-left: 28px;
+}
+
+/* The customcheck */
+.customcheck {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.customcheck input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border: 1px solid;
+}
+
+/* When the checkbox is checked, add a blue background */
+.customcheck input:checked ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.customcheck input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.customcheck .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+}
+
+.check-1 {
+  font-size: 16px !important;
+  left: 2px !important;
+}
+
+.loader-btn-update-rdv {
+  height: 58px;
+}
+
+a[id=more-rdv] {
+  background-color: var(--default-info-color) !important;
+  color: white !important;
+}
+
+.header .logo-suez {
+  margin-top: 12px;
+  height: 30px;
+}
+
+#mainWrapper .sz-button-group__btn-choose.active i,
+#mainWrapper .sz-button-group__btn-choose:hover i,
+#mainWrapper .sz-button-group__btn-choose.focus i {
+  background-color: var(--default-info-color);
+}
+#mainWrapper .sz-Calendar .fc-button-primary {
+  background: #3D466C;
+}
+#mainWrapper .sz-form-group__sz-input-text:focus {
+  border: 2px solid #3D466C;
+}
+#mainWrapper .sz-underline::after {
+  background-color: #3D466C;
+}
+#mainWrapper .sz-form-group .sz-form-group__sz-input-text:focus {
+  border: 2px solid #3D466C;
+}
+#mainWrapper .btn-secondary:not(:disabled) {
+  background: white !important;
+  color: #3D466C !important;
+  border: 2px solid #3D466C !important;
+}
+#mainWrapper .btn-secondary:not(:disabled):hover {
+  background: #3D466C;
+  color: white !important;
+}
+#mainWrapper .sz-button-group__btn-choose {
+  margin-right: 5px;
+}
+#mainWrapper .sz-button-group__btn-choose.active, #mainWrapper .sz-button-group__btn-choose:hover, #mainWrapper .sz-button-group__btn-choose.focus {
+  border-color: #3D466C !important;
+  background-color: var(--default-info-color) !important;
+}
+#mainWrapper .sz-btn:not(:disabled)::after {
+  border-color: #3D466C !important;
+}
+#mainWrapper .sz-btn-outline:not(:disabled):hover,
+#mainWrapper .btn-secondary:not(:disabled):hover {
+  background: #3D466C !important;
+}
+#mainWrapper .border-secondary {
+  border-color: #3D466C !important;
+}
+#mainWrapper .sz-form-group__sz-input-text--checked {
+  border: 2px solid #3D466C;
+}
+
+form.login-form h3,
+div.block form.login-form h3 {
+  font-size: 1em;
+}
+
+.information-circle {
+  color: #ACE2FF;
+}
+
+.sz-Calendar .fc-day-grid-event {
+  cursor: pointer;
+}
+
+.title-02 {
+  font-size: 14px;
+  color: var(--default-info-color);
+  font-family: DINPro-Bold;
+}
+
+.title-03 {
+  font-size: 12px;
+  color: #767C97;
+  font-family: DINPro-Medium;
+}
+
+.title-04 {
+  font-size: 16px;
+  color: #030f40;
+  font-family: DINPro-Bold;
+}
+
+.title-05 {
+  color: #666666;
+  font-family: "DINPro-Bold";
+}
+
+.text-color-red-02 {
+  color: #EB4A65;
+}
+
+.text-color-grey-05 {
+  color: #767C97;
+}
+
+.title-block-summary {
+  margin: 12px 0 12px 0;
+}
+
+#content {
+  margin-top: 72px;
+}
+
+.main-content {
+  margin: 28px 61px 20px 61px;
+}
+
+.main-footer {
+  bottom: 0;
+  width: 100%;
+  margin-top: 4%;
+}
+
+.bloc-prev-next {
+  width: 100%;
+}
+
+.error-label {
+  color: #EB4A65;
+  width: 100%;
+}
+
+#form-summary .block {
+  border-right: 2px solid #E2E4EB;
+  margin: 0;
+}
+
+.motif-admin {
+  margin-top: 20px;
+}
+
+.message-checkbox-admin-meeting {
+  font-weight: bold;
+}
+.message-checkbox-admin-meeting input {
+  margin-right: 15px;
+}
+.message-checkbox-admin-meeting label {
+  padding-top: 6px;
+}
+
+#tc-input-town-choice {
+  position: relative;
+}
+#tc-input-town-choice .icon-spinner {
+  font-size: 23px;
+  position: absolute;
+  top: 18px;
+  right: 31px;
+}
+
+.message-infos {
+  border: #ACE2FF 2px solid;
+}
+.message-infos .icon-not-infos {
+  color: #ACE2FF;
+  font-size: 29px;
+  vertical-align: middle;
+}
+.message-infos .message-request {
+  color: #767C97;
+}
+
+.mdi-arrow-left {
+  font-size: 25px;
+}
+.mdi-arrow-left:before {
+  margin-top: 6px;
+}
+
+.div-header-vertical {
+  display: flex;
+  justify-content: center;
+}
+.div-header-vertical:after {
+  content: "";
+  width: 2px;
+  background-color: #E2E4EB;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 14px;
+}
+
+.easy-autocomplete-container {
+  left: 0;
+  width: 100%;
+  top: 57px;
+}
+.easy-autocomplete-container ul li {
+  padding: 10px;
+  border: 1px solid #030f40;
+}
+.easy-autocomplete-container ul li:not(:last-child) {
+  border-bottom: 0;
+}
+.easy-autocomplete-container ul li:last-child {
+  border-width: 1px;
+}
+
+.easy-autocomplete {
+  width: 100%;
+}
+
+.previous-btn {
+  background: white;
+  border: 2px #3D466C solid;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.previous-btn .icon {
+  padding-top: 9px;
+  padding-left: 9px;
+}
+
+.previous-btn:hover {
+  background: #3D466C;
+  color: white;
+}
+
+.arow-prev {
+  font-size: 2.5rem;
+  line-height: 0.2;
+}
+
+.request-row-title {
+  color: #4f4f4f;
+  height: 43px;
+  border-bottom: 1px solid #e2e4eb;
+}
+
+.question-yes-or-no {
+  color: #666666;
+}
+
+.cap__error {
+  width: 100% !important;
+}
+
+.sz-label-input.required:after {
+  position: relative !important;
+}
+
+.form-control {
+  font-size: 1.15rem !important;
+}
+
+@media screen and (max-width: 651px) {
+  .bloc-form-request {
+    margin-top: 141px;
+  }
+  .div-header-vertical {
+    border-bottom: 2px solid #E2E4EB;
+    left: 15px;
+    right: 15px;
+    margin: 0 15px 15px 0;
+  }
+  #form-summary .block {
+    border-right: none;
+    border-bottom: 2px solid #E2E4EB;
+    margin: 0 0 15px 15px;
+    padding: 0;
+  }
+}
+.body-request {
+  background-color: var(--default-secondary-color) !important;
+}
+
+.container-request {
+  min-height: 650px;
+}
+
+#applicant-quality .sz-container-select,
+#beneficiary-status .sz-container-select {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#applicant-quality .custom-select,
+#beneficiary-status .custom-select {
+  margin-bottom: 0;
+}
+
+#applicant-type .sz-button-group,
+#beneficiary-sex .sz-button-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#applicant-type .sz-button-group .sz-button-group__btn-choose,
+#beneficiary-sex .sz-button-group .sz-button-group__btn-choose {
+  width: 100%;
+  padding: 16px 0 !important;
+  margin-bottom: 15px;
+}
+@media (min-width: 992px) {
+  #applicant-type .sz-button-group .sz-button-group__btn-choose,
+  #beneficiary-sex .sz-button-group .sz-button-group__btn-choose {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 992px) {
+  #applicant-type .sz-button-group,
+  #beneficiary-sex .sz-button-group {
+    flex-direction: row;
+  }
+}
