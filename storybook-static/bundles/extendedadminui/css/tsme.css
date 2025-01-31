@@ -1,7 +1,0 @@
-/* override from smile */
-.checklist li{
-    list-style-image: url("/assets/legacy/build/img/ezadmin/check.png");
-}
-.ng-tags-input-ui .tagssuggestfieldwrap {
-    float: none !important;
-}
