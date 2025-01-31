@@ -1,42 +1,171 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[56],{
 
-/***/ "./assets/img/photoMeter/ask-email.png":
-/*!*********************************************!*\
-  !*** ./assets/img/photoMeter/ask-email.png ***!
-  \*********************************************/
+/***/ "./assets/img/doc.svg":
+/*!****************************!*\
+  !*** ./assets/img/doc.svg ***!
+  \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("/assets/front/build/ask-email.png");
+/* harmony default export */ __webpack_exports__["default"] = ("/assets/front/build/doc.svg");
 
 /***/ }),
 
-/***/ "./assets/js/components/photoMeter/AskEmail.jsx":
-/*!******************************************************!*\
-  !*** ./assets/js/components/photoMeter/AskEmail.jsx ***!
-  \******************************************************/
+/***/ "./assets/img/light-bulb-shine.svg":
+/*!*****************************************!*\
+  !*** ./assets/img/light-bulb-shine.svg ***!
+  \*****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return AskEmail; });
+/* harmony default export */ __webpack_exports__["default"] = ("/assets/front/build/light-bulb-shine.svg");
+
+/***/ }),
+
+/***/ "./assets/js/ez-components/cards/Pedago/card-pedago.scss":
+/*!***************************************************************!*\
+  !*** ./assets/js/ez-components/cards/Pedago/card-pedago.scss ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./assets/js/ez-components/cards/Pedago/index.tsx":
+/*!********************************************************!*\
+  !*** ./assets/js/ez-components/cards/Pedago/index.tsx ***!
+  \********************************************************/
+/*! exports provided: CardPedago */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardPedago", function() { return CardPedago; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _img_photoMeter_ask_email_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../img/photoMeter/ask-email.png */ "./assets/img/photoMeter/ask-email.png");
-/* harmony import */ var _services_photoMeter_Meter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/photoMeter/Meter */ "./assets/js/services/photoMeter/Meter.js");
-/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @suezenv/react-theme-components */ "./node_modules/@suezenv/react-theme-components/build/index.js");
-/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
-/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../constants */ "./assets/js/constants/index.ts");
-/* harmony import */ var _hooks_useResponsive__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../hooks/useResponsive */ "./assets/js/hooks/useResponsive.ts");
-/* harmony import */ var _photoCompteur_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./photoCompteur.scss */ "./assets/js/components/photoMeter/photoCompteur.scss");
-/* harmony import */ var _photoCompteur_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_photoCompteur_scss__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! formik */ "./node_modules/formik/dist/formik.esm.js");
-/* harmony import */ var _models_photoMeter_AskEmail__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../models/photoMeter/AskEmail */ "./assets/js/models/photoMeter/AskEmail.js");
+/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @suezenv/react-theme-components */ "./node_modules/@suezenv/react-theme-components/build/index.js");
+/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _app_hooks_useInterweave__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/hooks/useInterweave */ "./assets/js/hooks/useInterweave.jsx");
+/* harmony import */ var interweave__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! interweave */ "./node_modules/interweave/esm/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _card_pedago_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./card-pedago.scss */ "./assets/js/ez-components/cards/Pedago/card-pedago.scss");
+/* harmony import */ var _card_pedago_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_card_pedago_scss__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+
+var CardPedago = function CardPedago(_ref) {
+  var icon = _ref.icon,
+    title = _ref.title,
+    subtitle = _ref.subtitle,
+    children = _ref.children,
+    _ref$centered = _ref.centered,
+    centered = _ref$centered === void 0 ? false : _ref$centered,
+    _ref$clickable = _ref.clickable,
+    clickable = _ref$clickable === void 0 ? true : _ref$clickable,
+    _ref$backgroundColor = _ref.backgroundColor,
+    backgroundColor = _ref$backgroundColor === void 0 ? 'white' : _ref$backgroundColor,
+    background = _ref.background,
+    cardIndex = _ref.cardIndex,
+    handleClick = _ref.handleClick;
+  var _useInterweave = Object(_app_hooks_useInterweave__WEBPACK_IMPORTED_MODULE_2__["default"])(),
+    transform = _useInterweave.transform;
+  var getStyleBackground = function getStyleBackground(backgroundColor) {
+    return {
+      backgroundColor: backgroundColor
+    };
+  };
+  var cardPedagoClassNames = classnames__WEBPACK_IMPORTED_MODULE_4___default()('card-pedago d-flex flex-column rounded-2 px-3 py-4 p-lg-3 w-100 position-relative', {
+    'cursor-pointer': clickable,
+    'card-detail text-center': centered
+  });
+  var contentClassNames = classnames__WEBPACK_IMPORTED_MODULE_4___default()('card-content d-flex', {
+    'justify-content-between align-items-start': !centered,
+    'justify-content-center flex-column': centered
+  });
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: cardPedagoClassNames,
+    style: getStyleBackground(backgroundColor),
+    onClick: handleClick,
+    "data-cy": title
+  }, background && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CardPedagoBackground, {
+    index: cardIndex
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: contentClassNames
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzTypographie"], {
+    variant: centered ? 'H3' : 'H4',
+    size: "L",
+    weight: "medium"
+  }, title), subtitle && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(interweave__WEBPACK_IMPORTED_MODULE_3__["Markup"], {
+    noWrap: true,
+    transform: transform,
+    content: subtitle
+  })), icon && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "rounded-circle p-2 bg-gray-100 d-flex align-items-center justify-content-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: icon.src,
+    alt: icon.alt,
+    style: {
+      width: 32,
+      height: 32
+    }
+  })), children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "text-right mt-auto"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzIcon"], {
+    variant: "line",
+    icon: "keyboard-arrow-right"
+  })));
+};
+var CardPedagoBackground = function CardPedagoBackground(_ref2) {
+  var index = _ref2.index;
+  var waveClassname = "wave-".concat(index + 1);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "wave-container position-absolute w-100 left-0 bottom-0"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "wave ".concat(waveClassname)
+  }));
+};
+
+/***/ }),
+
+/***/ "./assets/js/pages/pedago-facture/Board.tsx":
+/*!**************************************************!*\
+  !*** ./assets/js/pages/pedago-facture/Board.tsx ***!
+  \**************************************************/
+/*! exports provided: Board */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Board", function() { return Board; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @suezenv/react-theme-components */ "./node_modules/@suezenv/react-theme-components/build/index.js");
+/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _app_hooks_useResponsive__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/hooks/useResponsive */ "./assets/js/hooks/useResponsive.ts");
+/* harmony import */ var _app_components_Links_LinkBtn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/components/Links/LinkBtn */ "./assets/js/components/Links/LinkBtn.jsx");
+/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/constants */ "./assets/js/constants/index.ts");
+/* harmony import */ var _app_ez_components_cards_Pedago__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @app/ez-components/cards/Pedago */ "./assets/js/ez-components/cards/Pedago/index.tsx");
+/* harmony import */ var _img_doc_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @img/doc.svg */ "./assets/img/doc.svg");
+/* harmony import */ var _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @app/services/AxiosInstance */ "./assets/js/services/AxiosInstance.jsx");
+/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _PedagoModalContent__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./PedagoModalContent */ "./assets/js/pages/pedago-facture/PedagoModalContent.tsx");
+/* harmony import */ var _app_ez_components_ModuleCardFaq__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @app/ez-components/ModuleCardFaq */ "./assets/js/ez-components/ModuleCardFaq/index.tsx");
+/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-query */ "./node_modules/react-query/es/index.js");
+/* harmony import */ var react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-loading-skeleton */ "./node_modules/react-loading-skeleton/lib/index.js");
+/* harmony import */ var react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _app_components_background_BackgroundWave__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @app/components/background/BackgroundWave */ "./assets/js/components/background/BackgroundWave/index.tsx");
+/* harmony import */ var _app_hooks_useGA__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @app/hooks/useGA */ "./assets/js/hooks/useGA/index.ts");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
@@ -54,316 +183,269 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-function AskEmail() {
-  var isBrowser = Object(_hooks_useResponsive__WEBPACK_IMPORTED_MODULE_7__["useIsDesktop"])();
-  var _useTranslation = Object(react_i18next__WEBPACK_IMPORTED_MODULE_5__["useTranslation"])(),
+
+
+
+
+
+var Board = function Board() {
+  var _a;
+  var isMobile = Object(_app_hooks_useResponsive__WEBPACK_IMPORTED_MODULE_2__["useIsMobile"])();
+  var _useTranslation = Object(react_i18next__WEBPACK_IMPORTED_MODULE_8__["useTranslation"])(),
     t = _useTranslation.t;
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_9__["useHistory"])();
+  var _useGA = Object(_app_hooks_useGA__WEBPACK_IMPORTED_MODULE_15__["default"])(),
+    track = _useGA.track;
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
     _useState2 = _slicedToArray(_useState, 2),
-    setDataSession = _useState2[1];
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+    isShowModal = _useState2[0],
+    setisShowModal = _useState2[1];
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null),
     _useState4 = _slicedToArray(_useState3, 2),
-    showLoader = _useState4[0],
-    setshowLoader = _useState4[1];
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    _services_photoMeter_Meter__WEBPACK_IMPORTED_MODULE_3__["default"].getDataSession().then(function (data) {
-      setDataSession(data);
-    });
-  }, []);
-  var onChangeEmailInput = function onChangeEmailInput(_ref, setFieldValue) {
-    var target = _ref.target;
-    setFieldValue('email', target.value);
+    selectedPedagoCard = _useState4[0],
+    setSelectedPedagoCard = _useState4[1];
+  var _useQuery = Object(react_query__WEBPACK_IMPORTED_MODULE_12__["useQuery"])('invoiceExplanation', function () {
+      return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_7__["default"].get(_app_constants__WEBPACK_IMPORTED_MODULE_4__["API"].INVOICE_EXPLANATION);
+    }),
+    data = _useQuery.data,
+    isLoading = _useQuery.isLoading,
+    isError = _useQuery.isError;
+  var content = ((_a = data === null || data === void 0 ? void 0 : data.data) === null || _a === void 0 ? void 0 : _a.content) || {};
+  var pf_card_cmf = content.pf_card_cmf,
+    pf_card_go_further = content.pf_card_go_further,
+    clientContext = content.clientContext;
+  var handleCloseModal = function handleCloseModal() {
+    setisShowModal(false);
   };
-  var mailToUser = function mailToUser(values) {
-    var email = values.email;
-    setshowLoader(true);
-    _services_photoMeter_Meter__WEBPACK_IMPORTED_MODULE_3__["default"].updateSession({
-      email: email
-    }).then(function () {
-      _services_photoMeter_Meter__WEBPACK_IMPORTED_MODULE_3__["default"].sendConfirmationMail().then(function (sendMail) {
-        if (sendMail.isError == false) {
-          history.push(_constants__WEBPACK_IMPORTED_MODULE_6__["ROUTES"].PHOTO_COUNTER_CONFIRM, {
-            isMailError: false
-          });
-        } else {
-          history.push(_constants__WEBPACK_IMPORTED_MODULE_6__["ROUTES"].PHOTO_COUNTER_CONFIRM, {
-            isMailSent: true
-          });
-        }
+  var handleOpenModal = function handleOpenModal(data) {
+    var _ref = data || {},
+      modalContent = _ref.modalContent;
+    if (Object.keys(modalContent).length > 0) {
+      track('PEDAGO_1', {
+        nom_modale: modalContent.type,
+        cas_client: clientContext
       });
+      setisShowModal(true);
+      setSelectedPedagoCard(data);
+    }
+  };
+  var pedagoItemClassName = 'col-12 col-lg-6 px-0 px-lg-2 mb-3';
+  var openCard = function openCard(modalContent) {
+    track('PEDAGO_2', {
+      nom_modale: modalContent === null || modalContent === void 0 ? void 0 : modalContent.type,
+      cas_client: clientContext
     });
   };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "home-index"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_9__["Formik"], {
-    initialValues: {
-      email: ''
-    },
-    validateOnBlur: true,
-    validateOnChange: true,
-    validationSchema: _models_photoMeter_AskEmail__WEBPACK_IMPORTED_MODULE_10__["AskEmailModel"],
-    onSubmit: mailToUser
-  }, function (_ref2) {
-    var handleSubmit = _ref2.handleSubmit,
-      values = _ref2.values,
-      errors = _ref2.errors,
-      setFieldValue = _ref2.setFieldValue,
-      isValid = _ref2.isValid,
-      dirty = _ref2.dirty;
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-      onSubmit: handleSubmit
+  if (isLoading) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SkeletonInvoiceExplanation, null);
+  }
+  if (isError) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "w-100 bg-blue-07 pb-lg-0"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "container"
+      className: "tsme-container pb-3 pb-lg-0"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "col-12 col-md-10 m-auto"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_4__["SzTypographie"], {
-      variant: "h1",
-      className: "pl-3 title-page"
-    }, t('photoMeter.askEmail.title')))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "container global-container mb-4"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "col-12 col-md-10 m-auto ".concat(isBrowser ? 'py-5' : 'py-3')
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "row"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "col-md-6 d-md-block"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_4__["SzTypographie"], {
-      weight: "regular",
-      className: "mb-4"
-    }, t('photoMeter.askEmail.formTitle')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_4__["SzInput"], {
-      name: "email",
-      value: values.email,
-      onChange: function onChange(event) {
-        onChangeEmailInput(event, setFieldValue);
-      },
-      label: t('photoMeter.askEmail.email.label'),
-      placeholder: isBrowser ? t('photoMeter.askEmail.email.placeholder.browser') : t('photoMeter.askEmail.email.placeholder.mobile'),
-      icon: "envelope",
-      valid: !errors.email
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "col-md-6 d-flex"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "m-auto justify-content-center align-self-center d-md-block"
+      className: "col-12 col-lg-7 mx-auto"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "/"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-      src: _img_photoMeter_ask_email_png__WEBPACK_IMPORTED_MODULE_2__["default"],
-      alt: ""
-    })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "container my-4"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "col-12 col-md-10 m-auto d-flex"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_4__["SzButton"], {
-      type: "submit",
-      variant: "contained",
-      className: "m-auto",
-      loader: showLoader,
-      isDisabled: !dirty || !isValid
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_4__["SzTypographie"], {
-      weight: "light",
-      variant: "button"
-    }, t('photoMeter.askEmail.submit'))))));
-  }));
-}
+      className: "border border-dark w-100",
+      src: "/assets/legacy/build/img/page-404.png",
+      alt: t('errors.notFound')
+    })))));
+  }
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "pedago-facture-board position-relative w-100 pb-lg-0"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tsme-container py-3 pb-lg-0"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzTypographie"], {
+    variant: "H2",
+    size: isMobile ? 'L' : 'XL',
+    weight: "bold",
+    className: "text-center mb-3",
+    tag: "h1"
+  }, t('pedagoFacture.board.title')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "d-flex flex-column flex-lg-row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-12 col-lg-7 px-0"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row no-gutters"
+  }, pf_card_cmf.map(function (data, index) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: pedagoItemClassName,
+      key: index
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_ez_components_cards_Pedago__WEBPACK_IMPORTED_MODULE_5__["CardPedago"], Object.assign({}, data, {
+      cardIndex: index,
+      background: true,
+      handleClick: function handleClick() {
+        return handleOpenModal(data);
+      }
+    })));
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-12 col-lg-5 px-0"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "pl-0 pl-lg-4 mb-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_ez_components_cards_Pedago__WEBPACK_IMPORTED_MODULE_5__["CardPedago"], {
+    title: "Ma facture en d\xE9tail",
+    subtitle: "<p>Zoom sur chaque point cl\xE9</p>",
+    centered: true,
+    handleClick: function handleClick() {
+      track('PEDAGO_4', {
+        cas_client: clientContext
+      });
+      history.push(_app_constants__WEBPACK_IMPORTED_MODULE_4__["ROUTES"].INVOICE_DETAIL);
+    },
+    backgroundColor: "var(--blue-electric-light)"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _img_doc_svg__WEBPACK_IMPORTED_MODULE_6__["default"],
+    className: "mx-auto",
+    style: {
+      position: 'absolute',
+      bottom: isMobile ? -25 : 0,
+      left: '50%',
+      transform: 'translateX(-50%)',
+      width: isMobile ? 250 : 315
+    }
+  }))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_background_BackgroundWave__WEBPACK_IMPORTED_MODULE_14__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_ez_components_ModuleCardFaq__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    title: t('pedagoFacture.board.card_contract_module_title'),
+    items: pf_card_go_further,
+    openCard: openCard
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tsme-container pt-0 pb-6 text-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_Links_LinkBtn__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    variant: "outlined",
+    border: "soft",
+    className: "border-white bg-transparent mb-1 mb-lg-0 text-white",
+    to: _app_constants__WEBPACK_IMPORTED_MODULE_4__["ROUTES"].HELP_AND_CONTACT,
+    id: "invoice-explanation-other-question-btn",
+    onClick: function onClick() {
+      track('PEDAGO_3', {
+        cas_client: clientContext
+      });
+    }
+  }, t('pedagoFacture.board.otherQuestionBtn')))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzModal"], {
+    show: isShowModal,
+    handleClose: handleCloseModal,
+    size: "xl",
+    backdrop: true,
+    centered: true,
+    scrollable: true,
+    border: "smooth",
+    fullscreen: "md",
+    title: ""
+  }, selectedPedagoCard && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PedagoModalContent__WEBPACK_IMPORTED_MODULE_10__["PedagoModalContent"], Object.assign({}, selectedPedagoCard)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "text-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzButton"], {
+    variant: "contained",
+    border: "soft",
+    onClick: handleCloseModal,
+    id: "close-pedago-modal"
+  }, t('pedagoFacture.board.modal.btn')))));
+};
+var SkeletonInvoiceExplanation = function SkeletonInvoiceExplanation() {
+  var isMobile = Object(_app_hooks_useResponsive__WEBPACK_IMPORTED_MODULE_2__["useIsMobile"])();
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "w-100 bg-blue-07 pb-lg-0"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tsme-container pb-3 pb-lg-0"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "text-center mb-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13___default.a, {
+    width: isMobile ? 250 : 500,
+    height: 40
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "d-flex flex-column flex-lg-row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-12 col-lg-7 px-0"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row no-gutters"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-12 col-lg-6 px-0 px-lg-2 mb-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13___default.a, {
+    width: '100%',
+    height: 180
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-12 col-lg-6 px-0 px-lg-2 mb-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13___default.a, {
+    width: '100%',
+    height: 180
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-12 col-lg-6 px-0 px-lg-2 mb-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13___default.a, {
+    width: '100%',
+    height: 180
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-12 col-lg-6 px-0 px-lg-2 mb-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13___default.a, {
+    width: '100%',
+    height: 180
+  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-12 col-lg-5 px-0"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "pl-0 pl-lg-4 mb-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13___default.a, {
+    width: isMobile ? '100%&' : 497,
+    height: 375
+  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "w-100"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tsme-container mx-auto position-relative pt-3 pt-lg-4 px-lg-6"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "text-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13___default.a, {
+    width: 200,
+    height: 30
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "row no-gutters justify-content-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-12 col-lg-4 px-lg-2 "
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13___default.a, {
+    width: '100%',
+    height: 210
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-12 col-lg-4 px-lg-2 "
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13___default.a, {
+    width: '100%',
+    height: 210
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "col-12 col-lg-4 px-lg-2 "
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13___default.a, {
+    width: '100%',
+    height: 210
+  }))))));
+};
 
 /***/ }),
 
-/***/ "./assets/js/components/photoMeter/photoCompteur.scss":
-/*!************************************************************!*\
-  !*** ./assets/js/components/photoMeter/photoCompteur.scss ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-
-/***/ "./assets/js/models/photoMeter/AskEmail.js":
-/*!*************************************************!*\
-  !*** ./assets/js/models/photoMeter/AskEmail.js ***!
-  \*************************************************/
-/*! exports provided: AskEmailModel */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AskEmailModel", function() { return AskEmailModel; });
-/* harmony import */ var yup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! yup */ "./node_modules/yup/es/index.js");
-/* harmony import */ var _validation_yup__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../validation/yup */ "./assets/js/validation/yup.js");
-
-
-var AskEmailModel = yup__WEBPACK_IMPORTED_MODULE_0__["object"]().shape({
-  email: yup__WEBPACK_IMPORTED_MODULE_0__["string"]().email('photoMeter.form.errors.email')
-});
-
-/***/ }),
-
-/***/ "./assets/js/services/photoMeter/Meter.js":
-/*!************************************************!*\
-  !*** ./assets/js/services/photoMeter/Meter.js ***!
-  \************************************************/
+/***/ "./assets/js/pages/pedago-facture/index.tsx":
+/*!**************************************************!*\
+  !*** ./assets/js/pages/pedago-facture/index.tsx ***!
+  \**************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @app/constants */ "./assets/js/constants/index.ts");
-/* harmony import */ var _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @app/services/AxiosInstance */ "./assets/js/services/AxiosInstance.jsx");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PedagoFacture; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Board__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Board */ "./assets/js/pages/pedago-facture/Board.tsx");
+/* harmony import */ var _components_Container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/Container */ "./assets/js/components/Container/index.tsx");
+/* harmony import */ var _pedago_facture_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pedago-facture.scss */ "./assets/js/pages/pedago-facture/pedago-facture.scss");
+/* harmony import */ var _pedago_facture_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_pedago_facture_scss__WEBPACK_IMPORTED_MODULE_3__);
 
 
-function getMailAndPhone(reference) {
-  return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_1__["default"].get('consumption/getMailAndPhone', {
-    params: {
-      reference: reference
-    }
-  }).then(function (response) {
-    return response.data['response'];
-  })["catch"](function (err) {
-    return err.response.data.response;
-  });
+
+
+function PedagoFacture() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Container__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    className: "p-0",
+    fullscreen: true,
+    tag: "main",
+    id: "pedago-facture-board",
+    minHeight: "initial"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Board__WEBPACK_IMPORTED_MODULE_1__["Board"], null));
 }
-function nextStepAction(fullRef, email, cellphone) {
-  return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_1__["default"].get('consumption/nextStep/1', {
-    params: {
-      fullRef: fullRef,
-      email: email,
-      cellphone: cellphone
-    }
-  }).then(function (response) {
-    return response.data;
-  })["catch"](function (err) {
-    return err.response.data.response;
-  });
-}
-function generateJwToken(fullRef) {
-  return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_1__["default"].get('consumption/generateJwToken', {
-    params: {
-      fullRef: fullRef
-    }
-  }).then(function (response) {
-    return response.data;
-  })["catch"](function (err) {
-    return err.response.data.response;
-  });
-}
-function revokeJwtToken() {
-  return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_1__["default"].get('consumption/revokeJwtToken').then(function (response) {
-    return response.data;
-  })["catch"](function (err) {
-    return err.response.data.response;
-  });
-}
-function getDataSession() {
-  return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_1__["default"].get('/consumption/pc/getDataSession').then(function (response) {
-    return response.data;
-  })["catch"](function (err) {
-    return err.response.data.response;
-  });
-}
-function getMeterData() {
-  return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_1__["default"].get(_app_constants__WEBPACK_IMPORTED_MODULE_0__["API"].CONSUMPTION.METER_DATA).then(function (response) {
-    return response.data['meters'];
-  })["catch"](function (err) {
-    return err.response.data.response;
-  });
-}
-function sendPhotoMeter(data) {
-  return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_1__["default"].post('/consumption/dropPhoto', data).then(function (response) {
-    return response.data['response'];
-  })["catch"](function (err) {
-    return err.response.data.response;
-  });
-}
-function updateSession(data) {
-  return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_1__["default"].post('/consumption/pc/updateSession', data).then(function (response) {
-    return response.data;
-  })["catch"](function (err) {
-    return err.response.data.response;
-  });
-}
-function selectedMeter(data) {
-  return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_1__["default"].post('/consumption/pc/selectedMeter', data).then(function (response) {
-    return response.data;
-  })["catch"](function (err) {
-    return err.response.data.response;
-  });
-}
-function getConsommation(numCompteur) {
-  return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_1__["default"].get(_app_constants__WEBPACK_IMPORTED_MODULE_0__["API"].CONSUMPTION.GET_CONSOMMATION, {
-    params: {
-      numCompteur: numCompteur
-    }
-  }).then(function (response) {
-    return response.data['consommation'];
-  })["catch"](function (err) {
-    return err.response.data.response;
-  });
-}
-function getDeposeInfo(numCompteur, rangCompteur) {
-  return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_1__["default"].get(_app_constants__WEBPACK_IMPORTED_MODULE_0__["API"].CONSUMPTION.GET_DEPOSE_INFO, {
-    params: {
-      numCompteur: numCompteur,
-      rangCompteur: rangCompteur
-    }
-  }).then(function (response) {
-    return response.data['response'];
-  })["catch"](function (err) {
-    return err.response.data.response;
-  });
-}
-function checkIndexEntry(data) {
-  return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_1__["default"].post(_app_constants__WEBPACK_IMPORTED_MODULE_0__["API"].CONSUMPTION.CHECK_INDEX_ENTRY, data).then(function (response) {
-    return response.data['response'];
-  })["catch"](function (err) {
-    return err.response.data.response;
-  });
-}
-function checkAllMeterDropIndex(data) {
-  return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_1__["default"].post(_app_constants__WEBPACK_IMPORTED_MODULE_0__["API"].CONSUMPTION.CHECK_ALL_METER_DROP_INDEX, data).then(function (response) {
-    return response.data['response'];
-  })["catch"](function (err) {
-    return err.response.data.response;
-  });
-}
-function validationMotif() {
-  return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_1__["default"].get('/consumption/pc/validationMotif').then(function (response) {
-    return response.data['response'];
-  })["catch"](function (err) {
-    return err.response.data.response;
-  });
-}
-function deposeIndex(data) {
-  return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_1__["default"].post(_app_constants__WEBPACK_IMPORTED_MODULE_0__["API"].CONSUMPTION.DEPOSE_INDEX, data).then(function (response) {
-    return response.data['response'];
-  })["catch"](function (err) {
-    return err.response.data.response;
-  });
-}
-function sendConfirmationMail() {
-  return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_1__["default"].get('/consumption/pc/sendConfirmationMail').then(function (response) {
-    return response.data['response'];
-  })["catch"](function (err) {
-    return err.response.data.response;
-  });
-}
-/* harmony default export */ __webpack_exports__["default"] = ({
-  getMailAndPhone: getMailAndPhone,
-  nextStepAction: nextStepAction,
-  generateJwToken: generateJwToken,
-  revokeJwtToken: revokeJwtToken,
-  getMeterData: getMeterData,
-  sendPhotoMeter: sendPhotoMeter,
-  updateSession: updateSession,
-  getDataSession: getDataSession,
-  selectedMeter: selectedMeter,
-  getConsommation: getConsommation,
-  getDeposeInfo: getDeposeInfo,
-  checkIndexEntry: checkIndexEntry,
-  checkAllMeterDropIndex: checkAllMeterDropIndex,
-  validationMotif: validationMotif,
-  deposeIndex: deposeIndex,
-  sendConfirmationMail: sendConfirmationMail
-});
 
 /***/ })
 

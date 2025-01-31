@@ -1,14 +1,45 @@
-.date-resiliation .sz-daterangepicker .react-calendar {
-  z-index: 40 !important;
+.eco-water-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  min-height: fit-content;
+  position: relative;
+  margin: 0 auto;
 }
-.date-resiliation .sz-daterangepicker .react-calendar .react-calendar__month-view__days__day--weekend:disabled abbr {
-  color: var(--gray);
+@media (min-width: 769px) {
+  .eco-water-card {
+    margin: 0;
+  }
 }
-.date-resiliation .sz-daterangepicker .react-calendar .react-calendar__month-view__weekdays__weekday abbr {
-  padding-left: 0;
-  margin-left: auto;
+.eco-water-card .eco-water-card-image {
+  position: relative;
+  aspect-ratio: 5/3;
+  min-height: 124px;
+  overflow: hidden;
 }
-
-.timer-img {
-  margin-top: -5rem;
+.eco-water-card .eco-water-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.eco-water-card .footer-bar {
+  height: 4px;
+  position: relative;
+  margin-top: auto;
+}
+.carousel__item {
+  user-select: none;
+  width: 310px;
+}
+@media (min-width: 768px) {
+  .carousel__item {
+    width: 330px;
+  }
+}
+@media (min-width: 992px) {
+  .carousel__item {
+    width: 336px;
+  }
 }

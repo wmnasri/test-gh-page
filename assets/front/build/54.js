@@ -1,171 +1,339 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[54],{
 
-/***/ "./assets/img/doc.svg":
-/*!****************************!*\
-  !*** ./assets/img/doc.svg ***!
-  \****************************/
+/***/ "./assets/img/icons/envelope.svg":
+/*!***************************************!*\
+  !*** ./assets/img/icons/envelope.svg ***!
+  \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("/assets/front/build/doc.svg");
+/* harmony default export */ __webpack_exports__["default"] = ("/assets/front/build/envelope.svg");
 
 /***/ }),
 
-/***/ "./assets/img/light-bulb-shine.svg":
-/*!*****************************************!*\
-  !*** ./assets/img/light-bulb-shine.svg ***!
-  \*****************************************/
+/***/ "./assets/img/icons/key-lock.svg":
+/*!***************************************!*\
+  !*** ./assets/img/icons/key-lock.svg ***!
+  \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("/assets/front/build/light-bulb-shine.svg");
+/* harmony default export */ __webpack_exports__["default"] = ("/assets/front/build/key-lock.svg");
 
 /***/ }),
 
-/***/ "./assets/js/ez-components/cards/Pedago/card-pedago.scss":
-/*!***************************************************************!*\
-  !*** ./assets/js/ez-components/cards/Pedago/card-pedago.scss ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-
-/***/ "./assets/js/ez-components/cards/Pedago/index.tsx":
-/*!********************************************************!*\
-  !*** ./assets/js/ez-components/cards/Pedago/index.tsx ***!
-  \********************************************************/
-/*! exports provided: CardPedago */
+/***/ "./assets/js/components/Services.jsx":
+/*!*******************************************!*\
+  !*** ./assets/js/components/Services.jsx ***!
+  \*******************************************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardPedago", function() { return CardPedago; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Services; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @suezenv/react-theme-components */ "./node_modules/@suezenv/react-theme-components/build/index.js");
 /* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _app_hooks_useInterweave__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/hooks/useInterweave */ "./assets/js/hooks/useInterweave.jsx");
-/* harmony import */ var interweave__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! interweave */ "./node_modules/interweave/esm/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _card_pedago_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./card-pedago.scss */ "./assets/js/ez-components/cards/Pedago/card-pedago.scss");
-/* harmony import */ var _card_pedago_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_card_pedago_scss__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 
 
 
 
-
-
-var CardPedago = function CardPedago(_ref) {
-  var icon = _ref.icon,
-    title = _ref.title,
-    subtitle = _ref.subtitle,
-    children = _ref.children,
-    _ref$centered = _ref.centered,
-    centered = _ref$centered === void 0 ? false : _ref$centered,
-    _ref$clickable = _ref.clickable,
-    clickable = _ref$clickable === void 0 ? true : _ref$clickable,
-    _ref$backgroundColor = _ref.backgroundColor,
-    backgroundColor = _ref$backgroundColor === void 0 ? 'white' : _ref$backgroundColor,
-    background = _ref.background,
-    cardIndex = _ref.cardIndex,
-    handleClick = _ref.handleClick;
-  var _useInterweave = Object(_app_hooks_useInterweave__WEBPACK_IMPORTED_MODULE_2__["default"])(),
-    transform = _useInterweave.transform;
-  var getStyleBackground = function getStyleBackground(backgroundColor) {
-    return {
-      backgroundColor: backgroundColor
-    };
-  };
-  var cardPedagoClassNames = classnames__WEBPACK_IMPORTED_MODULE_4___default()('card-pedago d-flex flex-column rounded-2 px-3 py-4 p-lg-3 w-100 position-relative', {
-    'cursor-pointer': clickable,
-    'card-detail text-center': centered
+function Services(_ref) {
+  var variant = _ref.variant,
+    ptValue = _ref.ptValue;
+  var _useTranslation = Object(react_i18next__WEBPACK_IMPORTED_MODULE_2__["useTranslation"])(),
+    t = _useTranslation.t;
+  var isLabelInline = variant === 'label-inline';
+  var isLine = variant === 'line';
+  var isSquare = variant === 'square';
+  var containerClassName = classnames__WEBPACK_IMPORTED_MODULE_3___default()('row no-gutters pt-3', _defineProperty({
+    'pt-md-5 mt-3': isSquare,
+    'pt-md-5 justify-content-center': isLine
+  }, "pt-md-".concat(ptValue, " justify-content-center"), isLabelInline));
+  var serviceClassName = classnames__WEBPACK_IMPORTED_MODULE_3___default()({
+    'px-2 px-sm-3 col-sm-3 new-line col-6 col-md-2 text-center': isLine,
+    'px-2 px-sm-3 col-sm-3 new-line col-6 col-md-4 col-lg-6 text-center': isSquare,
+    'px-2 px-xl-3 d-flex': isLabelInline
   });
-  var contentClassNames = classnames__WEBPACK_IMPORTED_MODULE_4___default()('card-content d-flex', {
-    'justify-content-between align-items-start': !centered,
-    'justify-content-center flex-column': centered
+  var labelClassName = classnames__WEBPACK_IMPORTED_MODULE_3___default()('text-dark mt-2', {
+    'pl-2 pl-xl-3 mb-4': isLabelInline
   });
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: cardPedagoClassNames,
-    style: getStyleBackground(backgroundColor),
-    onClick: handleClick,
-    "data-cy": title
-  }, background && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CardPedagoBackground, {
-    index: cardIndex
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: contentClassNames
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzTypographie"], {
-    variant: centered ? 'H3' : 'H4',
-    size: "L",
-    weight: "medium"
-  }, title), subtitle && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(interweave__WEBPACK_IMPORTED_MODULE_3__["Markup"], {
-    noWrap: true,
-    transform: transform,
-    content: subtitle
-  })), icon && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "rounded-circle p-2 bg-gray-100 d-flex align-items-center justify-content-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: icon.src,
-    alt: icon.alt,
-    style: {
-      width: 32,
-      height: 32
-    }
-  })), children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "text-right mt-auto"
+    className: containerClassName
+  }, isLabelInline ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: serviceClassName
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzIcon"], {
+    icon: "accounting-document",
     variant: "line",
-    icon: "keyboard-arrow-right"
-  })));
-};
-var CardPedagoBackground = function CardPedagoBackground(_ref2) {
-  var index = _ref2.index;
-  var waveClassname = "wave-".concat(index + 1);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "wave-container position-absolute w-100 left-0 bottom-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "wave ".concat(waveClassname)
+    className: "mb-2"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzTypographie"], {
+    weight: "regular",
+    className: labelClassName
+  }, t('signUp.accountInfos.service1'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: serviceClassName
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzIcon"], {
+    icon: "check-1",
+    variant: "line",
+    className: "mb-2"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzTypographie"], {
+    weight: "regular",
+    className: labelClassName
+  }, t('signUp.accountInfos.service3')))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: serviceClassName
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzIcon"], {
+    icon: "gauge-dashboard-1",
+    variant: "line",
+    className: "mb-2"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzTypographie"], {
+    weight: "regular",
+    className: labelClassName
+  }, t('signUp.accountInfos.service2'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: serviceClassName
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzIcon"], {
+    icon: "cog",
+    variant: "line",
+    className: "mb-2"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzTypographie"], {
+    weight: "regular",
+    className: labelClassName
+  }, t('signUp.accountInfos.service4'))))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Content, {
+    serviceClassName: serviceClassName,
+    labelClassName: labelClassName
   }));
+}
+var Content = function Content(_ref2) {
+  var serviceClassName = _ref2.serviceClassName,
+    labelClassName = _ref2.labelClassName;
+  var _useTranslation2 = Object(react_i18next__WEBPACK_IMPORTED_MODULE_2__["useTranslation"])(),
+    t = _useTranslation2.t;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: serviceClassName
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzIcon"], {
+    icon: "accounting-document",
+    variant: "line",
+    className: "mb-2"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzTypographie"], {
+    weight: "regular",
+    className: labelClassName
+  }, t('signUp.accountInfos.service1'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: serviceClassName
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzIcon"], {
+    icon: "gauge-dashboard-1",
+    variant: "line",
+    className: "mb-2"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzTypographie"], {
+    weight: "regular",
+    className: labelClassName
+  }, t('signUp.accountInfos.service2'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: serviceClassName
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzIcon"], {
+    icon: "check-1",
+    variant: "line",
+    className: "mb-2"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzTypographie"], {
+    weight: "regular",
+    className: labelClassName
+  }, t('signUp.accountInfos.service3'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: serviceClassName
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzIcon"], {
+    icon: "cog",
+    variant: "line",
+    className: "mb-2"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzTypographie"], {
+    weight: "regular",
+    className: labelClassName
+  }, t('signUp.accountInfos.service4'))));
 };
 
 /***/ }),
 
-/***/ "./assets/js/pages/pedago-facture/Board.tsx":
-/*!**************************************************!*\
-  !*** ./assets/js/pages/pedago-facture/Board.tsx ***!
-  \**************************************************/
-/*! exports provided: Board */
+/***/ "./assets/js/pages/login-reset/Modal.tsx":
+/*!***********************************************!*\
+  !*** ./assets/js/pages/login-reset/Modal.tsx ***!
+  \***********************************************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Board", function() { return Board; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return LoginResetModal; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @suezenv/react-theme-components */ "./node_modules/@suezenv/react-theme-components/build/index.js");
 /* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _app_hooks_useResponsive__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/hooks/useResponsive */ "./assets/js/hooks/useResponsive.ts");
-/* harmony import */ var _app_components_Links_LinkBtn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/components/Links/LinkBtn */ "./assets/js/components/Links/LinkBtn.jsx");
-/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/constants */ "./assets/js/constants/index.ts");
-/* harmony import */ var _app_ez_components_cards_Pedago__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @app/ez-components/cards/Pedago */ "./assets/js/ez-components/cards/Pedago/index.tsx");
-/* harmony import */ var _img_doc_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @img/doc.svg */ "./assets/img/doc.svg");
-/* harmony import */ var _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @app/services/AxiosInstance */ "./assets/js/services/AxiosInstance.jsx");
-/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _PedagoModalContent__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./PedagoModalContent */ "./assets/js/pages/pedago-facture/PedagoModalContent.tsx");
-/* harmony import */ var _app_ez_components_ModuleCardFaq__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @app/ez-components/ModuleCardFaq */ "./assets/js/ez-components/ModuleCardFaq/index.tsx");
-/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-query */ "./node_modules/react-query/es/index.js");
-/* harmony import */ var react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-loading-skeleton */ "./node_modules/react-loading-skeleton/lib/index.js");
-/* harmony import */ var react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _app_components_background_BackgroundWave__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @app/components/background/BackgroundWave */ "./assets/js/components/background/BackgroundWave/index.tsx");
-/* harmony import */ var _app_hooks_useGA__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @app/hooks/useGA */ "./assets/js/hooks/useGA/index.ts");
+/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
+/* harmony import */ var _app_hooks_useResponsive__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/hooks/useResponsive */ "./assets/js/hooks/useResponsive.ts");
+/* harmony import */ var _emotion_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @emotion/css */ "./node_modules/@emotion/css/dist/emotion-css.esm.js");
+/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @app/constants */ "./assets/js/constants/index.ts");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _app_components_Box__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @app/components/Box */ "./assets/js/components/Box/index.jsx");
+/* harmony import */ var _app_components_Links_Link__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @app/components/Links/Link */ "./assets/js/components/Links/Link.jsx");
+/* harmony import */ var _img_icons_key_lock_svg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @img/icons/key-lock.svg */ "./assets/img/icons/key-lock.svg");
+/* harmony import */ var _img_icons_envelope_svg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @img/icons/envelope.svg */ "./assets/img/icons/envelope.svg");
+/* harmony import */ var _app_hooks__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @app/hooks */ "./assets/js/hooks/index.ts");
+
+
+
+
+
+
+
+
+
+
+
+
+function LoginResetModal(_ref) {
+  var isShow = _ref.isShow,
+    close = _ref.close;
+  var _useTranslation = Object(react_i18next__WEBPACK_IMPORTED_MODULE_2__["useTranslation"])(),
+    t = _useTranslation.t;
+  var isMobile = Object(_app_hooks_useResponsive__WEBPACK_IMPORTED_MODULE_3__["useIsMobile"])();
+  var _useGA = Object(_app_hooks__WEBPACK_IMPORTED_MODULE_11__["useGA"])(),
+    track = _useGA.track;
+  var resetLoginModalButtons = [{
+    link: _app_constants__WEBPACK_IMPORTED_MODULE_5__["ROUTES"].LOGIN_RESET.CUSTOMER_REF,
+    picto: {
+      src: _img_icons_envelope_svg__WEBPACK_IMPORTED_MODULE_10__["default"],
+      alt: ''
+    },
+    label: t('loginReset.modal.button_login_reset'),
+    id: 'to-login-reset',
+    onClick: function onClick() {
+      track('REINIT_CEL_1', {
+        nature_reinitID: 'pb_email'
+      });
+    }
+  }, {
+    link: _app_constants__WEBPACK_IMPORTED_MODULE_5__["ROUTES"].LOGIN_RESET.PASSWORD.INDEX,
+    picto: {
+      src: _img_icons_key_lock_svg__WEBPACK_IMPORTED_MODULE_9__["default"],
+      alt: ''
+    },
+    label: t('loginReset.modal.button_password_reset'),
+    id: 'to-password-reset',
+    onClick: function onClick() {
+      track('REINIT_CEL_1', {
+        nature_reinitID: 'oubli_mdp'
+      });
+    }
+  }];
+  var modalStyles = Object(_emotion_css__WEBPACK_IMPORTED_MODULE_4__["css"])({
+    borderRadius: '1rem',
+    '.modal-content': {
+      backgroundColor: 'white'
+    }
+  });
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzModal"], {
+    show: isShow,
+    handleClose: close,
+    size: "lg",
+    title: "",
+    centered: true,
+    fullscreen: "md",
+    border: "smooth",
+    className: modalStyles,
+    id: "login-reset-entry",
+    closeBtnId: "login-reset-close"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzTypographie"], {
+    variant: "H3",
+    size: "L",
+    weight: "medium",
+    className: "mb-4"
+  }, t('loginReset.modal.title')), resetLoginModalButtons.map(function (item, key) {
+    var link = item.link,
+      picto = item.picto,
+      label = item.label,
+      id = item.id,
+      onClick = item.onClick;
+    var boxClasses = classnames__WEBPACK_IMPORTED_MODULE_6___default()('shadow-sm', {
+      'mb-3': key !== resetLoginModalButtons.length - 1,
+      'mb-4': key === resetLoginModalButtons.length - 1,
+      'mt-3 mt-lg-4': key === 0
+    });
+    var pictoStyles = Object(_emotion_css__WEBPACK_IMPORTED_MODULE_4__["css"])({
+      width: isMobile ? 15 : 24,
+      height: isMobile ? 15 : 24
+    });
+    var iconStyles = Object(_emotion_css__WEBPACK_IMPORTED_MODULE_4__["css"])({
+      fontSize: '0.9rem !important',
+      marginLeft: 'auto'
+    });
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_Box__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      backgroundColor: "white",
+      className: boxClasses,
+      key: key
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_Links_Link__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      to: link,
+      className: "d-flex align-items-center p-3 p-lg-4 cursor-pointer",
+      id: id,
+      onClick: onClick
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "bg-gray-200 rounded-circle d-flex align-items-center justify-content-center p-2"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      src: picto.src,
+      alt: picto.alt,
+      className: pictoStyles
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzTypographie"], {
+      className: "text-dark ml-3 mb-0 mr-3 mr-sm-0",
+      size: "XL"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_i18next__WEBPACK_IMPORTED_MODULE_2__["Trans"], {
+      i18nKey: label,
+      components: {
+        boldText: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzTypographie"], {
+          weight: "bold",
+          tag: "span"
+        })
+      }
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzIcon"], {
+      icon: "arrow-right-1",
+      variant: "line",
+      className: iconStyles
+    })));
+  }));
+}
+
+/***/ }),
+
+/***/ "./assets/js/pages/sign-in/index.jsx":
+/*!*******************************************!*\
+  !*** ./assets/js/pages/sign-in/index.jsx ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SignIn; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
+/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @suezenv/react-theme-components */ "./node_modules/@suezenv/react-theme-components/build/index.js");
+/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_Services__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/Services */ "./assets/js/components/Services.jsx");
+/* harmony import */ var _components_Bubble__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/Bubble */ "./assets/js/components/Bubble/index.jsx");
+/* harmony import */ var _sign_in_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./sign-in.scss */ "./assets/js/pages/sign-in/sign-in.scss");
+/* harmony import */ var _sign_in_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_sign_in_scss__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _form_Login__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../form/Login */ "./assets/js/form/Login/index.jsx");
+/* harmony import */ var _components_Links_LinkBtn__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/Links/LinkBtn */ "./assets/js/components/Links/LinkBtn.jsx");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../constants */ "./assets/js/constants/index.ts");
+/* harmony import */ var _hooks_useResponsive__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../hooks/useResponsive */ "./assets/js/hooks/useResponsive.ts");
+/* harmony import */ var _login_reset_Modal__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../login-reset/Modal */ "./assets/js/pages/login-reset/Modal.tsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
@@ -184,268 +352,137 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-
-
-
-
-var Board = function Board() {
-  var _a;
-  var isMobile = Object(_app_hooks_useResponsive__WEBPACK_IMPORTED_MODULE_2__["useIsMobile"])();
-  var _useTranslation = Object(react_i18next__WEBPACK_IMPORTED_MODULE_8__["useTranslation"])(),
+var ProBlock = function ProBlock(_ref) {
+  var url_pro = _ref.url_pro;
+  var _useTranslation = Object(react_i18next__WEBPACK_IMPORTED_MODULE_1__["useTranslation"])(),
     t = _useTranslation.t;
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_9__["useHistory"])();
-  var _useGA = Object(_app_hooks_useGA__WEBPACK_IMPORTED_MODULE_15__["default"])(),
-    track = _useGA.track;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "mx-auto text-center col-sm-12 col-md-8 col-lg-12 px-lg-0 pt-lg-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_2__["SzTypographie"], {
+    variant: "H3",
+    size: "L",
+    weight: "medium",
+    className: "mb-3",
+    tag: "h2"
+  }, t('signIn.accountPro.title')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Links_LinkBtn__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    to: url_pro,
+    variant: "outlined",
+    border: "soft"
+  }, t('signIn.accountPro.button', {
+    context: 'submit'
+  })));
+};
+function SignIn() {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
     _useState2 = _slicedToArray(_useState, 2),
-    isShowModal = _useState2[0],
-    setisShowModal = _useState2[1];
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null),
-    _useState4 = _slicedToArray(_useState3, 2),
-    selectedPedagoCard = _useState4[0],
-    setSelectedPedagoCard = _useState4[1];
-  var _useQuery = Object(react_query__WEBPACK_IMPORTED_MODULE_12__["useQuery"])('invoiceExplanation', function () {
-      return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_7__["default"].get(_app_constants__WEBPACK_IMPORTED_MODULE_4__["API"].INVOICE_EXPLANATION);
-    }),
-    data = _useQuery.data,
-    isLoading = _useQuery.isLoading,
-    isError = _useQuery.isError;
-  var content = ((_a = data === null || data === void 0 ? void 0 : data.data) === null || _a === void 0 ? void 0 : _a.content) || {};
-  var pf_card_cmf = content.pf_card_cmf,
-    pf_card_go_further = content.pf_card_go_further,
-    clientContext = content.clientContext;
+    showModal = _useState2[0],
+    setShowModal = _useState2[1];
+  var isMobile = Object(_hooks_useResponsive__WEBPACK_IMPORTED_MODULE_9__["useIsMobile"])();
+  var _useTranslation2 = Object(react_i18next__WEBPACK_IMPORTED_MODULE_1__["useTranslation"])(),
+    t = _useTranslation2.t;
+  var _window$tsme_data = window.tsme_data,
+    header = _window$tsme_data.header,
+    targetUrl = _window$tsme_data.targetUrl;
+  var url_pro = header.url_pro;
+  var location = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_11__["useLocation"])();
+  var pathname = location.pathname;
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    if (pathname === _constants__WEBPACK_IMPORTED_MODULE_8__["ROUTES"].LOGIN_LOST_ID) {
+      setShowModal(true);
+    }
+  }, []);
   var handleCloseModal = function handleCloseModal() {
-    setisShowModal(false);
+    setShowModal(false);
   };
-  var handleOpenModal = function handleOpenModal(data) {
-    var _ref = data || {},
-      modalContent = _ref.modalContent;
-    if (Object.keys(modalContent).length > 0) {
-      track('PEDAGO_1', {
-        nom_modale: modalContent.type,
-        cas_client: clientContext
-      });
-      setisShowModal(true);
-      setSelectedPedagoCard(data);
-    }
-  };
-  var pedagoItemClassName = 'col-12 col-lg-6 px-0 px-lg-2 mb-3';
-  var openCard = function openCard(modalContent) {
-    track('PEDAGO_2', {
-      nom_modale: modalContent === null || modalContent === void 0 ? void 0 : modalContent.type,
-      cas_client: clientContext
-    });
-  };
-  if (isLoading) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SkeletonInvoiceExplanation, null);
-  }
-  if (isError) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "w-100 bg-blue-07 pb-lg-0"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "tsme-container pb-3 pb-lg-0"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "col-12 col-lg-7 mx-auto"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-      href: "/"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-      className: "border border-dark w-100",
-      src: "/assets/legacy/build/img/page-404.png",
-      alt: t('errors.notFound')
-    })))));
-  }
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "pedago-facture-board position-relative w-100 pb-lg-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "tsme-container py-3 pb-lg-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzTypographie"], {
-    variant: "H2",
-    size: isMobile ? 'L' : 'XL',
-    weight: "bold",
-    className: "text-center mb-3",
-    tag: "h1"
-  }, t('pedagoFacture.board.title')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "d-flex flex-column flex-lg-row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-12 col-lg-7 px-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row no-gutters"
-  }, pf_card_cmf.map(function (data, index) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: pedagoItemClassName,
-      key: index
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_ez_components_cards_Pedago__WEBPACK_IMPORTED_MODULE_5__["CardPedago"], Object.assign({}, data, {
-      cardIndex: index,
-      background: true,
-      handleClick: function handleClick() {
-        return handleOpenModal(data);
-      }
-    })));
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-12 col-lg-5 px-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "pl-0 pl-lg-4 mb-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_ez_components_cards_Pedago__WEBPACK_IMPORTED_MODULE_5__["CardPedago"], {
-    title: "Ma facture en d\xE9tail",
-    subtitle: "<p>Zoom sur chaque point cl\xE9</p>",
-    centered: true,
-    handleClick: function handleClick() {
-      track('PEDAGO_4', {
-        cas_client: clientContext
-      });
-      history.push(_app_constants__WEBPACK_IMPORTED_MODULE_4__["ROUTES"].INVOICE_DETAIL);
-    },
-    backgroundColor: "var(--blue-electric-light)"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _img_doc_svg__WEBPACK_IMPORTED_MODULE_6__["default"],
-    className: "mx-auto",
-    style: {
-      position: 'absolute',
-      bottom: isMobile ? -25 : 0,
-      left: '50%',
-      transform: 'translateX(-50%)',
-      width: isMobile ? 250 : 315
-    }
-  }))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_background_BackgroundWave__WEBPACK_IMPORTED_MODULE_14__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_ez_components_ModuleCardFaq__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    title: t('pedagoFacture.board.card_contract_module_title'),
-    items: pf_card_go_further,
-    openCard: openCard
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", {
+    className: "sign-in container-fluid p-0"
+  }, showModal && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_login_reset_Modal__WEBPACK_IMPORTED_MODULE_10__["default"], {
+    isShow: showModal,
+    close: handleCloseModal
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "tsme-container pt-0 pb-6 text-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_Links_LinkBtn__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    className: "container pb-large pt-5 pb-lg-5 px-md-0 position-relative"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Bubble__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    color: "light",
+    size: isMobile ? 'sm' : 'lg',
+    position: "4"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Bubble__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    color: "dark",
+    size: isMobile ? 'sm' : 'md',
+    position: "5"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Bubble__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    color: "green",
+    size: "md",
+    position: "6",
+    className: "d-none d-lg-block"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "rounded-img-1"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "rounded-img-2"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_2__["SzTypographie"], {
+    variant: "H1",
+    size: "XL",
+    weight: "bold",
+    color: "white",
+    className: "text-center text-uppercase"
+  }, t('signIn.title')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "sign-in-container bg-white d-flex flex-column flex-lg-row mx-auto mt-4 p-0 py-5 position-relative",
+    style: {
+      maxWidth: 1098,
+      borderRadius: 16
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "sign-in-account col-12 col-lg-5 px-md-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_form_Login__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    title: t('signIn.hasAccount.title'),
+    submitText: t('signIn.hasAccount.button', {
+      context: 'submit'
+    }),
+    variant: "redesign",
+    targetPath: targetUrl || _constants__WEBPACK_IMPORTED_MODULE_8__["ROUTES"].DASHBOARD,
+    usernameInputId: "username",
+    passwordInputId: "password"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "no-account col-12 col-lg-7 px-md-4 mt-4 mt-lg-0 text-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_2__["SzTypographie"], {
+    variant: "H3",
+    size: "L",
+    weight: "medium",
+    className: "mb-3",
+    tag: "h2"
+  }, t('signIn.hasNoAccount.title')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Links_LinkBtn__WEBPACK_IMPORTED_MODULE_7__["default"], {
     variant: "outlined",
     border: "soft",
-    className: "border-white bg-transparent mb-1 mb-lg-0 text-white",
-    to: _app_constants__WEBPACK_IMPORTED_MODULE_4__["ROUTES"].HELP_AND_CONTACT,
-    id: "invoice-explanation-other-question-btn",
-    onClick: function onClick() {
-      track('PEDAGO_3', {
-        cas_client: clientContext
-      });
+    to: _constants__WEBPACK_IMPORTED_MODULE_8__["ROUTES"].SIGN_UP
+  }, t('signUp.step1.button', {
+    context: 'submit'
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Services__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    variant: isMobile ? 'square' : 'label-inline',
+    ptValue: url_pro ? 4 : 6
+  }), url_pro && !isMobile && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "pro-block"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProBlock, {
+    url_pro: url_pro
+  })))), url_pro && isMobile && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "sign-in-container bg-white d-flex flex-column flex-lg-row mx-auto mt-4 p-0 py-5 position-relative",
+    style: {
+      maxWidth: 1098,
+      borderRadius: 16
     }
-  }, t('pedagoFacture.board.otherQuestionBtn')))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzModal"], {
-    show: isShowModal,
-    handleClose: handleCloseModal,
-    size: "xl",
-    backdrop: true,
-    centered: true,
-    scrollable: true,
-    border: "smooth",
-    fullscreen: "md",
-    title: ""
-  }, selectedPedagoCard && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PedagoModalContent__WEBPACK_IMPORTED_MODULE_10__["PedagoModalContent"], Object.assign({}, selectedPedagoCard)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "text-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzButton"], {
-    variant: "contained",
-    border: "soft",
-    onClick: handleCloseModal,
-    id: "close-pedago-modal"
-  }, t('pedagoFacture.board.modal.btn')))));
-};
-var SkeletonInvoiceExplanation = function SkeletonInvoiceExplanation() {
-  var isMobile = Object(_app_hooks_useResponsive__WEBPACK_IMPORTED_MODULE_2__["useIsMobile"])();
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "w-100 bg-blue-07 pb-lg-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "tsme-container pb-3 pb-lg-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "text-center mb-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13___default.a, {
-    width: isMobile ? 250 : 500,
-    height: 40
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "d-flex flex-column flex-lg-row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-12 col-lg-7 px-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row no-gutters"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-12 col-lg-6 px-0 px-lg-2 mb-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13___default.a, {
-    width: '100%',
-    height: 180
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-12 col-lg-6 px-0 px-lg-2 mb-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13___default.a, {
-    width: '100%',
-    height: 180
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-12 col-lg-6 px-0 px-lg-2 mb-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13___default.a, {
-    width: '100%',
-    height: 180
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-12 col-lg-6 px-0 px-lg-2 mb-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13___default.a, {
-    width: '100%',
-    height: 180
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-12 col-lg-5 px-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "pl-0 pl-lg-4 mb-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13___default.a, {
-    width: isMobile ? '100%&' : 497,
-    height: 375
-  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "w-100"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "tsme-container mx-auto position-relative pt-3 pt-lg-4 px-lg-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "text-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13___default.a, {
-    width: 200,
-    height: 30
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row no-gutters justify-content-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-12 col-lg-4 px-lg-2 "
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13___default.a, {
-    width: '100%',
-    height: 210
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-12 col-lg-4 px-lg-2 "
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13___default.a, {
-    width: '100%',
-    height: 210
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-12 col-lg-4 px-lg-2 "
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_13___default.a, {
-    width: '100%',
-    height: 210
-  }))))));
-};
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProBlock, {
+    url_pro: url_pro
+  }))));
+}
 
 /***/ }),
 
-/***/ "./assets/js/pages/pedago-facture/index.tsx":
-/*!**************************************************!*\
-  !*** ./assets/js/pages/pedago-facture/index.tsx ***!
-  \**************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./assets/js/pages/sign-in/sign-in.scss":
+/*!**********************************************!*\
+  !*** ./assets/js/pages/sign-in/sign-in.scss ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PedagoFacture; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Board__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Board */ "./assets/js/pages/pedago-facture/Board.tsx");
-/* harmony import */ var _components_Container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/Container */ "./assets/js/components/Container/index.tsx");
-/* harmony import */ var _pedago_facture_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pedago-facture.scss */ "./assets/js/pages/pedago-facture/pedago-facture.scss");
-/* harmony import */ var _pedago_facture_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_pedago_facture_scss__WEBPACK_IMPORTED_MODULE_3__);
-
-
-
-
-function PedagoFacture() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Container__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    className: "p-0",
-    fullscreen: true,
-    tag: "main",
-    id: "pedago-facture-board",
-    minHeight: "initial"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Board__WEBPACK_IMPORTED_MODULE_1__["Board"], null));
-}
+// extracted by mini-css-extract-plugin
 
 /***/ })
 

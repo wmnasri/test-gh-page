@@ -1,3 +1,7 @@
+.iban-icon {
+  width: 48px;
+  height: 48px;
+}
 .PhoneInputCountryIcon svg {
   display: block;
   width: 100%;
@@ -20,8 +24,4 @@
   border-color: var(--gray-600) !important;
   color: var(--expert-blue);
   background-color: white;
-}
-.iban-icon {
-  width: 48px;
-  height: 48px;
 }

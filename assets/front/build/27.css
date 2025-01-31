@@ -1,45 +1,69 @@
-.eco-water-card {
+.invoice-detail-modal .modal-content {
+  background-color: #f8f9fa;
+  overflow-x: hidden;
+}
+.invoice-detail-modal .modal-content .sz-modal_body {
+  padding-bottom: 2.5rem !important;
+}
+@media (max-width: 991.98px) {
+  .invoice-detail-modal .modal-content {
+    position: relative;
+  }
+  .invoice-detail-modal .modal-content .sz-modal_body {
+    padding-bottom: 13svh !important;
+  }
+}
+.invoice-detail-modal .modal-content .invoice-detail-item .step-number {
+  min-width: 32px;
+  height: 32px;
+  border-radius: 50%;
   display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  min-height: fit-content;
-  position: relative;
-  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 }
-@media (min-width: 769px) {
-  .eco-water-card {
-    margin: 0;
+.invoice-detail-modal .modal-content .invoice-detail-item .invoice-detail-desc p {
+  font-size: 16px;
+  color: var(--gray-800);
+  margin-bottom: 0;
+}
+.invoice-detail-modal .modal-content .invoice-detail-item .invoice-detail-desc ul {
+  padding-left: 1.5rem;
+  margin-bottom: 0;
+}
+.invoice-detail-modal .modal-content .invoice-detail-item .invoice-detail-desc ul li {
+  font-size: 1rem;
+  color: var(--dark);
+  font-family: "DINPro-Regular";
+}
+
+@media (min-width: 576px) {
+  .invoice-detail-title-block .back-btn {
+    position: absolute;
   }
 }
-.eco-water-card .eco-water-card-image {
-  position: relative;
-  aspect-ratio: 5/3;
-  min-height: 124px;
-  overflow: hidden;
+
+#invoice-detail-pages {
+  max-width: 700px;
+  margin: auto;
 }
-.eco-water-card .eco-water-card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+.paper > img {
+  filter: grayscale(1);
 }
-.eco-water-card .footer-bar {
-  height: 4px;
-  position: relative;
-  margin-top: auto;
+.paper .sz-typo-h5.lg {
+  font-size: 0.7rem;
 }
-.carousel__item {
-  user-select: none;
-  width: 310px;
+.paper .fixed-content {
+  position: absolute;
+  width: 72.2%;
+  top: 5.1%;
+  right: 2.35%;
 }
-@media (min-width: 768px) {
-  .carousel__item {
-    width: 330px;
+@media (max-width: 991.98px) {
+  .paper .fixed-content {
+    top: 7.6%;
   }
 }
-@media (min-width: 992px) {
-  .carousel__item {
-    width: 336px;
-  }
+.paper .fixed-content .cursor-pointer {
+  position: relative;
 }

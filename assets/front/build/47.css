@@ -1,223 +1,119 @@
-.speech-bubble {
-  padding: 0 0 9px 8px;
-}
-.speech-bubble-content {
-  position: relative;
-  padding: 16px 24px;
-  border-radius: 1rem;
-  background-color: var(--blue-1);
-}
-.speech-bubble-content:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border: 30px solid transparent;
-  border-bottom: 0;
-  border-left: 0;
-  border-top-color: var(--blue-1);
-  margin-left: -4px;
-  margin-bottom: -16px;
-  transform: rotate(22deg);
-}
-.speech-bubble-right {
-  padding: 0 9px 8px 0;
-}
-.speech-bubble-right .speech-bubble-content {
-  background-color: white;
-}
-.speech-bubble-right .speech-bubble-content:after {
-  left: inherit;
-  right: 0;
-  border: 30px solid transparent;
-  border-right: 0;
-  border-bottom: 0;
-  border-top-color: white;
-  margin-left: inherit;
-  margin-right: -4px;
-  transform: rotate(-22deg);
-}
-.z-auto {
-  z-index: auto;
-}
-
-.z-base {
+.passRules {
   z-index: 10;
+  top: 88px;
 }
 
-.LivingActorACallButton .LA_EmbedCallAreaA {
-  z-index: 10;
+.accordion > .card {
+  overflow: initial !important;
 }
-
-.LivingActor_IWindow {
-  z-index: 1050 !important;
+.signup {
+  background: var(--brand-dark);
+  overflow: hidden;
 }
-
-@supports (height: 100dvh) {
-  .LivingActor_IWindowFullScreen {
-    min-height: 100dvh !important;
-  }
+.signup .background {
+  position: initial;
 }
-@supports not (height: 100dvh) {
-  .LivingActor_IWindowFullScreen {
-    min-height: 100% !important;
-  }
-}
-
-.bg-img, .bg-img-02, .bg-img-01 {
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.bg-img-01 {
-  background-image: url(/assets/front/build/woman_glass_water.jpg);
-  width: 191px;
-  height: 191px;
-  bottom: -28px;
-  left: -46px;
-}
-@media (min-width: 768px) {
-  .bg-img-01 {
-    width: 264px;
-    height: 264px;
-    bottom: -22px;
-    left: 73px;
-  }
-}
-.bg-img-02 {
-  background-image: url(/assets/front/build/water_falling.jpg);
-  width: 65px;
-  height: 65px;
-  top: 32px;
-  right: 16px;
-}
-@media (min-width: 768px) {
-  .bg-img-02 {
-    width: 96px;
-    height: 96px;
-    top: 83px;
-    right: 72px;
-  }
-}
-.bg-bubble, .bg-bubble-04, .bg-bubble-03, .bg-bubble-02, .bg-bubble-01 {
-  position: absolute;
-}
-.bg-bubble-01 {
-  bottom: 58px;
-  left: 157px;
-}
-@media (min-width: 768px) {
-  .bg-bubble-01 {
-    bottom: inherit;
-    top: 82px;
-    left: 116px;
-  }
-}
-.bg-bubble-02 {
-  display: none;
-}
-@media (min-width: 768px) {
-  .bg-bubble-02 {
-    display: block;
-    top: 42px;
-    right: 510px;
-  }
-}
-.bg-bubble-03 {
-  top: 24px;
-  left: 32px;
-}
-@media (min-width: 768px) {
-  .bg-bubble-03 {
-    display: none;
-  }
-}
-.bg-bubble-04 {
-  top: 76px;
-  right: 97px;
-}
-@media (min-width: 768px) {
-  .bg-bubble-04 {
-    top: 208px;
-    right: 209px;
-  }
-}
-.bg-blue-1 {
-  background-color: var(--blue-1) !important;
-}
-
 @media (min-width: 992px) {
-  .contact-result .city-container {
-    width: 80%;
-    margin-left: 250px;
+  .signup .background {
+    position: relative;
+  }
+}
+.signup .stepper-container {
+  z-index: 2;
+  max-width: 540px;
+  border-radius: 16px;
+}
+.signup .pb-large {
+  padding-bottom: 7rem;
+}
+@media (min-width: 768px) {
+  .signup .pb-large {
+    padding-bottom: 9rem;
+  }
+}
+.signup .s-suez {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 116px;
+  height: 70px;
+  position: absolute;
+  left: -1rem;
+  bottom: 1rem;
+  z-index: 0;
+}
+@media (min-width: 768px) {
+  .signup .s-suez {
+    bottom: 2rem;
+    left: -2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .signup .s-suez {
+    width: 272px;
+    height: 167px;
+    right: 0;
+    left: auto;
+    bottom: 5rem;
   }
 }
 @media (min-width: 1200px) {
-  .contact-result .city-container {
-    margin-left: 450px;
+  .signup .s-suez {
+    right: 3.5rem;
+    left: auto;
+    bottom: 5rem;
   }
 }
-.contact-result .city-container .city {
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
-.contact-result .text-bold {
-  font-weight: 700;
-}
-.contact-result .arrow-line {
-  width: 100%;
-  height: 1px;
-  background: white;
-  margin-top: 10px;
-}
-.contact-result .arrow-line:before, .contact-result .arrow-line:after {
-  content: "";
+.signup .rounded-img-1 {
+  background-image: url(/assets/front/build/girl_laptop.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  border-radius: 50%;
+  width: 147px;
+  height: 147px;
   position: absolute;
-  border-style: solid;
-  border-width: 0 10px 10px;
-  border-color: white transparent;
-  display: block;
-  top: -10px;
-  left: calc(50% - 9px);
+  z-index: 0;
+  bottom: -0.5rem;
+  right: -1rem;
 }
-.contact-result .arrow-line:after {
-  border-color: #3d466c transparent;
-  top: -9px;
-}
-.help-and-contact-container {
-  margin-left: -4px;
-  margin-right: -4px;
-}
-
-.help-card {
-  height: 76px;
-}
-.help-card img {
-  width: 30px;
-  height: 30px;
-}
-
-.help-subicon {
-  width: 32px;
-  height: 32px;
-  background-color: var(--gray-200);
-}
-.help-subicon img {
-  width: 16px;
-  height: 16px;
+@media (min-width: 768px) {
+  .signup .rounded-img-1 {
+    right: -3rem;
+    bottom: 1rem;
+  }
 }
 @media (min-width: 992px) {
-  .help-subicon {
-    width: 40px;
-    height: 40px;
-  }
-  .help-subicon img {
-    width: 24px;
-    height: 24px;
+  .signup .rounded-img-1 {
+    width: 434px;
+    height: 434px;
+    top: 4rem;
+    right: unset;
+    left: -3rem;
   }
 }
-
-.question-card-icon {
-  font-size: 0.9rem !important;
+.signup .rounded-img-2 {
+  display: none;
+  background-image: url(/assets/front/build/water_blue.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 143px;
+  height: 143px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+@media (min-width: 992px) {
+  .signup .rounded-img-2 {
+    display: block;
+    left: 56rem;
+    top: 20.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .signup .rounded-img-2 {
+    display: block;
+    left: 63.5rem;
+    top: 23rem;
+  }
 }

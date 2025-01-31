@@ -1,0 +1,101 @@
+.customer-service {
+  padding: 0;
+  background: var(--brand-dark);
+  overflow-x: clip;
+  height: 100%;
+}
+.customer-service .p-bottom {
+  padding-bottom: 168px;
+}
+.customer-service .rounded-img-1 {
+  width: 152px;
+  height: 152px;
+  border-radius: 50%;
+  background-image: url(/assets/front/build/woman_desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  bottom: 2.6rem;
+  right: -0.8rem;
+}
+@media (min-width: 992px) {
+  .customer-service .rounded-img-1 {
+    width: 495px;
+    height: 495px;
+    top: 2.7rem;
+    right: unset;
+    left: -11.5rem;
+    bottom: unset;
+  }
+}
+.customer-service .rounded-img-2 {
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+  background-image: url(/assets/front/build/water_drops.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  bottom: 5rem;
+  left: 3.3rem;
+}
+@media (min-width: 992px) {
+  .customer-service .rounded-img-2 {
+    width: 97px;
+    height: 97px;
+    top: 90rem;
+    left: -2.5rem;
+    bottom: unset;
+  }
+}
+.customer-service .rounded-img-3 {
+  width: 266px;
+  height: 266px;
+  border-radius: 50%;
+  background-image: url(/assets/front/build/water_tornado.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 50rem;
+  right: -16.8rem;
+}
+
+.contact-divider {
+  border-top: 1px solid var(--gray-200);
+  margin: 2.5rem 0;
+}
+
+.border-small {
+  border: 1px solid;
+}
+
+.info-icon {
+  font-size: 2rem !important;
+}
+@media (min-width: 992px) {
+  .info-icon {
+    font-size: 3rem !important;
+  }
+}
+
+.locality-result {
+  overflow-x: clip;
+}
+@media (min-width: 992px) {
+  .locality-result .locality-container {
+    width: 80%;
+    margin-left: 230px;
+  }
+}
+@media (min-width: 1200px) {
+  .locality-result .locality-container {
+    margin-left: 312px;
+  }
+}
+.locality-result .locality-container .locality {
+  border: 1px solid var(--blue-4);
+  padding: 14px 16px;
+}

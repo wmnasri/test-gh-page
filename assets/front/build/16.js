@@ -1,3319 +1,1855 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[16],{
 
-/***/ "./assets/js/components/Confirmation/index.tsx":
-/*!*****************************************************!*\
-  !*** ./assets/js/components/Confirmation/index.tsx ***!
-  \*****************************************************/
-/*! exports provided: Confirmation */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Confirmation", function() { return Confirmation; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _app_components_FormButtons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @app/components/FormButtons */ "./assets/js/components/FormButtons/index.tsx");
-/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @suezenv/react-theme-components */ "./node_modules/@suezenv/react-theme-components/build/index.js");
-/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _app_components_AlertBox__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/components/AlertBox */ "./assets/js/components/AlertBox/index.tsx");
-/* harmony import */ var interweave__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! interweave */ "./node_modules/interweave/esm/index.js");
-/* harmony import */ var _app_hooks_useInterweave__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @app/hooks/useInterweave */ "./assets/js/hooks/useInterweave.jsx");
-
-
-
-
-
-
-var Confirmation = function Confirmation(_ref) {
-  var _ref$isSuccess = _ref.isSuccess,
-    isSuccess = _ref$isSuccess === void 0 ? true : _ref$isSuccess,
-    title = _ref.title,
-    subTitle = _ref.subTitle,
-    desc = _ref.desc,
-    descTransError = _ref.descTransError,
-    previousButton = _ref.previousButton,
-    nextButton = _ref.nextButton;
-  var _useInterweave = Object(_app_hooks_useInterweave__WEBPACK_IMPORTED_MODULE_5__["default"])(),
-    transform = _useInterweave.transform;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_2__["SzTypographie"], {
-    variant: "H3",
-    size: "L",
-    weight: "medium",
-    className: "mb-3 mb-lg-4"
-  }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_2__["SzTypographie"], null, subTitle), isSuccess ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_AlertBox__WEBPACK_IMPORTED_MODULE_3__["AlertBox"], {
-    className: "mb-5 new-line"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(interweave__WEBPACK_IMPORTED_MODULE_4__["Markup"], {
-    content: desc,
-    transform: transform
-  })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_AlertBox__WEBPACK_IMPORTED_MODULE_3__["AlertBox"], {
-    className: "mb-5 new-line",
-    variant: "alert"
-  }, descTransError ? descTransError : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(interweave__WEBPACK_IMPORTED_MODULE_4__["Markup"], {
-    content: desc
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_FormButtons__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    next: nextButton,
-    previous: previousButton
-  }));
-};
-
-/***/ }),
-
-/***/ "./assets/js/components/Skeleton/Payment/MyPaymentMode/index.tsx":
-/*!***********************************************************************!*\
-  !*** ./assets/js/components/Skeleton/Payment/MyPaymentMode/index.tsx ***!
-  \***********************************************************************/
-/*! exports provided: default, IdentityBlockSkeleton */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MyPaymentModeSkeleton; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IdentityBlockSkeleton", function() { return IdentityBlockSkeleton; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_loading_skeleton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-loading-skeleton */ "./node_modules/react-loading-skeleton/lib/index.js");
-/* harmony import */ var react_loading_skeleton__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_1__);
-
-
-function MyPaymentModeSkeleton() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    className: "col-6 col-lg-4 mb-1 px-0",
-    height: 20
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    className: "col-12 col-lg-9 mb-3 px-0",
-    height: 50
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    className: "col-6 col-lg-4 mb-1 px-0",
-    height: 20
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    className: "col-12 col-lg-9 mb-3 px-0",
-    height: 50
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    className: "col-6 col-lg-4 mb-1 px-0",
-    height: 20
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    className: "col-12 col-lg-9 mb-4 px-0",
-    height: 50
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    className: "col-12 col-lg-10 mb-3 px-0",
-    height: 60
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-12 col-lg-2"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    className: "col-1 col-lg-1 mb-1 px-0",
-    height: 20
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-11 col-lg-11"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    className: "col-12 col-lg-11 mb-3 px-0",
-    height: 50
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    className: "col-2 col-lg-2 mb-1 px-0",
-    height: 20
-  }));
-}
-function IdentityBlockSkeleton() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    className: "col-4 mb-3",
-    height: 12
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-8"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    className: "col-12 col-lg-5 mr-lg-2 mb-3",
-    height: 200
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    className: "col-12 col-lg-6 ml-lg-2 mb-3",
-    height: 200
-  }));
-}
-
-/***/ }),
-
-/***/ "./assets/js/components/Skeleton/PaymentModePromotion/paymentModePromotion.tsx":
-/*!*************************************************************************************!*\
-  !*** ./assets/js/components/Skeleton/PaymentModePromotion/paymentModePromotion.tsx ***!
-  \*************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PaymentPromotionSkeleton; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_loading_skeleton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-loading-skeleton */ "./node_modules/react-loading-skeleton/lib/index.js");
-/* harmony import */ var react_loading_skeleton__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _app_hooks_useResponsive__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/hooks/useResponsive */ "./assets/js/hooks/useResponsive.ts");
-
-
-
-function PaymentPromotionSkeleton() {
-  var isMobile = Object(_app_hooks_useResponsive__WEBPACK_IMPORTED_MODULE_2__["useIsMobile"])();
-  var heightGrayBlock = isMobile ? '124px' : '186px';
-  var heightSummaryBlock = isMobile ? '276px' : '186px';
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "d-flex flex-column flex-lg-row mb-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-12 col-lg-5 mb-3 mb-lg-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    height: heightGrayBlock
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-12 col-lg-7"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    height: heightSummaryBlock
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "mb-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-12"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    height: 376
-  }))));
-}
-
-/***/ }),
-
-/***/ "./assets/js/components/payment/PaylineMonext.tsx":
-/*!********************************************************!*\
-  !*** ./assets/js/components/payment/PaylineMonext.tsx ***!
-  \********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PaylineMonext; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @app/services/AxiosInstance */ "./assets/js/services/AxiosInstance.jsx");
-/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/constants */ "./assets/js/constants/index.ts");
-/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-query */ "./node_modules/react-query/es/index.js");
-/* harmony import */ var ahooks__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ahooks */ "./node_modules/ahooks/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _app_hooks_usePayline__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @app/hooks/usePayline */ "./assets/js/hooks/usePayline.ts");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
-
-
-function PaylineMonext(_ref) {
-  var launch = _ref.launch,
-    setRunPaymentCB = _ref.setRunPaymentCB;
-  var _a, _b;
-  Object(_app_hooks_usePayline__WEBPACK_IMPORTED_MODULE_6__["default"])();
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["useHistory"])();
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-    _useState2 = _slicedToArray(_useState, 2),
-    isOpenPopinCb = _useState2[0],
-    setIsOpenPopinCb = _useState2[1];
-  var _useMutation = Object(react_query__WEBPACK_IMPORTED_MODULE_3__["useMutation"])(function () {
-      return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_1__["default"].get(_app_constants__WEBPACK_IMPORTED_MODULE_2__["API"].PAYMENT.BANK_CARD, {
-        baseURL: ''
-      });
-    }, {
-      mutationKey: 'getBankCard',
-      onSuccess: function onSuccess(response) {
-        var _a;
-        var code = (_a = response === null || response === void 0 ? void 0 : response.data) === null || _a === void 0 ? void 0 : _a.code;
-        if (_app_constants__WEBPACK_IMPORTED_MODULE_2__["CODES"].CODE_DOMAIN_ERROR === code) {
-          history.push(_app_constants__WEBPACK_IMPORTED_MODULE_2__["ROUTES"].PAYMENT.CONFIRMATION_CB_FAILED);
-        }
-      },
-      onError: function onError() {
-        history.push(_app_constants__WEBPACK_IMPORTED_MODULE_2__["ROUTES"].PAYMENT.CONFIRMATION_CB_FAILED);
-      }
-    }),
-    muateBankCard = _useMutation.mutate,
-    isLoadingBankCard = _useMutation.isLoading,
-    isSuccessBankCard = _useMutation.isSuccess,
-    dataBankCard = _useMutation.data;
-  var checkPayline = Object(react_query__WEBPACK_IMPORTED_MODULE_3__["useMutation"])(function () {
-    return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_1__["default"].get(_app_constants__WEBPACK_IMPORTED_MODULE_2__["API"].PAYMENT.CHECK_PAYLINE);
-  }, {
-    onSuccess: function onSuccess(response, _ref2) {
-      var callSubmitPayment = _ref2.callSubmitPayment;
-      var _a;
-      if (callSubmitPayment) {
-        muateBankCard();
-      } else {
-        var _ref3 = (_a = response === null || response === void 0 ? void 0 : response.data) === null || _a === void 0 ? void 0 : _a.content,
-          isRedirect = _ref3.isRedirect,
-          redirect = _ref3.redirect;
-        if (isRedirect === true && redirect) {
-          window.location.href = redirect;
-        }
-      }
-    },
-    onError: function onError() {
-      history.push(_app_constants__WEBPACK_IMPORTED_MODULE_2__["ROUTES"].PAYMENT.CONFIRMATION_CB_FAILED);
-    }
-  });
-  var idBtnClosePopinCb = document === null || document === void 0 ? void 0 : document.getElementById('pl-container-lightbox-close');
-  var responseBankCard = dataBankCard;
-  var paylineToken = isSuccessBankCard && responseBankCard ? (_b = (_a = responseBankCard === null || responseBankCard === void 0 ? void 0 : responseBankCard.data) === null || _a === void 0 ? void 0 : _a.content) === null || _b === void 0 ? void 0 : _b.paylineToken : '';
-  var handleClick = function handleClick() {
-    // @ts-ignore
-    Payline.Api.endToken();
-    checkPayline.mutate({});
-    setRunPaymentCB(false);
-    setIsOpenPopinCb(false);
-  };
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    if (paylineToken) {
-      var currentTimeout = setTimeout(function () {
-        // @ts-ignore
-        Payline.Api.reset(paylineToken);
-        setIsOpenPopinCb(true);
-      }, 1000);
-      return function () {
-        clearTimeout(currentTimeout);
-      };
-    }
-    return;
-  }, [isLoadingBankCard]);
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    var currentTimeout = setTimeout(function () {
-      idBtnClosePopinCb === null || idBtnClosePopinCb === void 0 ? void 0 : idBtnClosePopinCb.addEventListener('click', handleClick);
-    }, 1000);
-    return function () {
-      idBtnClosePopinCb === null || idBtnClosePopinCb === void 0 ? void 0 : idBtnClosePopinCb.removeEventListener('click', handleClick);
-      clearTimeout(currentTimeout);
-    };
-  }, [isOpenPopinCb]);
-  Object(ahooks__WEBPACK_IMPORTED_MODULE_4__["useKeyPress"])(27, function () {
-    if (isOpenPopinCb && idBtnClosePopinCb) {
-      // @ts-ignore
-      Payline.Api.endToken();
-      checkPayline.mutate({});
-      setRunPaymentCB(false);
-      setIsOpenPopinCb(false);
-    }
-  });
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    if (launch) {
-      checkPayline.mutate({
-        callSubmitPayment: true
-      });
-    }
-  }, [launch]);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    id: "PaylineWidget",
-    "data-token": paylineToken,
-    "data-embeddedredirectionallowed": "false",
-    "data-auto-init": "false"
-  });
-}
-
-/***/ }),
-
-/***/ "./assets/js/hooks/useGetAvailablePaymentModes.ts":
-/*!********************************************************!*\
-  !*** ./assets/js/hooks/useGetAvailablePaymentModes.ts ***!
-  \********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return useGetAvailablePaymentModes; });
-/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
-
-function useGetAvailablePaymentModes(list, hasEtipSignedValidMandate, monthlyPaymentAmount, allModes) {
-  var _useTranslation = Object(react_i18next__WEBPACK_IMPORTED_MODULE_0__["useTranslation"])(),
-    t = _useTranslation.t;
-  var availablePaymentModes = new Array();
-  var monthlyPayment = list.monthlyPayment,
-    directDebitPayment = list.directDebitPayment,
-    etip = list.etip,
-    bankCardPayment = list.bankCardPayment,
-    tipi = list.tipi;
-  if (monthlyPayment === true) {
-    availablePaymentModes.push({
-      label: t('payment.list.label_monthlyPayment'),
-      value: 'monthlyPayment',
-      text: t('payment.list.text_monthlyPayment', {
-        monthlyAmount: monthlyPaymentAmount
-      }),
-      info: t('payment.list.info_monthlyPayment')
-    });
-  }
-  if (directDebitPayment === true) {
-    availablePaymentModes.push({
-      label: t('payment.list.label_directDebitPayment'),
-      value: 'directDebitPayment',
-      text: t('payment.list.text_directDebitPayment'),
-      info: t('payment.list.info_directDebitPayment')
-    });
-  }
-  if (etip === true && allModes) {
-    availablePaymentModes.push({
-      label: t('payment.list.label_etip'),
-      value: 'etip',
-      text: t('payment.list.text_etip'),
-      info: t('payment.list.info_etip', {
-        context: hasEtipSignedValidMandate ? 'mandate' : 'no_mandate'
-      })
-    });
-  }
-  if (bankCardPayment === true && allModes) {
-    availablePaymentModes.push({
-      label: t('payment.list.label_bankCardPayment'),
-      value: 'bankCardPayment',
-      text: t('payment.list.text_bankCardPayment'),
-      info: t('payment.list.info_bankCardPayment')
-    });
-  }
-  if (tipi === true && allModes) {
-    availablePaymentModes.push({
-      label: t('payment.list.label_tipi'),
-      value: 'tipi',
-      text: t('payment.list.text_tipi'),
-      info: t('payment.list.info_tipi')
-    });
-  }
-  return availablePaymentModes;
-}
-
-/***/ }),
-
-/***/ "./assets/js/hooks/useSearchParams.ts":
-/*!********************************************!*\
-  !*** ./assets/js/hooks/useSearchParams.ts ***!
-  \********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return useSearchParams; });
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-
-function useSearchParams() {
-  var _useLocation = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_0__["useLocation"])(),
-    search = _useLocation.search;
-  return new URLSearchParams(search);
-}
-
-/***/ }),
-
-/***/ "./assets/js/models/IbanSepa/SelectPaymentMode.js":
-/*!********************************************************!*\
-  !*** ./assets/js/models/IbanSepa/SelectPaymentMode.js ***!
-  \********************************************************/
-/*! exports provided: SelectPaymentModeSchema */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SelectPaymentModeSchema", function() { return SelectPaymentModeSchema; });
-/* harmony import */ var yup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! yup */ "./node_modules/yup/es/index.js");
-/* harmony import */ var _validation_yup__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../validation/yup */ "./assets/js/validation/yup.js");
-
-
-var SelectPaymentModeSchema = yup__WEBPACK_IMPORTED_MODULE_0__["object"]({
-  paymentMode: yup__WEBPACK_IMPORTED_MODULE_0__["string"]().required('managePayments.form.errors.select_option')
-});
-
-/***/ }),
-
-/***/ "./assets/js/models/IbanSepa/checkboxVerified.js":
-/*!*******************************************************!*\
-  !*** ./assets/js/models/IbanSepa/checkboxVerified.js ***!
-  \*******************************************************/
-/*! exports provided: checkboxVerifiedSchema */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "checkboxVerifiedSchema", function() { return checkboxVerifiedSchema; });
-/* harmony import */ var yup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! yup */ "./node_modules/yup/es/index.js");
-/* harmony import */ var _validation_yup__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../validation/yup */ "./assets/js/validation/yup.js");
-
-
-var checkboxVerifiedSchema = yup__WEBPACK_IMPORTED_MODULE_0__["object"]({
-  checkboxVerified: yup__WEBPACK_IMPORTED_MODULE_0__["bool"]().oneOf([true], 'payment.IBANForm.errors.checkboxVerified')
-});
-
-/***/ }),
-
-/***/ "./assets/js/models/IbanSepa/index.ts":
-/*!********************************************!*\
-  !*** ./assets/js/models/IbanSepa/index.ts ***!
-  \********************************************/
-/*! exports provided: accountOwnerSchema */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "accountOwnerSchema", function() { return accountOwnerSchema; });
-/* harmony import */ var yup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! yup */ "./node_modules/yup/es/index.js");
-/* harmony import */ var _app_validation_yup__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @app/validation/yup */ "./assets/js/validation/yup.js");
-/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/constants */ "./assets/js/constants/index.ts");
-
-
-
-var ownerRegex = new RegExp("^[0-9A-Za-z ]{0,".concat(_app_constants__WEBPACK_IMPORTED_MODULE_2__["PAYMENT_OWNER_MAX_LENGTH"], "}$"));
-var accountOwnerSchema = yup__WEBPACK_IMPORTED_MODULE_0__["object"]({
-  name: yup__WEBPACK_IMPORTED_MODULE_0__["string"]().required('managePayments.form.errors.mandatory').matches(ownerRegex, 'payment.IBANForm.errors.owner_name'),
-  surname: yup__WEBPACK_IMPORTED_MODULE_0__["string"]().required('managePayments.form.errors.mandatory').matches(ownerRegex, 'payment.IBANForm.errors.owner_surname')
-});
-
-/***/ }),
-
-/***/ "./assets/js/pages/payment/ContractSummary.tsx":
-/*!*****************************************************!*\
-  !*** ./assets/js/pages/payment/ContractSummary.tsx ***!
-  \*****************************************************/
-/*! exports provided: ContractSummary */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContractSummary", function() { return ContractSummary; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @suezenv/react-theme-components */ "./node_modules/@suezenv/react-theme-components/build/index.js");
-/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
-
-
-
-var ContractSummary = function ContractSummary(props) {
-  var name = props.name,
-    address = props.address,
-    reference = props.reference;
-  var _useTranslation = Object(react_i18next__WEBPACK_IMPORTED_MODULE_2__["useTranslation"])(),
-    t = _useTranslation.t;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "border sz-border-1 rounded-2 px-4 py-3",
-    "data-cy": "summary-contract"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzData"], {
-    className: "mb-3",
-    icon: "business-contract-handshake-sign",
-    variant: "line"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzData"].Text, {
-    className: "sz-typo-caption md font-family-regular"
-  }, t('managePayments.summary.contract_name')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzData"].Title, {
-    className: "summary-contract-name"
-  }, name)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzData"], {
-    className: "mb-3",
-    icon: "pin-location-1",
-    variant: "line"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzData"].Text, {
-    className: "sz-typo-caption md font-family-regular"
-  }, t('managePayments.summary.address')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzData"].Title, {
-    className: "summary-contract-address new-line"
-  }, address)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzData"], {
-    icon: "house-3",
-    variant: "line"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzData"].Text, {
-    className: "sz-typo-caption md font-family-regular"
-  }, t('managePayments.summary.reference')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_1__["SzData"].Title, {
-    className: "summary-contract-reference"
-  }, reference)));
-};
-
-/***/ }),
-
-/***/ "./assets/js/pages/payment/PaymentBlock.tsx":
-/*!**************************************************!*\
-  !*** ./assets/js/pages/payment/PaymentBlock.tsx ***!
-  \**************************************************/
-/*! exports provided: PaymentBlock */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PaymentBlock", function() { return PaymentBlock; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
-/* harmony import */ var _app_components_Links_LinkBtn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/components/Links/LinkBtn */ "./assets/js/components/Links/LinkBtn.jsx");
-/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/constants */ "./assets/js/constants/index.ts");
-/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @suezenv/react-theme-components */ "./node_modules/@suezenv/react-theme-components/build/index.js");
-/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
-/* harmony import */ var _payments_manage_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./payments-manage.scss */ "./assets/js/pages/payment/payments-manage.scss");
-/* harmony import */ var _payments_manage_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_payments_manage_scss__WEBPACK_IMPORTED_MODULE_6__);
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
-
-
-var PaymentBlock = function PaymentBlock(props) {
-  var _useTranslation = Object(react_i18next__WEBPACK_IMPORTED_MODULE_1__["useTranslation"])(),
-    t = _useTranslation.t,
-    i18n = _useTranslation.i18n;
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-    _useState2 = _slicedToArray(_useState, 2),
-    isPayMyBillBtnLoading = _useState2[0],
-    setIsPayMyBillBtnLoading = _useState2[1];
-  var titleCode = props.titleCode,
-    amount = props.amount,
-    date = props.date,
-    showEtip = props.showEtip,
-    paymentMode = props.paymentMode,
-    computationModeCode = props.computationModeCode,
-    invoiceVariant = props.invoiceVariant,
-    currentPaymentModeCode = props.currentPaymentModeCode,
-    showPayBillButton = props.showPayBillButton;
-  var paymentModeKey = "payment.summary_box.debit_type_".concat(currentPaymentModeCode);
-  var paymentModeValue = currentPaymentModeCode && i18n.exists(paymentModeKey) ? t(paymentModeKey) : undefined;
-  var isIntranet = window.tsme_data.isIntranet;
-  var showCommentCases = ['04', '06', '07'];
-  var showComment = titleCode ? showCommentCases.includes(titleCode) : null;
-  var showAmountCases = ['01', '02', '04', '08', '09', _app_constants__WEBPACK_IMPORTED_MODULE_3__["PAYMENT_MODE_MENSU"], _app_constants__WEBPACK_IMPORTED_MODULE_3__["PAYMENT_MODE_ETIP"]];
-  var showAmount = titleCode ? showAmountCases.includes(titleCode) : null;
-  var paymentBlockClasses = Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])('summary-payment-block rounded-2 d-flex', {
-    'col-12 col-lg-5 bg-gray-100 mt-3 mt-lg-0 p-3 p-lg-4 align-items-center': !invoiceVariant,
-    'w-100 bg-white px-3 py-4 p-lg-5 mt-3 mt-lg-4 d-flex flex-column': invoiceVariant
-  });
-  var headlineClasses = Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])('mb-0', {
-    'text-dark': !invoiceVariant,
-    'text-expert-blue': invoiceVariant
-  });
-  var amountClasses = Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])('text-expert-blue', {
-    'mb-2': !invoiceVariant,
-    'my-3': invoiceVariant
-  });
-  var commentClasses = Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])('text-dark mb-0', {
-    'mt-auto': !invoiceVariant,
-    'mt-2': invoiceVariant
-  });
-  var handleOnClickPayBill = function handleOnClickPayBill() {
-    setIsPayMyBillBtnLoading(true);
-    window.location.href = _app_constants__WEBPACK_IMPORTED_MODULE_3__["ROUTES"].PAYMENT.INDEX;
-  };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: paymentBlockClasses,
-    "data-cy": "summary-payment-block"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "d-flex flex-column justify-content-center h-100",
-    "data-cy": "summary-payment"
-  }, titleCode && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_4__["SzTypographie"], {
-    variant: invoiceVariant ? 'H3' : 'body',
-    size: invoiceVariant ? 'L' : 'S',
-    weight: "medium",
-    className: headlineClasses
-  }, t("payment.summary_box.paymentInfo.headline", {
-    context: titleCode
-  })), showAmount && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_4__["SzTypographie"], {
-    variant: "H2",
-    size: "XL",
-    weight: "bold",
-    className: amountClasses
-  }, t("payment.summary_box.paymentInfo.amount", {
-    amount: amount,
-    context: titleCode
-  })), _app_constants__WEBPACK_IMPORTED_MODULE_3__["PAYMENT_MODE_PRELEV"] === paymentMode && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_4__["SzTypographie"], {
-    size: "M",
-    weight: "bold",
-    className: "text-expert-blue"
-  }, t("payment.summary_box.paymentInfo.amount", {
-    context: paymentMode
-  })), (showComment || computationModeCode) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_4__["SzTypographie"], {
-    variant: "caption",
-    size: "M",
-    weight: "regular",
-    className: commentClasses
-  }, showComment && t("payment.summary_box.paymentInfo.comment", {
-    context: titleCode,
-    amount: amount,
-    date: date
-  }), computationModeCode && t('payment.summary_box.paymentInfo.comment_mensualisation', {
-    context: computationModeCode
-  })), showEtip && !isIntranet && !invoiceVariant && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_Links_LinkBtn__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    icon: "keyboard-arrow-right",
-    className: "mt-auto pl-0 h-25 text-left justify-content-start",
-    variant: "text",
-    alignIcon: "right",
-    to: _app_constants__WEBPACK_IMPORTED_MODULE_3__["ROUTES"].PAYMENT.ETIP,
-    "data-cy": "etip-payment-link"
-  }, t('payment.summary_box.paymentInfo.etip_payment_button'))), invoiceVariant && paymentModeValue && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "border-top border-1 border-gray-100 w-100 mt-3 pt-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "text-break mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_4__["SzTypographie"], {
-    variant: "body",
-    className: "mb-0",
-    tag: "span"
-  }, t('payment.summary_box.payment_mode_label', {
-    context: t('payment.summary_box.actual')
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_4__["SzTypographie"], {
-    variant: "body",
-    weight: "bold",
-    className: "mb-0",
-    tag: "span"
-  }, paymentModeValue))), invoiceVariant && showPayBillButton && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "mt-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_4__["SzButton"], {
-    variant: "outlined",
-    border: "soft",
-    onClick: handleOnClickPayBill,
-    loader: isPayMyBillBtnLoading,
-    "data-cy": "pay-my-bill-button"
-  }, t('payment.summary_box.paymentInfo.payment_button'))));
-};
-
-/***/ }),
-
-/***/ "./assets/js/pages/payment/PaymentBox.tsx":
-/*!************************************************!*\
-  !*** ./assets/js/pages/payment/PaymentBox.tsx ***!
-  \************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PaymentBox; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var __rest = undefined && undefined.__rest || function (s, e) {
-  var t = {};
-  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
-  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
-  }
-  return t;
-};
-
-function PaymentBox(_a) {
-  var children = _a.children,
-    props = __rest(_a, ["children"]);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", Object.assign({
-    className: "payments-manage-block bg-white rounded-3 position-relative mb-lg-3 px-3 px-lg-6 py-4 py-lg-5"
-  }, props), children);
-}
-
-/***/ }),
-
-/***/ "./assets/js/pages/payment/PaymentStepper.tsx":
-/*!****************************************************!*\
-  !*** ./assets/js/pages/payment/PaymentStepper.tsx ***!
-  \****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PaymentStepper; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _hooks_useSteps__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./hooks/useSteps */ "./assets/js/pages/payment/hooks/useSteps.tsx");
-var __rest = undefined && undefined.__rest || function (s, e) {
-  var t = {};
-  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
-  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
-  }
-  return t;
-};
-
-
-
-function PaymentStepper() {
-  var steps = Object(_hooks_useSteps__WEBPACK_IMPORTED_MODULE_2__["default"])();
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, steps.map(function (step) {
-    var path = step.path,
-      props = __rest(step, ["path"]);
-    var Step = step['step'];
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-      key: Array.isArray(path) ? path[0] : path,
-      path: path
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Step, Object.assign({}, props)));
-  }));
-}
-
-/***/ }),
-
-/***/ "./assets/js/pages/payment/SummaryBox.tsx":
-/*!************************************************!*\
-  !*** ./assets/js/pages/payment/SummaryBox.tsx ***!
-  \************************************************/
-/*! exports provided: SummaryBox, SummaryBoxContent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SummaryBox", function() { return SummaryBox; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SummaryBoxContent", function() { return SummaryBoxContent; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _app_ez_components_accordion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/ez-components/accordion */ "./assets/js/ez-components/accordion/index.jsx");
-/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @suezenv/react-theme-components */ "./node_modules/@suezenv/react-theme-components/build/index.js");
-/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _ContractSummary__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ContractSummary */ "./assets/js/pages/payment/ContractSummary.tsx");
-/* harmony import */ var _PaymentBlock__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./PaymentBlock */ "./assets/js/pages/payment/PaymentBlock.tsx");
-/* harmony import */ var _payments_manage_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./payments-manage.scss */ "./assets/js/pages/payment/payments-manage.scss");
-/* harmony import */ var _payments_manage_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_payments_manage_scss__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _app_pages_payment_hooks_usePaymentParams__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @app/pages/payment/hooks/usePaymentParams */ "./assets/js/pages/payment/hooks/usePaymentParams.ts");
-/* harmony import */ var _app_pages_payment_hooks_useGetManagePayment__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @app/pages/payment/hooks/useGetManagePayment */ "./assets/js/pages/payment/hooks/useGetManagePayment.ts");
-/* harmony import */ var _app_pages_payment_hooks_useGetIban__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @app/pages/payment/hooks/useGetIban */ "./assets/js/pages/payment/hooks/useGetIban.ts");
-/* harmony import */ var _app_pages_payment_steps_MyPaymentMode__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @app/pages/payment/steps/MyPaymentMode */ "./assets/js/pages/payment/steps/MyPaymentMode.tsx");
-/* harmony import */ var _app_pages_payment__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @app/pages/payment */ "./assets/js/pages/payment/index.tsx");
-/* harmony import */ var _app_pages_payment_PaymentBox__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @app/pages/payment/PaymentBox */ "./assets/js/pages/payment/PaymentBox.tsx");
-/* harmony import */ var _app_components_Skeleton_Payment_MyPaymentMode_index__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @app/components/Skeleton/Payment/MyPaymentMode/index */ "./assets/js/components/Skeleton/Payment/MyPaymentMode/index.tsx");
-/* harmony import */ var _app_constants_index__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @app/constants/index */ "./assets/js/constants/index.ts");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var SummaryBox = function SummaryBox(_ref) {
-  var isOpen = _ref.isOpen;
-  var _a, _b, _c, _d, _e, _f;
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useHistory"])();
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(function () {
-      return isOpen ? '0' : '1';
-    }),
-    _useState2 = _slicedToArray(_useState, 2),
-    activeKey = _useState2[0],
-    setActiveKey = _useState2[1];
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    setActiveKey(isOpen ? '0' : '1');
-  }, [isOpen]);
-  var _useTranslation = Object(react_i18next__WEBPACK_IMPORTED_MODULE_1__["useTranslation"])(),
-    t = _useTranslation.t;
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_app_pages_payment__WEBPACK_IMPORTED_MODULE_12__["PaymentContext"]),
-    setManagePayment = _useContext.setManagePayment;
-  var _usePaymentParams = Object(_app_pages_payment_hooks_usePaymentParams__WEBPACK_IMPORTED_MODULE_8__["default"])(),
-    paymentMode = _usePaymentParams.paymentMode,
-    eFacture = _usePaymentParams.eFacture;
-  var _useGetManagePayment = Object(_app_pages_payment_hooks_useGetManagePayment__WEBPACK_IMPORTED_MODULE_9__["default"])({
-      paymentMode: paymentMode,
-      eFacture: eFacture,
-      onSuccess: function onSuccess(_ref2) {
-        var data = _ref2.data;
-        if (data.content) {
-          setManagePayment(data.content);
-        }
-      },
-      onError: function onError() {
-        history.push(_app_constants_index__WEBPACK_IMPORTED_MODULE_15__["ROUTES"].PAYMENT.ERROR);
-      },
-      enabled: paymentMode !== _app_constants_index__WEBPACK_IMPORTED_MODULE_15__["PAYMENT_MODE_LIST"].ETIP
-    }),
-    data = _useGetManagePayment.data,
-    isLoading = _useGetManagePayment.isLoading;
-  var _ref3 = (data === null || data === void 0 ? void 0 : data.data) || {},
-    managePayment = _ref3.content;
-  var _useGetIban = Object(_app_pages_payment_hooks_useGetIban__WEBPACK_IMPORTED_MODULE_10__["default"])({
-      onSuccess: function onSuccess(_ref4) {
-        var data = _ref4.data;
-        // Retraitement
-        var pmtDataFromGetIban = {
-          hasMandate: data.has_mandate,
-          contractData: {
-            reference: data.reference,
-            iban: data.iban,
-            ibanHolder: data.titulaire,
-            contractName: data.name,
-            balanceAmount: data.balance,
-            siteAddress: data.site_address,
-            balanceDate: ''
-          },
-          monthlyPaymentData: {
-            amount: '',
-            computationModeLabel: '',
-            computationModeCode: ''
-          }
-        };
-        setManagePayment(pmtDataFromGetIban);
-      },
-      onError: function onError() {
-        history.push(_app_constants_index__WEBPACK_IMPORTED_MODULE_15__["ROUTES"].PAYMENT.ERROR_ETIP);
-      },
-      enabled: paymentMode === _app_constants_index__WEBPACK_IMPORTED_MODULE_15__["PAYMENT_MODE_LIST"].ETIP
-    }),
-    dataGetIban = _useGetIban.data,
-    isLoadingGetIban = _useGetIban.isLoading;
-  var summaryBoxContent = {
-    amount: ((_a = managePayment === null || managePayment === void 0 ? void 0 : managePayment.monthlyPaymentData) === null || _a === void 0 ? void 0 : _a.amount) || ((_b = dataGetIban === null || dataGetIban === void 0 ? void 0 : dataGetIban.data) === null || _b === void 0 ? void 0 : _b.balance) || '',
-    name: (managePayment === null || managePayment === void 0 ? void 0 : managePayment.contractData.contractName) || ((_c = dataGetIban === null || dataGetIban === void 0 ? void 0 : dataGetIban.data) === null || _c === void 0 ? void 0 : _c.name) || '',
-    address: (managePayment === null || managePayment === void 0 ? void 0 : managePayment.contractData.siteAddress) || ((_d = dataGetIban === null || dataGetIban === void 0 ? void 0 : dataGetIban.data) === null || _d === void 0 ? void 0 : _d.site_address) || '',
-    reference: (managePayment === null || managePayment === void 0 ? void 0 : managePayment.contractData.reference) || ((_e = dataGetIban === null || dataGetIban === void 0 ? void 0 : dataGetIban.data) === null || _e === void 0 ? void 0 : _e.reference) || '',
-    titleCode: paymentMode,
-    paymentMode: paymentMode,
-    computationModeCode: (_f = managePayment === null || managePayment === void 0 ? void 0 : managePayment.monthlyPaymentData) === null || _f === void 0 ? void 0 : _f.computationModeCode,
-    paymentModeLabel: t('payment.summary_box.payment_mode_label', {
-      context: 'selected'
-    }),
-    paymentModeValue: t('payment.summary_box.debit_type', {
-      context: _app_pages_payment_steps_MyPaymentMode__WEBPACK_IMPORTED_MODULE_11__["PAYMENT_MODE_ACTION"][paymentMode]
-    }),
-    showEtip: false,
-    paymentModeShow: true
-  };
-  var dataAccordeon = [{
-    fields: {
-      title: t('payment.summary_box.title'),
-      content: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SummaryBoxContent, Object.assign({}, summaryBoxContent))
-    }
-  }];
-  var setCurrentKey = function setCurrentKey(activeKeyState) {
-    setActiveKey(activeKeyState);
-  };
-  if (isLoading || isLoadingGetIban) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_pages_payment_PaymentBox__WEBPACK_IMPORTED_MODULE_13__["default"], {
-      "data-cy": "my-payment-loading"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_Skeleton_Payment_MyPaymentMode_index__WEBPACK_IMPORTED_MODULE_14__["IdentityBlockSkeleton"], null));
-  }
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "payments-manage-block"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_ez_components_accordion__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    data: dataAccordeon,
-    className: "rounded-3 mb-3",
-    activeKey: activeKey,
-    setCurrentKey: setCurrentKey,
-    toggle: false,
-    borderBottom: false,
-    buttonArrow: true,
-    isHistory: true
-  }));
-};
-var SummaryBoxContent = function SummaryBoxContent(props) {
-  var titleCode = props.titleCode,
-    amount = props.amount,
-    date = props.date,
-    showEtip = props.showEtip,
-    paymentMode = props.paymentMode,
-    computationModeCode = props.computationModeCode,
-    name = props.name,
-    address = props.address,
-    reference = props.reference,
-    paymentModeShow = props.paymentModeShow,
-    paymentModeLabel = props.paymentModeLabel,
-    paymentModeValue = props.paymentModeValue;
-  var grayBlockData = {
-    titleCode: titleCode,
-    amount: amount,
-    date: date,
-    showEtip: showEtip,
-    paymentMode: paymentMode,
-    computationModeCode: computationModeCode
-  };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "d-flex flex-column flex-lg-row mb-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PaymentBlock__WEBPACK_IMPORTED_MODULE_6__["PaymentBlock"], Object.assign({}, grayBlockData)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-12 col-lg-7 pt-3 px-0 pt-lg-0 pl-lg-3 pr-lg-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ContractSummary__WEBPACK_IMPORTED_MODULE_5__["ContractSummary"], {
-    name: name,
-    address: address,
-    reference: reference
-  }))), paymentModeShow && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row no-gutters",
-    "data-cy": "payment-mode"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_4__["SzTypographie"], {
-    variant: "body",
-    className: "text-dark mb-0"
-  }, paymentModeLabel), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_4__["SzTypographie"], {
-    variant: "body",
-    weight: "bold",
-    className: "text-dark ml-lg-1 mb-0"
-  }, paymentModeValue)));
-};
-
-/***/ }),
-
-/***/ "./assets/js/pages/payment/hooks/useGetDocapostMandateDownload.ts":
-/*!************************************************************************!*\
-  !*** ./assets/js/pages/payment/hooks/useGetDocapostMandateDownload.ts ***!
-  \************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return useGetDocapostMandateDownload; });
-/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-query */ "./node_modules/react-query/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/services/AxiosInstance */ "./assets/js/services/AxiosInstance.jsx");
-/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/constants */ "./assets/js/constants/index.ts");
-/* harmony import */ var _app_services_Utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/services/Utils */ "./assets/js/services/Utils.js");
-
-
-
-
-
-function useGetDocapostMandateDownload() {
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
-  return Object(react_query__WEBPACK_IMPORTED_MODULE_0__["useMutation"])(function () {
-    return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_2__["default"].get(_app_constants__WEBPACK_IMPORTED_MODULE_3__["API"].DOCAPOSTE.DOWNLOAD_MANDATE, {
-      responseType: 'blob'
-    });
-  }, {
-    onSuccess: function onSuccess(data) {
-      _app_services_Utils__WEBPACK_IMPORTED_MODULE_4__["download"].fromFile(data);
-    },
-    onError: function onError() {
-      history.push({
-        pathname: _app_constants__WEBPACK_IMPORTED_MODULE_3__["ROUTES"].PAYMENT.ERROR_ETIP
-      });
-    }
-  });
-}
-
-/***/ }),
-
-/***/ "./assets/js/pages/payment/hooks/useGetIban.ts":
-/*!*****************************************************!*\
-  !*** ./assets/js/pages/payment/hooks/useGetIban.ts ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return useGetIban; });
-/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-query */ "./node_modules/react-query/es/index.js");
-/* harmony import */ var _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @app/services/AxiosInstance */ "./assets/js/services/AxiosInstance.jsx");
-/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/constants */ "./assets/js/constants/index.ts");
-
-
-
-function useGetIban(_ref) {
-  var onSuccess = _ref.onSuccess,
-    onError = _ref.onError,
-    enabled = _ref.enabled;
-  return Object(react_query__WEBPACK_IMPORTED_MODULE_0__["useQuery"])('getIban', function () {
-    return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_1__["default"].get(_app_constants__WEBPACK_IMPORTED_MODULE_2__["API"].DOCAPOSTE.GET_CONTRACT_IBAN, {
-      params: {
-        enable_tracking: '1'
-      }
-    });
-  }, {
-    onSuccess: onSuccess,
-    onError: onError,
-    enabled: enabled
-  });
-}
-
-/***/ }),
-
-/***/ "./assets/js/pages/payment/hooks/useGetManagePayment.ts":
-/*!**************************************************************!*\
-  !*** ./assets/js/pages/payment/hooks/useGetManagePayment.ts ***!
-  \**************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return useGetManagePayment; });
-/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-query */ "./node_modules/react-query/es/index.js");
-/* harmony import */ var _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @app/services/AxiosInstance */ "./assets/js/services/AxiosInstance.jsx");
-/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/constants */ "./assets/js/constants/index.ts");
-/* harmony import */ var _app_pages_payment_steps_MyPaymentMode__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/pages/payment/steps/MyPaymentMode */ "./assets/js/pages/payment/steps/MyPaymentMode.tsx");
-
-
-
-
-function useGetManagePayment(_ref) {
-  var paymentMode = _ref.paymentMode,
-    eFacture = _ref.eFacture,
-    onSuccess = _ref.onSuccess,
-    onError = _ref.onError,
-    enabled = _ref.enabled;
-  return Object(react_query__WEBPACK_IMPORTED_MODULE_0__["useQuery"])('getManagePayment', function () {
-    return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_1__["default"].get(_app_constants__WEBPACK_IMPORTED_MODULE_2__["API"].PAYMENT.GET_MANAGE_PAYMENT, {
-      params: {
-        paymentMode: _app_pages_payment_steps_MyPaymentMode__WEBPACK_IMPORTED_MODULE_3__["PAYMENT_MODE_ACTION"][paymentMode],
-        eInvoice: eFacture
-      }
-    });
-  }, {
-    onSuccess: onSuccess,
-    onError: onError,
-    enabled: enabled
-  });
-}
-
-/***/ }),
-
-/***/ "./assets/js/pages/payment/hooks/useModeListPayment.ts":
-/*!*************************************************************!*\
-  !*** ./assets/js/pages/payment/hooks/useModeListPayment.ts ***!
-  \*************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return useModeListPayment; });
-/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-query */ "./node_modules/react-query/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/constants */ "./assets/js/constants/index.ts");
-/* harmony import */ var _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/services/AxiosInstance */ "./assets/js/services/AxiosInstance.jsx");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-function useModeListPayment() {
-  var _a;
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
-  var _useLocation = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useLocation"])(),
-    pathname = _useLocation.pathname;
-  var invoiceEfacturePath = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["generatePath"])(_app_constants__WEBPACK_IMPORTED_MODULE_2__["ROUTES"].ACCOUNT_INVOICES, {
-    modal: 'modale-e-facture'
-  });
-  var invoiceHistoryPath = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["generatePath"])(_app_constants__WEBPACK_IMPORTED_MODULE_2__["ROUTES"].ACCOUNT_INVOICES);
-  var pathNoRedirectError = [invoiceEfacturePath, invoiceHistoryPath];
-  var getModeListPayment = Object(react_query__WEBPACK_IMPORTED_MODULE_0__["useQuery"])('getModeListPayment', function () {
-    return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_3__["default"].get(_app_constants__WEBPACK_IMPORTED_MODULE_2__["API"].PAYMENT.GET_PAYMENT_MODE_LIST);
-  }, {
-    onError: function onError() {
-      if (pathNoRedirectError.includes(pathname)) {
-        return;
-      }
-      history.push(_app_constants__WEBPACK_IMPORTED_MODULE_2__["ROUTES"].PAYMENT.ERROR);
-    }
-  });
-  var _ref = ((_a = getModeListPayment === null || getModeListPayment === void 0 ? void 0 : getModeListPayment.data) === null || _a === void 0 ? void 0 : _a.data) || {},
-    modeListPaymentData = _ref.content;
-  // Get first payment equal to true
-  var _ref2 = modeListPaymentData || {},
-    _ref2$paymentModesLis = _ref2.paymentModesList,
-    paymentModesList = _ref2$paymentModesLis === void 0 ? {} : _ref2$paymentModesLis;
-  var _ref3 = Object.entries(paymentModesList).find(function (_ref5) {
-      var _ref6 = _slicedToArray(_ref5, 2),
-        v = _ref6[1];
-      return v;
-    }) || [null],
-    _ref4 = _slicedToArray(_ref3, 1),
-    promotedValue = _ref4[0];
-  return Object.assign(Object.assign({}, getModeListPayment), {
-    modeListPaymentData: modeListPaymentData,
-    promotedValue: promotedValue
-  });
-}
-
-/***/ }),
-
-/***/ "./assets/js/pages/payment/hooks/usePostDocapostContractIban.ts":
-/*!**********************************************************************!*\
-  !*** ./assets/js/pages/payment/hooks/usePostDocapostContractIban.ts ***!
-  \**********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return usePostDocapostContractIban; });
-/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-query */ "./node_modules/react-query/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/services/AxiosInstance */ "./assets/js/services/AxiosInstance.jsx");
-/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/constants */ "./assets/js/constants/index.ts");
-
-
-
-
-function usePostDocapostContractIban() {
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
-  return Object(react_query__WEBPACK_IMPORTED_MODULE_0__["useMutation"])(function (params) {
-    return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_2__["default"].post(_app_constants__WEBPACK_IMPORTED_MODULE_3__["API"].DOCAPOSTE.POST_IBAN, params);
-  }, {
-    onError: function onError() {
-      history.push({
-        pathname: _app_constants__WEBPACK_IMPORTED_MODULE_3__["ROUTES"].PAYMENT.ERROR_ETIP
-      });
-    }
-  });
-}
-
-/***/ }),
-
-/***/ "./assets/js/pages/payment/hooks/usePostPaymentMessage.ts":
-/*!****************************************************************!*\
-  !*** ./assets/js/pages/payment/hooks/usePostPaymentMessage.ts ***!
-  \****************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return usePostPaymentMessage; });
-/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-query */ "./node_modules/react-query/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/services/AxiosInstance */ "./assets/js/services/AxiosInstance.jsx");
-/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/constants */ "./assets/js/constants/index.ts");
-/* harmony import */ var _app_pages_payment_steps_MyPaymentMode__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/pages/payment/steps/MyPaymentMode */ "./assets/js/pages/payment/steps/MyPaymentMode.tsx");
-
-
-
-
-
-function usePostPaymentMessage(_ref) {
-  var managePayment = _ref.managePayment,
-    paymentMode = _ref.paymentMode,
-    eFacture = _ref.eFacture,
-    firstOrigin = _ref.firstOrigin;
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
-  return Object(react_query__WEBPACK_IMPORTED_MODULE_0__["useMutation"])(function (params) {
-    return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_2__["default"].post(_app_constants__WEBPACK_IMPORTED_MODULE_3__["API"].PAYMENT.POST_PAYMENT_MSG, params);
-  }, {
-    onSuccess: function onSuccess(_ref2, variables) {
-      var data = _ref2.data;
-      var _ref3 = data || '',
-        message = _ref3.message;
-      if (message !== _app_constants__WEBPACK_IMPORTED_MODULE_3__["CODES"].OK) {
-        history.push({
-          pathname: _app_constants__WEBPACK_IMPORTED_MODULE_3__["ROUTES"].PAYMENT.ERROR
-        });
-        return;
-      }
-      if (managePayment === null || managePayment === void 0 ? void 0 : managePayment.hasMandate) {
-        var search = eFacture ? "?payment_mode=" + paymentMode + "&e-facture=true&mandat=false" : "?payment_mode=" + paymentMode + "&mandat=false";
-        history.push({
-          pathname: _app_constants__WEBPACK_IMPORTED_MODULE_3__["ROUTES"].PAYMENT.CONFIRMATION,
-          search: search
-        });
-      } else {
-        var myPmtModeDatas = Object.assign({}, variables);
-        var regex = /((X{4} ){5})/g;
-        var isAnonIban = (variables.iban || '').match(regex);
-        if (variables.iban && !isAnonIban) {
-          var mergedIban = variables.iban;
-          var splitIban = mergedIban.match(/.{1,4}/g) || [];
-          splitIban.forEach(function (item, index) {
-            var key = 'iban_field_' + (index + 1);
-            myPmtModeDatas[key] = item;
-          });
-        }
-        var paymentModeUrl = "payment_mode=".concat(paymentMode);
-        var _search = eFacture ? "".concat(paymentModeUrl, "&e-facture=true") : paymentModeUrl;
-        history.push({
-          pathname: _app_constants__WEBPACK_IMPORTED_MODULE_3__["ROUTES"].PAYMENT.MY_PAYMENT_METHOD,
-          search: _search,
-          state: {
-            origin: _app_pages_payment_steps_MyPaymentMode__WEBPACK_IMPORTED_MODULE_4__["ORIGIN_MANAGE"],
-            firstOrigin: firstOrigin,
-            myPmtModeDatas: myPmtModeDatas
-          }
-        });
-      }
-    }
-  });
-}
-
-/***/ }),
-
-/***/ "./assets/js/pages/payment/hooks/useResetButtons.tsx":
-/*!***********************************************************!*\
-  !*** ./assets/js/pages/payment/hooks/useResetButtons.tsx ***!
-  \***********************************************************/
-/*! exports provided: useResetButtons */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useResetButtons", function() { return useResetButtons; });
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
-/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../constants */ "./assets/js/constants/index.ts");
-
-
-
-var useResetButtons = function useResetButtons() {
-  var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-  var previousButton = props.previousButton,
-    nextButton = props.nextButton;
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_0__["useHistory"])();
-  var _useTranslation = Object(react_i18next__WEBPACK_IMPORTED_MODULE_1__["useTranslation"])(),
-    t = _useTranslation.t;
-  var handlePreviousClick = function handlePreviousClick() {
-    history.push(_constants__WEBPACK_IMPORTED_MODULE_2__["ROUTES"].DASHBOARD);
-  };
-  var handleNextClick = function handleNextClick() {
-    var indexPayment = _constants__WEBPACK_IMPORTED_MODULE_2__["ROUTES"].PAYMENT_INDEX;
-    history.push(indexPayment);
-  };
-  var previousBtn = Object.assign({
-    label: t('managePayments.validate.button_dashboard'),
-    align: 'left',
-    onClick: handlePreviousClick,
-    enabled: true
-  }, previousButton);
-  var nextBtn = Object.assign({
-    label: t('managePayments.validate.button_reset_payment'),
-    align: 'right',
-    onClick: handleNextClick
-  }, nextButton);
-  return {
-    previousBtn: previousBtn,
-    nextBtn: nextBtn
-  };
-};
-
-/***/ }),
-
-/***/ "./assets/js/pages/payment/hooks/useSteps.tsx":
-/*!****************************************************!*\
-  !*** ./assets/js/pages/payment/hooks/useSteps.tsx ***!
-  \****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return useSteps; });
-/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @app/constants */ "./assets/js/constants/index.ts");
-/* harmony import */ var _app_pages_payment_steps_MyPaymentMode__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @app/pages/payment/steps/MyPaymentMode */ "./assets/js/pages/payment/steps/MyPaymentMode.tsx");
-/* harmony import */ var _app_pages_payment_steps_ConfirmationMandat__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/pages/payment/steps/ConfirmationMandat */ "./assets/js/pages/payment/steps/ConfirmationMandat.tsx");
-/* harmony import */ var _app_pages_payment_steps_Error__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/pages/payment/steps/Error */ "./assets/js/pages/payment/steps/Error.tsx");
-/* harmony import */ var _app_pages_payment_steps_ErrorCB__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/pages/payment/steps/ErrorCB */ "./assets/js/pages/payment/steps/ErrorCB.tsx");
-/* harmony import */ var _app_pages_payment_steps_ErrorEtip__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @app/pages/payment/steps/ErrorEtip */ "./assets/js/pages/payment/steps/ErrorEtip.tsx");
-/* harmony import */ var _app_pages_payment_steps_PromotionBlock__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @app/pages/payment/steps/PromotionBlock */ "./assets/js/pages/payment/steps/PromotionBlock.tsx");
-/* harmony import */ var _app_pages_payment_steps_UnavailablePmtMode__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @app/pages/payment/steps/UnavailablePmtMode */ "./assets/js/pages/payment/steps/UnavailablePmtMode.tsx");
-/* harmony import */ var _app_pages_payment_steps_SignMandate__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @app/pages/payment/steps/SignMandate */ "./assets/js/pages/payment/steps/SignMandate.tsx");
-/* harmony import */ var _app_pages_payment_steps_CancelCB__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @app/pages/payment/steps/CancelCB */ "./assets/js/pages/payment/steps/CancelCB.tsx");
-/* harmony import */ var _app_pages_payment_steps_SuccessCB__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @app/pages/payment/steps/SuccessCB */ "./assets/js/pages/payment/steps/SuccessCB.tsx");
-
-
-
-
-
-
-
-
-
-
-
-function useSteps() {
-  return [{
-    step: _app_pages_payment_steps_Error__WEBPACK_IMPORTED_MODULE_3__["Error"],
-    path: _app_constants__WEBPACK_IMPORTED_MODULE_0__["ROUTES"].PAYMENT.ERROR
-  }, {
-    step: _app_pages_payment_steps_ErrorEtip__WEBPACK_IMPORTED_MODULE_5__["ErrorEtip"],
-    path: _app_constants__WEBPACK_IMPORTED_MODULE_0__["ROUTES"].PAYMENT.ERROR_ETIP
-  }, {
-    step: _app_pages_payment_steps_SuccessCB__WEBPACK_IMPORTED_MODULE_10__["SuccessCB"],
-    path: _app_constants__WEBPACK_IMPORTED_MODULE_0__["ROUTES"].PAYMENT.CONFIRMATION_CB,
-    isSuccess: true
-  }, {
-    step: _app_pages_payment_steps_ErrorCB__WEBPACK_IMPORTED_MODULE_4__["ErrorCB"],
-    path: _app_constants__WEBPACK_IMPORTED_MODULE_0__["ROUTES"].PAYMENT.CONFIRMATION_CB_FAILED,
-    isSuccess: false
-  }, {
-    step: _app_pages_payment_steps_CancelCB__WEBPACK_IMPORTED_MODULE_9__["CancelCB"],
-    path: _app_constants__WEBPACK_IMPORTED_MODULE_0__["ROUTES"].PAYMENT.CANCEL_CB,
-    isSuccess: false
-  }, {
-    step: _app_pages_payment_steps_ConfirmationMandat__WEBPACK_IMPORTED_MODULE_2__["ConfirmationMandat"],
-    path: _app_constants__WEBPACK_IMPORTED_MODULE_0__["ROUTES"].PAYMENT.CONFIRMATION,
-    isSuccess: true,
-    hasSummaryBox: true,
-    isOpen: false
-  }, {
-    step: _app_pages_payment_steps_ConfirmationMandat__WEBPACK_IMPORTED_MODULE_2__["ConfirmationMandat"],
-    path: _app_constants__WEBPACK_IMPORTED_MODULE_0__["ROUTES"].PAYMENT.CONFIRMATION_WITHOUT_MANDAT,
-    hasSummaryBox: true,
-    isSuccess: false,
-    isOpen: false
-  }, {
-    step: _app_pages_payment_steps_MyPaymentMode__WEBPACK_IMPORTED_MODULE_1__["MyPaymentMode"],
-    path: _app_constants__WEBPACK_IMPORTED_MODULE_0__["ROUTES"].PAYMENT.ETIP,
-    hasSummaryBox: true,
-    isOpen: true
-  }, {
-    step: _app_pages_payment_steps_CancelCB__WEBPACK_IMPORTED_MODULE_9__["CancelCB"],
-    path: _app_constants__WEBPACK_IMPORTED_MODULE_0__["ROUTES"].PAYMENT.CANCEL_CB,
-    isSuccess: false
-  }, {
-    step: _app_pages_payment_steps_SignMandate__WEBPACK_IMPORTED_MODULE_8__["default"],
-    path: _app_constants__WEBPACK_IMPORTED_MODULE_0__["ROUTES"].PAYMENT.SIGN_MANDAT,
-    hasSummaryBox: true,
-    isOpen: false
-  }, {
-    step: _app_pages_payment_steps_UnavailablePmtMode__WEBPACK_IMPORTED_MODULE_7__["UnavailablePmtMode"],
-    path: _app_constants__WEBPACK_IMPORTED_MODULE_0__["ROUTES"].PAYMENT.UNAVAILABLE_PMT_MODE
-  }, {
-    step: _app_pages_payment_steps_PromotionBlock__WEBPACK_IMPORTED_MODULE_6__["PromotionBlock"],
-    path: _app_constants__WEBPACK_IMPORTED_MODULE_0__["ROUTES"].PAYMENT_INDEX
-  }, {
-    step: _app_pages_payment_steps_MyPaymentMode__WEBPACK_IMPORTED_MODULE_1__["MyPaymentMode"],
-    path: _app_constants__WEBPACK_IMPORTED_MODULE_0__["ROUTES"].PAYMENT.MY_PAYMENT_METHOD
-  }];
-}
-
-/***/ }),
-
-/***/ "./assets/js/pages/payment/index.tsx":
-/*!*******************************************!*\
-  !*** ./assets/js/pages/payment/index.tsx ***!
-  \*******************************************/
-/*! exports provided: PaymentContext, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PaymentContext", function() { return PaymentContext; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Payment; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @suezenv/react-theme-components */ "./node_modules/@suezenv/react-theme-components/build/index.js");
-/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _app_components_background_BackgroundBubbles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/components/background/BackgroundBubbles */ "./assets/js/components/background/BackgroundBubbles/index.tsx");
-/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
-/* harmony import */ var _app_hooks_useResponsive__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @app/hooks/useResponsive */ "./assets/js/hooks/useResponsive.ts");
-/* harmony import */ var _payments_manage_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./payments-manage.scss */ "./assets/js/pages/payment/payments-manage.scss");
-/* harmony import */ var _payments_manage_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_payments_manage_scss__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _app_pages_payment_PaymentStepper__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @app/pages/payment/PaymentStepper */ "./assets/js/pages/payment/PaymentStepper.tsx");
-/* harmony import */ var _hooks_useSteps__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./hooks/useSteps */ "./assets/js/pages/payment/hooks/useSteps.tsx");
-/* harmony import */ var _app_pages_payment_SummaryBox__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @app/pages/payment/SummaryBox */ "./assets/js/pages/payment/SummaryBox.tsx");
-/* harmony import */ var _app_constants_index__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @app/constants/index */ "./assets/js/constants/index.ts");
-/* harmony import */ var _app_pages_payment_steps_MyPaymentMode__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @app/pages/payment/steps/MyPaymentMode */ "./assets/js/pages/payment/steps/MyPaymentMode.tsx");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
-
-
-
-
-
-
-
-var PaymentContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext(null);
-function Payment() {
-  var _a, _b;
-  var _useTranslation = Object(react_i18next__WEBPACK_IMPORTED_MODULE_4__["useTranslation"])(),
-    t = _useTranslation.t;
-  var isMobile = Object(_app_hooks_useResponsive__WEBPACK_IMPORTED_MODULE_5__["useIsMobile"])();
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
-    _useState2 = _slicedToArray(_useState, 2),
-    managePayment = _useState2[0],
-    setManagePayment = _useState2[1];
-  var _useLocation = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useLocation"])(),
-    state = _useLocation.state,
-    search = _useLocation.search,
-    pathname = _useLocation.pathname;
-  var steps = Object(_hooks_useSteps__WEBPACK_IMPORTED_MODULE_8__["default"])();
-  var step = steps.find(function (step) {
-    return Array.isArray(step.path) ? step.path[0] === pathname : step.path === pathname;
-  });
-  var params = new URLSearchParams(search);
-  var hasSummaryBox = (_a = step === null || step === void 0 ? void 0 : step.hasSummaryBox) !== null && _a !== void 0 ? _a : pathname === _app_constants_index__WEBPACK_IMPORTED_MODULE_10__["ROUTES"].PAYMENT.MY_PAYMENT_METHOD && params.has('payment_mode');
-  var isOpen = (_b = step === null || step === void 0 ? void 0 : step.isOpen) !== null && _b !== void 0 ? _b : pathname === _app_constants_index__WEBPACK_IMPORTED_MODULE_10__["ROUTES"].PAYMENT.MY_PAYMENT_METHOD && params.has('payment_mode') && (state === null || state === void 0 ? void 0 : state.origin) !== _app_pages_payment_steps_MyPaymentMode__WEBPACK_IMPORTED_MODULE_11__["ORIGIN_MANAGE"];
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PaymentContext.Provider, {
-    value: {
-      managePayment: managePayment,
-      setManagePayment: setManagePayment
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_background_BackgroundBubbles__WEBPACK_IMPORTED_MODULE_3__["BackgroundBubbles"], {
-    id: "payment-manage-v3",
-    type: "payment"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_2__["SzTypographie"], {
-    variant: "H1",
-    size: isMobile ? 'L' : 'XL',
-    align: "center",
-    color: "light",
-    weight: "black",
-    className: "mb-4 text-uppercase"
-  }, t('payment.title')), hasSummaryBox && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_pages_payment_SummaryBox__WEBPACK_IMPORTED_MODULE_9__["SummaryBox"], {
-    isOpen: isOpen
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_pages_payment_PaymentStepper__WEBPACK_IMPORTED_MODULE_7__["default"], null)));
-}
-
-/***/ }),
-
-/***/ "./assets/js/pages/payment/payments-manage.scss":
-/*!******************************************************!*\
-  !*** ./assets/js/pages/payment/payments-manage.scss ***!
-  \******************************************************/
+/***/ "./node_modules/attr-accept/dist/es/index.js":
+/*!***************************************************!*\
+  !*** ./node_modules/attr-accept/dist/es/index.js ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-
-/***/ "./assets/js/pages/payment/steps/CancelCB.tsx":
-/*!****************************************************!*\
-  !*** ./assets/js/pages/payment/steps/CancelCB.tsx ***!
-  \****************************************************/
-/*! exports provided: CancelCB */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CancelCB", function() { return CancelCB; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/constants */ "./assets/js/constants/index.ts");
-/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
-/* harmony import */ var _app_components_Confirmation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/components/Confirmation */ "./assets/js/components/Confirmation/index.tsx");
-/* harmony import */ var interweave__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! interweave */ "./node_modules/interweave/esm/index.js");
-/* harmony import */ var _app_hooks_useInterweave__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @app/hooks/useInterweave */ "./assets/js/hooks/useInterweave.jsx");
-/* harmony import */ var _PaymentBox__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../PaymentBox */ "./assets/js/pages/payment/PaymentBox.tsx");
-/* harmony import */ var react_loading_skeleton__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-loading-skeleton */ "./node_modules/react-loading-skeleton/lib/index.js");
-/* harmony import */ var react_loading_skeleton__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _app_hooks_useResponsive__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @app/hooks/useResponsive */ "./assets/js/hooks/useResponsive.ts");
-/* harmony import */ var _hooks_useModeListPayment__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../hooks/useModeListPayment */ "./assets/js/pages/payment/hooks/useModeListPayment.ts");
 
 
+exports.__esModule = true;
 
+exports.default = function (file, acceptedFiles) {
+  if (file && acceptedFiles) {
+    var acceptedFilesArray = Array.isArray(acceptedFiles) ? acceptedFiles : acceptedFiles.split(',');
+    var fileName = file.name || '';
+    var mimeType = (file.type || '').toLowerCase();
+    var baseMimeType = mimeType.replace(/\/.*$/, '');
+    return acceptedFilesArray.some(function (type) {
+      var validType = type.trim().toLowerCase();
 
+      if (validType.charAt(0) === '.') {
+        return fileName.toLowerCase().endsWith(validType);
+      } else if (validType.endsWith('/*')) {
+        // This is something like a image/* mime type
+        return baseMimeType === validType.replace(/\/.*$/, '');
+      }
 
-
-
-
-
-
-
-var CancelCB = function CancelCB() {
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
-  var _useTranslation = Object(react_i18next__WEBPACK_IMPORTED_MODULE_3__["useTranslation"])(),
-    t = _useTranslation.t;
-  var isMobile = Object(_app_hooks_useResponsive__WEBPACK_IMPORTED_MODULE_9__["useIsMobile"])();
-  var _useLocation = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useLocation"])(),
-    state = _useLocation.state;
-  var _ref = state || '',
-    solde = _ref.solde;
-  var handlePreviousClick = function handlePreviousClick() {
-    history.push(_app_constants__WEBPACK_IMPORTED_MODULE_2__["ROUTES"].DASHBOARD);
-  };
-  var _useModeListPayment = Object(_hooks_useModeListPayment__WEBPACK_IMPORTED_MODULE_10__["default"])(),
-    modeListPaymentData = _useModeListPayment.modeListPaymentData,
-    isLoading = _useModeListPayment.isLoading;
-  var soldeApi = (modeListPaymentData === null || modeListPaymentData === void 0 ? void 0 : modeListPaymentData.balanceAmount) || '';
-  var handleNextClick = function handleNextClick() {
-    var indexPayment = _app_constants__WEBPACK_IMPORTED_MODULE_2__["ROUTES"].PAYMENT_INDEX;
-    history.push(indexPayment);
-  };
-  var previousButton = {
-    label: t('managePayments.validate.button_dashboard'),
-    align: 'left',
-    onClick: handlePreviousClick,
-    enabled: true
-  };
-  var nextButton = {
-    label: t('managePayments.validate.button_reset_payment'),
-    align: 'right',
-    onClick: handleNextClick
-  };
-  var _useInterweave = Object(_app_hooks_useInterweave__WEBPACK_IMPORTED_MODULE_6__["default"])(),
-    transform = _useInterweave.transform;
-  var descTransCancel = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(interweave__WEBPACK_IMPORTED_MODULE_5__["Markup"], {
-    transform: transform,
-    content: t('payment.confirmation_cb.message_cancel')
-  });
-  var amount = solde ? solde : soldeApi;
-  var keyCancel = amount ? 'cancel' : 'cancel_no_amount';
-  var title = t('payment.confirmation_cb.title_cancel', {
-    amount: amount,
-    context: keyCancel
-  });
-  if (isLoading) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PaymentBox__WEBPACK_IMPORTED_MODULE_7__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_8___default.a, {
-      width: isMobile ? 256 : 622,
-      height: 46,
-      className: "mb-3"
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_8___default.a, {
-      width: isMobile ? 256 : 622,
-      height: 150
-    }));
+      return mimeType === validType;
+    });
   }
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PaymentBox__WEBPACK_IMPORTED_MODULE_7__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_Confirmation__WEBPACK_IMPORTED_MODULE_4__["Confirmation"], {
-    isSuccess: false,
-    title: title,
-    desc: t('payment.confirmation_cb.message_cancel'),
-    descTransError: descTransCancel,
-    previousButton: previousButton,
-    nextButton: nextButton
-  }));
+
+  return true;
 };
 
 /***/ }),
 
-/***/ "./assets/js/pages/payment/steps/ConfirmationMandat.tsx":
+/***/ "./node_modules/file-selector/dist/es5/file-selector.js":
 /*!**************************************************************!*\
-  !*** ./assets/js/pages/payment/steps/ConfirmationMandat.tsx ***!
+  !*** ./node_modules/file-selector/dist/es5/file-selector.js ***!
   \**************************************************************/
-/*! exports provided: ConfirmationMandat */
+/*! exports provided: fromEvent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConfirmationMandat", function() { return ConfirmationMandat; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fromEvent", function() { return fromEvent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/file-selector/node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _file__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./file */ "./node_modules/file-selector/dist/es5/file.js");
+
+
+var FILES_TO_IGNORE = [
+    // Thumbnail cache files for macOS and Windows
+    '.DS_Store',
+    'Thumbs.db' // Windows
+];
+/**
+ * Convert a DragEvent's DataTrasfer object to a list of File objects
+ * NOTE: If some of the items are folders,
+ * everything will be flattened and placed in the same list but the paths will be kept as a {path} property.
+ *
+ * EXPERIMENTAL: A list of https://developer.mozilla.org/en-US/docs/Web/API/FileSystemHandle objects can also be passed as an arg
+ * and a list of File objects will be returned.
+ *
+ * @param evt
+ */
+function fromEvent(evt) {
+    return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function () {
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"])(this, function (_a) {
+            if (isObject(evt) && isDataTransfer(evt)) {
+                return [2 /*return*/, getDataTransferFiles(evt.dataTransfer, evt.type)];
+            }
+            else if (isChangeEvt(evt)) {
+                return [2 /*return*/, getInputFiles(evt)];
+            }
+            else if (Array.isArray(evt) && evt.every(function (item) { return 'getFile' in item && typeof item.getFile === 'function'; })) {
+                return [2 /*return*/, getFsHandleFiles(evt)];
+            }
+            return [2 /*return*/, []];
+        });
+    });
+}
+function isDataTransfer(value) {
+    return isObject(value.dataTransfer);
+}
+function isChangeEvt(value) {
+    return isObject(value) && isObject(value.target);
+}
+function isObject(v) {
+    return typeof v === 'object' && v !== null;
+}
+function getInputFiles(evt) {
+    return fromList(evt.target.files).map(function (file) { return Object(_file__WEBPACK_IMPORTED_MODULE_1__["toFileWithPath"])(file); });
+}
+// Ee expect each handle to be https://developer.mozilla.org/en-US/docs/Web/API/FileSystemFileHandle
+function getFsHandleFiles(handles) {
+    return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function () {
+        var files;
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"])(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, Promise.all(handles.map(function (h) { return h.getFile(); }))];
+                case 1:
+                    files = _a.sent();
+                    return [2 /*return*/, files.map(function (file) { return Object(_file__WEBPACK_IMPORTED_MODULE_1__["toFileWithPath"])(file); })];
+            }
+        });
+    });
+}
+function getDataTransferFiles(dt, type) {
+    return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function () {
+        var items, files;
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"])(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    if (dt === null) {
+                        return [2 /*return*/, []];
+                    }
+                    if (!dt.items) return [3 /*break*/, 2];
+                    items = fromList(dt.items)
+                        .filter(function (item) { return item.kind === 'file'; });
+                    // According to https://html.spec.whatwg.org/multipage/dnd.html#dndevents,
+                    // only 'dragstart' and 'drop' has access to the data (source node)
+                    if (type !== 'drop') {
+                        return [2 /*return*/, items];
+                    }
+                    return [4 /*yield*/, Promise.all(items.map(toFilePromises))];
+                case 1:
+                    files = _a.sent();
+                    return [2 /*return*/, noIgnoredFiles(flatten(files))];
+                case 2: return [2 /*return*/, noIgnoredFiles(fromList(dt.files)
+                        .map(function (file) { return Object(_file__WEBPACK_IMPORTED_MODULE_1__["toFileWithPath"])(file); }))];
+            }
+        });
+    });
+}
+function noIgnoredFiles(files) {
+    return files.filter(function (file) { return FILES_TO_IGNORE.indexOf(file.name) === -1; });
+}
+// IE11 does not support Array.from()
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from#Browser_compatibility
+// https://developer.mozilla.org/en-US/docs/Web/API/FileList
+// https://developer.mozilla.org/en-US/docs/Web/API/DataTransferItemList
+function fromList(items) {
+    if (items === null) {
+        return [];
+    }
+    var files = [];
+    // tslint:disable: prefer-for-of
+    for (var i = 0; i < items.length; i++) {
+        var file = items[i];
+        files.push(file);
+    }
+    return files;
+}
+// https://developer.mozilla.org/en-US/docs/Web/API/DataTransferItem
+function toFilePromises(item) {
+    if (typeof item.webkitGetAsEntry !== 'function') {
+        return fromDataTransferItem(item);
+    }
+    var entry = item.webkitGetAsEntry();
+    // Safari supports dropping an image node from a different window and can be retrieved using
+    // the DataTransferItem.getAsFile() API
+    // NOTE: FileSystemEntry.file() throws if trying to get the file
+    if (entry && entry.isDirectory) {
+        return fromDirEntry(entry);
+    }
+    return fromDataTransferItem(item);
+}
+function flatten(items) {
+    return items.reduce(function (acc, files) { return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__spread"])(acc, (Array.isArray(files) ? flatten(files) : [files])); }, []);
+}
+function fromDataTransferItem(item) {
+    var file = item.getAsFile();
+    if (!file) {
+        return Promise.reject(item + " is not a File");
+    }
+    var fwp = Object(_file__WEBPACK_IMPORTED_MODULE_1__["toFileWithPath"])(file);
+    return Promise.resolve(fwp);
+}
+// https://developer.mozilla.org/en-US/docs/Web/API/FileSystemEntry
+function fromEntry(entry) {
+    return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function () {
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"])(this, function (_a) {
+            return [2 /*return*/, entry.isDirectory ? fromDirEntry(entry) : fromFileEntry(entry)];
+        });
+    });
+}
+// https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryEntry
+function fromDirEntry(entry) {
+    var reader = entry.createReader();
+    return new Promise(function (resolve, reject) {
+        var entries = [];
+        function readEntries() {
+            var _this = this;
+            // https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryEntry/createReader
+            // https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryReader/readEntries
+            reader.readEntries(function (batch) { return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this, void 0, void 0, function () {
+                var files, err_1, items;
+                return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"])(this, function (_a) {
+                    switch (_a.label) {
+                        case 0:
+                            if (!!batch.length) return [3 /*break*/, 5];
+                            _a.label = 1;
+                        case 1:
+                            _a.trys.push([1, 3, , 4]);
+                            return [4 /*yield*/, Promise.all(entries)];
+                        case 2:
+                            files = _a.sent();
+                            resolve(files);
+                            return [3 /*break*/, 4];
+                        case 3:
+                            err_1 = _a.sent();
+                            reject(err_1);
+                            return [3 /*break*/, 4];
+                        case 4: return [3 /*break*/, 6];
+                        case 5:
+                            items = Promise.all(batch.map(fromEntry));
+                            entries.push(items);
+                            // Continue reading
+                            readEntries();
+                            _a.label = 6;
+                        case 6: return [2 /*return*/];
+                    }
+                });
+            }); }, function (err) {
+                reject(err);
+            });
+        }
+        readEntries();
+    });
+}
+// https://developer.mozilla.org/en-US/docs/Web/API/FileSystemFileEntry
+function fromFileEntry(entry) {
+    return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function () {
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"])(this, function (_a) {
+            return [2 /*return*/, new Promise(function (resolve, reject) {
+                    entry.file(function (file) {
+                        var fwp = Object(_file__WEBPACK_IMPORTED_MODULE_1__["toFileWithPath"])(file, entry.fullPath);
+                        resolve(fwp);
+                    }, function (err) {
+                        reject(err);
+                    });
+                })];
+        });
+    });
+}
+//# sourceMappingURL=file-selector.js.map
+
+/***/ }),
+
+/***/ "./node_modules/file-selector/dist/es5/file.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/file-selector/dist/es5/file.js ***!
+  \*****************************************************/
+/*! exports provided: COMMON_MIME_TYPES, toFileWithPath */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "COMMON_MIME_TYPES", function() { return COMMON_MIME_TYPES; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toFileWithPath", function() { return toFileWithPath; });
+var COMMON_MIME_TYPES = new Map([
+    // https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types
+    ['aac', 'audio/aac'],
+    ['abw', 'application/x-abiword'],
+    ['arc', 'application/x-freearc'],
+    ['avif', 'image/avif'],
+    ['avi', 'video/x-msvideo'],
+    ['azw', 'application/vnd.amazon.ebook'],
+    ['bin', 'application/octet-stream'],
+    ['bmp', 'image/bmp'],
+    ['bz', 'application/x-bzip'],
+    ['bz2', 'application/x-bzip2'],
+    ['cda', 'application/x-cdf'],
+    ['csh', 'application/x-csh'],
+    ['css', 'text/css'],
+    ['csv', 'text/csv'],
+    ['doc', 'application/msword'],
+    ['docx', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'],
+    ['eot', 'application/vnd.ms-fontobject'],
+    ['epub', 'application/epub+zip'],
+    ['gz', 'application/gzip'],
+    ['gif', 'image/gif'],
+    ['htm', 'text/html'],
+    ['html', 'text/html'],
+    ['ico', 'image/vnd.microsoft.icon'],
+    ['ics', 'text/calendar'],
+    ['jar', 'application/java-archive'],
+    ['jpeg', 'image/jpeg'],
+    ['jpg', 'image/jpeg'],
+    ['js', 'text/javascript'],
+    ['json', 'application/json'],
+    ['jsonld', 'application/ld+json'],
+    ['mid', 'audio/midi'],
+    ['midi', 'audio/midi'],
+    ['mjs', 'text/javascript'],
+    ['mp3', 'audio/mpeg'],
+    ['mp4', 'video/mp4'],
+    ['mpeg', 'video/mpeg'],
+    ['mpkg', 'application/vnd.apple.installer+xml'],
+    ['odp', 'application/vnd.oasis.opendocument.presentation'],
+    ['ods', 'application/vnd.oasis.opendocument.spreadsheet'],
+    ['odt', 'application/vnd.oasis.opendocument.text'],
+    ['oga', 'audio/ogg'],
+    ['ogv', 'video/ogg'],
+    ['ogx', 'application/ogg'],
+    ['opus', 'audio/opus'],
+    ['otf', 'font/otf'],
+    ['png', 'image/png'],
+    ['pdf', 'application/pdf'],
+    ['php', 'application/x-httpd-php'],
+    ['ppt', 'application/vnd.ms-powerpoint'],
+    ['pptx', 'application/vnd.openxmlformats-officedocument.presentationml.presentation'],
+    ['rar', 'application/vnd.rar'],
+    ['rtf', 'application/rtf'],
+    ['sh', 'application/x-sh'],
+    ['svg', 'image/svg+xml'],
+    ['swf', 'application/x-shockwave-flash'],
+    ['tar', 'application/x-tar'],
+    ['tif', 'image/tiff'],
+    ['tiff', 'image/tiff'],
+    ['ts', 'video/mp2t'],
+    ['ttf', 'font/ttf'],
+    ['txt', 'text/plain'],
+    ['vsd', 'application/vnd.visio'],
+    ['wav', 'audio/wav'],
+    ['weba', 'audio/webm'],
+    ['webm', 'video/webm'],
+    ['webp', 'image/webp'],
+    ['woff', 'font/woff'],
+    ['woff2', 'font/woff2'],
+    ['xhtml', 'application/xhtml+xml'],
+    ['xls', 'application/vnd.ms-excel'],
+    ['xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'],
+    ['xml', 'application/xml'],
+    ['xul', 'application/vnd.mozilla.xul+xml'],
+    ['zip', 'application/zip'],
+    ['7z', 'application/x-7z-compressed'],
+    // Others
+    ['mkv', 'video/x-matroska'],
+    ['mov', 'video/quicktime'],
+    ['msg', 'application/vnd.ms-outlook']
+]);
+function toFileWithPath(file, path) {
+    var f = withMimeType(file);
+    if (typeof f.path !== 'string') { // on electron, path is already set to the absolute path
+        var webkitRelativePath = file.webkitRelativePath;
+        Object.defineProperty(f, 'path', {
+            value: typeof path === 'string'
+                ? path
+                // If <input webkitdirectory> is set,
+                // the File will have a {webkitRelativePath} property
+                // https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/webkitdirectory
+                : typeof webkitRelativePath === 'string' && webkitRelativePath.length > 0
+                    ? webkitRelativePath
+                    : file.name,
+            writable: false,
+            configurable: false,
+            enumerable: true
+        });
+    }
+    return f;
+}
+function withMimeType(file) {
+    var name = file.name;
+    var hasExtension = name && name.lastIndexOf('.') !== -1;
+    if (hasExtension && !file.type) {
+        var ext = name.split('.')
+            .pop().toLowerCase();
+        var type = COMMON_MIME_TYPES.get(ext);
+        if (type) {
+            Object.defineProperty(file, 'type', {
+                value: type,
+                writable: false,
+                configurable: false,
+                enumerable: true
+            });
+        }
+    }
+    return file;
+}
+//# sourceMappingURL=file.js.map
+
+/***/ }),
+
+/***/ "./node_modules/file-selector/dist/es5/index.js":
+/*!******************************************************!*\
+  !*** ./node_modules/file-selector/dist/es5/index.js ***!
+  \******************************************************/
+/*! exports provided: fromEvent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _file_selector__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./file-selector */ "./node_modules/file-selector/dist/es5/file-selector.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "fromEvent", function() { return _file_selector__WEBPACK_IMPORTED_MODULE_0__["fromEvent"]; });
+
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/file-selector/node_modules/tslib/tslib.es6.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/file-selector/node_modules/tslib/tslib.es6.js ***!
+  \********************************************************************/
+/*! exports provided: __extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __createBinding, __exportStar, __values, __read, __spread, __spreadArrays, __spreadArray, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault, __classPrivateFieldGet, __classPrivateFieldSet, __classPrivateFieldIn */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__extends", function() { return __extends; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__assign", function() { return __assign; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__rest", function() { return __rest; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__decorate", function() { return __decorate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__param", function() { return __param; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__metadata", function() { return __metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__awaiter", function() { return __awaiter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__generator", function() { return __generator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__createBinding", function() { return __createBinding; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__exportStar", function() { return __exportStar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__values", function() { return __values; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__read", function() { return __read; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spread", function() { return __spread; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spreadArrays", function() { return __spreadArrays; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spreadArray", function() { return __spreadArray; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__await", function() { return __await; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncGenerator", function() { return __asyncGenerator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncDelegator", function() { return __asyncDelegator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncValues", function() { return __asyncValues; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__makeTemplateObject", function() { return __makeTemplateObject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importStar", function() { return __importStar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importDefault", function() { return __importDefault; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__classPrivateFieldGet", function() { return __classPrivateFieldGet; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__classPrivateFieldSet", function() { return __classPrivateFieldSet; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__classPrivateFieldIn", function() { return __classPrivateFieldIn; });
+/******************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+/* global Reflect, Promise */
+
+var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+    return extendStatics(d, b);
+};
+
+function __extends(d, b) {
+    if (typeof b !== "function" && b !== null)
+        throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+    extendStatics(d, b);
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+}
+
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    }
+    return __assign.apply(this, arguments);
+}
+
+function __rest(s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+}
+
+function __decorate(decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+}
+
+function __param(paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+}
+
+function __metadata(metadataKey, metadataValue) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+}
+
+function __awaiter(thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+}
+
+function __generator(thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (g && (g = 0, op[0] && (_ = 0)), _) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+}
+
+var __createBinding = Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+        desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+});
+
+function __exportStar(m, o) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) __createBinding(o, m, p);
+}
+
+function __values(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function () {
+            if (o && i >= o.length) o = void 0;
+            return { value: o && o[i++], done: !o };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+}
+
+function __read(o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+}
+
+/** @deprecated */
+function __spread() {
+    for (var ar = [], i = 0; i < arguments.length; i++)
+        ar = ar.concat(__read(arguments[i]));
+    return ar;
+}
+
+/** @deprecated */
+function __spreadArrays() {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+}
+
+function __spreadArray(to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+}
+
+function __await(v) {
+    return this instanceof __await ? (this.v = v, this) : new __await(v);
+}
+
+function __asyncGenerator(thisArg, _arguments, generator) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var g = generator.apply(thisArg, _arguments || []), i, q = [];
+    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
+    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
+    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
+    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
+    function fulfill(value) { resume("next", value); }
+    function reject(value) { resume("throw", value); }
+    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
+}
+
+function __asyncDelegator(o) {
+    var i, p;
+    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
+    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
+}
+
+function __asyncValues(o) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var m = o[Symbol.asyncIterator], i;
+    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
+    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
+    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
+}
+
+function __makeTemplateObject(cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+
+var __setModuleDefault = Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+};
+
+function __importStar(mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+}
+
+function __importDefault(mod) {
+    return (mod && mod.__esModule) ? mod : { default: mod };
+}
+
+function __classPrivateFieldGet(receiver, state, kind, f) {
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
+    return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
+}
+
+function __classPrivateFieldSet(receiver, state, value, kind, f) {
+    if (kind === "m") throw new TypeError("Private method is not writable");
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
+    return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
+}
+
+function __classPrivateFieldIn(state, receiver) {
+    if (receiver === null || (typeof receiver !== "object" && typeof receiver !== "function")) throw new TypeError("Cannot use 'in' operator on non-object");
+    return typeof state === "function" ? receiver === state : state.has(receiver);
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/react-dropzone/dist/es/index.js":
+/*!******************************************************!*\
+  !*** ./node_modules/react-dropzone/dist/es/index.js ***!
+  \******************************************************/
+/*! exports provided: default, useDropzone, ErrorCode */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useDropzone", function() { return useDropzone; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/constants */ "./assets/js/constants/index.ts");
-/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
-/* harmony import */ var _app_components_Confirmation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/components/Confirmation */ "./assets/js/components/Confirmation/index.tsx");
-/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-query */ "./node_modules/react-query/es/index.js");
-/* harmony import */ var _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @app/services/AxiosInstance */ "./assets/js/services/AxiosInstance.jsx");
-/* harmony import */ var react_loading_skeleton__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-loading-skeleton */ "./node_modules/react-loading-skeleton/lib/index.js");
-/* harmony import */ var react_loading_skeleton__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _app_hooks_useResponsive__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @app/hooks/useResponsive */ "./assets/js/hooks/useResponsive.ts");
-/* harmony import */ var _app_pages_payment_hooks_usePaymentParams__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @app/pages/payment/hooks/usePaymentParams */ "./assets/js/pages/payment/hooks/usePaymentParams.ts");
-/* harmony import */ var _PaymentBox__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../PaymentBox */ "./assets/js/pages/payment/PaymentBox.tsx");
-/* harmony import */ var _app_pages_payment_hooks_useGetDocapostMandateDownload__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @app/pages/payment/hooks/useGetDocapostMandateDownload */ "./assets/js/pages/payment/hooks/useGetDocapostMandateDownload.ts");
-/* harmony import */ var _app_hooks__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @app/hooks */ "./assets/js/hooks/index.ts");
-/* harmony import */ var _app_hooks_useGA_tags_payment__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @app/hooks/useGA/tags/payment */ "./assets/js/hooks/useGA/tags/payment.ts");
-/* harmony import */ var _app_hooks_useQueryObserver__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @app/hooks/useQueryObserver */ "./assets/js/hooks/useQueryObserver.ts");
-/* harmony import */ var _app_AppContext__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @app/AppContext */ "./assets/js/AppContext.tsx");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var file_selector__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! file-selector */ "./node_modules/file-selector/dist/es5/index.js");
+/* harmony import */ var _utils_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils/index */ "./node_modules/react-dropzone/dist/es/utils/index.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ErrorCode", function() { return _utils_index__WEBPACK_IMPORTED_MODULE_3__["ErrorCode"]; });
+
+var _excluded = ["children"],
+    _excluded2 = ["open"],
+    _excluded3 = ["refKey", "role", "onKeyDown", "onFocus", "onBlur", "onClick", "onDragEnter", "onDragOver", "onDragLeave", "onDrop"],
+    _excluded4 = ["refKey", "onChange", "onClick"];
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+/* eslint prefer-template: 0 */
 
 
 
 
+/**
+ * Convenience wrapper component for the `useDropzone` hook
+ *
+ * ```jsx
+ * <Dropzone>
+ *   {({getRootProps, getInputProps}) => (
+ *     <div {...getRootProps()}>
+ *       <input {...getInputProps()} />
+ *       <p>Drag 'n' drop some files here, or click to select files</p>
+ *     </div>
+ *   )}
+ * </Dropzone>
+ * ```
+ */
 
+var Dropzone = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(function (_ref, ref) {
+  var children = _ref.children,
+      params = _objectWithoutProperties(_ref, _excluded);
 
+  var _useDropzone = useDropzone(params),
+      open = _useDropzone.open,
+      props = _objectWithoutProperties(_useDropzone, _excluded2);
 
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useImperativeHandle"])(ref, function () {
+    return {
+      open: open
+    };
+  }, [open]); // TODO: Figure out why react-styleguidist cannot create docs if we don't return a jsx element
 
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, children(_objectSpread(_objectSpread({}, props), {}, {
+    open: open
+  })));
+});
+Dropzone.displayName = 'Dropzone'; // Add default props for react-docgen
 
+var defaultProps = {
+  disabled: false,
+  getFilesFromEvent: file_selector__WEBPACK_IMPORTED_MODULE_2__["fromEvent"],
+  maxSize: Infinity,
+  minSize: 0,
+  multiple: true,
+  maxFiles: 0,
+  preventDropOnDocument: true,
+  noClick: false,
+  noKeyboard: false,
+  noDrag: false,
+  noDragEventsBubbling: false,
+  validator: null,
+  useFsAccessApi: false
+};
+Dropzone.defaultProps = defaultProps;
+Dropzone.propTypes = {
+  /**
+   * Render function that exposes the dropzone state and prop getter fns
+   *
+   * @param {object} params
+   * @param {Function} params.getRootProps Returns the props you should apply to the root drop container you render
+   * @param {Function} params.getInputProps Returns the props you should apply to hidden file input you render
+   * @param {Function} params.open Open the native file selection dialog
+   * @param {boolean} params.isFocused Dropzone area is in focus
+   * @param {boolean} params.isFileDialogActive File dialog is opened
+   * @param {boolean} params.isDragActive Active drag is in progress
+   * @param {boolean} params.isDragAccept Dragged files are accepted
+   * @param {boolean} params.isDragReject Some dragged files are rejected
+   * @param {File[]} params.draggedFiles Files in active drag
+   * @param {File[]} params.acceptedFiles Accepted files
+   * @param {FileRejection[]} params.fileRejections Rejected files and why they were rejected
+   */
+  children: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
 
+  /**
+   * Set accepted file types.
+   * See https://github.com/okonet/attr-accept for more information.
+   * Keep in mind that mime type determination is not reliable across platforms. CSV files,
+   * for example, are reported as text/plain under macOS but as application/vnd.ms-excel under
+   * Windows. In some cases there might not be a mime type set at all.
+   * See: https://github.com/react-dropzone/react-dropzone/issues/276
+   */
+  accept: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string)]),
 
+  /**
+   * Allow drag 'n' drop (or selection from the file dialog) of multiple files
+   */
+  multiple: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
 
+  /**
+   * If false, allow dropped items to take over the current browser window
+   */
+  preventDropOnDocument: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
 
+  /**
+   * If true, disables click to open the native file selection dialog
+   */
+  noClick: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
 
+  /**
+   * If true, disables SPACE/ENTER to open the native file selection dialog.
+   * Note that it also stops tracking the focus state.
+   */
+  noKeyboard: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
 
+  /**
+   * If true, disables drag 'n' drop
+   */
+  noDrag: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
 
-var ConfirmationMandat = function ConfirmationMandat(_ref) {
-  var isSuccess = _ref.isSuccess;
-  var _a, _b, _c;
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
-  var isMobile = Object(_app_hooks_useResponsive__WEBPACK_IMPORTED_MODULE_8__["useIsMobile"])();
-  var _useTranslation = Object(react_i18next__WEBPACK_IMPORTED_MODULE_3__["useTranslation"])(),
-    t = _useTranslation.t;
-  var _useGA = Object(_app_hooks__WEBPACK_IMPORTED_MODULE_12__["useGA"])(),
-    track = _useGA.track;
-  var _usePaymentParams = Object(_app_pages_payment_hooks_usePaymentParams__WEBPACK_IMPORTED_MODULE_9__["default"])(),
-    paymentMode = _usePaymentParams.paymentMode,
-    eFacture = _usePaymentParams.eFacture,
-    isWithMandat = _usePaymentParams.isWithMandat;
-  var isEtip = paymentMode === 'etip';
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_app_AppContext__WEBPACK_IMPORTED_MODULE_15__["AppContext"]),
-    payment = _useContext.payment;
-  var handlePreviousClick = function handlePreviousClick() {
-    history.push(_app_constants__WEBPACK_IMPORTED_MODULE_2__["ROUTES"].DASHBOARD);
-  };
-  var _useQuery = Object(react_query__WEBPACK_IMPORTED_MODULE_5__["useQuery"])('postPaymentEInvoice', function () {
-      return _app_services_AxiosInstance__WEBPACK_IMPORTED_MODULE_6__["default"].post(_app_constants__WEBPACK_IMPORTED_MODULE_2__["API"].PAYMENT.POST_PAYMENT_E_INVOICE);
-    }, {
-      enabled: eFacture
-    }),
-    dataPostPmt = _useQuery.data,
-    loadIngEfacture = _useQuery.isLoading,
-    isError = _useQuery.isError;
-  var message = ((_a = dataPostPmt === null || dataPostPmt === void 0 ? void 0 : dataPostPmt.data) === null || _a === void 0 ? void 0 : _a.message) || '';
-  var messageNotOk = dataPostPmt && message !== _app_constants__WEBPACK_IMPORTED_MODULE_2__["CODES"].PAYMENT_E_INVOICE_OK;
-  var title = t('payment.confirmation.title', {
-    context: isEtip ? 'etip' : ''
-  });
-  var eInvoiceDesc = t('payment.confirmation.einvoice', {
-    context: messageNotOk || isError ? 'failed' : 'success'
-  });
-  var eTipDesc = t('payment.confirmation.etip_message', {
-    context: isWithMandat ? 'mandate' : 'no_mandate'
-  });
-  var description = eFacture ? eInvoiceDesc : isEtip ? eTipDesc : t('payment.confirmation.message');
-  var pathDownloadMandate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["generatePath"])(_app_constants__WEBPACK_IMPORTED_MODULE_2__["ROUTES"].DOWNLOAD_MANDATE_PDF);
-  var _useGetDocapostMandat = Object(_app_pages_payment_hooks_useGetDocapostMandateDownload__WEBPACK_IMPORTED_MODULE_11__["default"])(),
-    isLoadingMandate = _useGetDocapostMandat.isLoading,
-    mutate = _useGetDocapostMandat.mutate;
-  var handleNextClick = function handleNextClick() {
-    if (isWithMandat) {
-      if (isEtip) {
-        mutate();
-      } else {
-        window.open(pathDownloadMandate, '_blank');
-      }
-    } else {
-      history.push(_app_constants__WEBPACK_IMPORTED_MODULE_2__["ROUTES"].DASHBOARD);
+  /**
+   * If true, stops drag event propagation to parents
+   */
+  noDragEventsBubbling: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+
+  /**
+   * Minimum file size (in bytes)
+   */
+  minSize: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
+
+  /**
+   * Maximum file size (in bytes)
+   */
+  maxSize: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
+
+  /**
+   * Maximum accepted number of files
+   * The default value is 0 which means there is no limitation to how many files are accepted.
+   */
+  maxFiles: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
+
+  /**
+   * Enable/disable the dropzone
+   */
+  disabled: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+
+  /**
+   * Use this to provide a custom file aggregator
+   *
+   * @param {(DragEvent|Event)} event A drag event or input change event (if files were selected via the file dialog)
+   */
+  getFilesFromEvent: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+
+  /**
+   * Cb for when closing the file dialog with no selection
+   */
+  onFileDialogCancel: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+
+  /**
+   * Cb for when opening the file dialog
+   */
+  onFileDialogOpen: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+
+  /**
+   * Set to true to use the https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API
+   * to open the file picker instead of using an `<input type="file">` click event.
+   */
+  useFsAccessApi: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+
+  /**
+   * Cb for when the `dragenter` event occurs.
+   *
+   * @param {DragEvent} event
+   */
+  onDragEnter: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+
+  /**
+   * Cb for when the `dragleave` event occurs
+   *
+   * @param {DragEvent} event
+   */
+  onDragLeave: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+
+  /**
+   * Cb for when the `dragover` event occurs
+   *
+   * @param {DragEvent} event
+   */
+  onDragOver: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+
+  /**
+   * Cb for when the `drop` event occurs.
+   * Note that this callback is invoked after the `getFilesFromEvent` callback is done.
+   *
+   * Files are accepted or rejected based on the `accept`, `multiple`, `minSize` and `maxSize` props.
+   * `accept` must be a valid [MIME type](http://www.iana.org/assignments/media-types/media-types.xhtml) according to [input element specification](https://www.w3.org/wiki/HTML/Elements/input/file) or a valid file extension.
+   * If `multiple` is set to false and additional files are dropped,
+   * all files besides the first will be rejected.
+   * Any file which does not have a size in the [`minSize`, `maxSize`] range, will be rejected as well.
+   *
+   * Note that the `onDrop` callback will always be invoked regardless if the dropped files were accepted or rejected.
+   * If you'd like to react to a specific scenario, use the `onDropAccepted`/`onDropRejected` props.
+   *
+   * `onDrop` will provide you with an array of [File](https://developer.mozilla.org/en-US/docs/Web/API/File) objects which you can then process and send to a server.
+   * For example, with [SuperAgent](https://github.com/visionmedia/superagent) as a http/ajax library:
+   *
+   * ```js
+   * function onDrop(acceptedFiles) {
+   *   const req = request.post('/upload')
+   *   acceptedFiles.forEach(file => {
+   *     req.attach(file.name, file)
+   *   })
+   *   req.end(callback)
+   * }
+   * ```
+   *
+   * @param {File[]} acceptedFiles
+   * @param {FileRejection[]} fileRejections
+   * @param {(DragEvent|Event)} event A drag event or input change event (if files were selected via the file dialog)
+   */
+  onDrop: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+
+  /**
+   * Cb for when the `drop` event occurs.
+   * Note that if no files are accepted, this callback is not invoked.
+   *
+   * @param {File[]} files
+   * @param {(DragEvent|Event)} event
+   */
+  onDropAccepted: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+
+  /**
+   * Cb for when the `drop` event occurs.
+   * Note that if no files are rejected, this callback is not invoked.
+   *
+   * @param {FileRejection[]} fileRejections
+   * @param {(DragEvent|Event)} event
+   */
+  onDropRejected: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+
+  /**
+   * Custom validation function
+   * @param {File} file
+   * @returns {FileError|FileError[]}
+   */
+  validator: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func
+};
+/* harmony default export */ __webpack_exports__["default"] = (Dropzone);
+/**
+ * A function that is invoked for the `dragenter`,
+ * `dragover` and `dragleave` events.
+ * It is not invoked if the items are not files (such as link, text, etc.).
+ *
+ * @callback dragCb
+ * @param {DragEvent} event
+ */
+
+/**
+ * A function that is invoked for the `drop` or input change event.
+ * It is not invoked if the items are not files (such as link, text, etc.).
+ *
+ * @callback dropCb
+ * @param {File[]} acceptedFiles List of accepted files
+ * @param {FileRejection[]} fileRejections List of rejected files and why they were rejected
+ * @param {(DragEvent|Event)} event A drag event or input change event (if files were selected via the file dialog)
+ */
+
+/**
+ * A function that is invoked for the `drop` or input change event.
+ * It is not invoked if the items are files (such as link, text, etc.).
+ *
+ * @callback dropAcceptedCb
+ * @param {File[]} files List of accepted files that meet the given criteria
+ * (`accept`, `multiple`, `minSize`, `maxSize`)
+ * @param {(DragEvent|Event)} event A drag event or input change event (if files were selected via the file dialog)
+ */
+
+/**
+ * A function that is invoked for the `drop` or input change event.
+ *
+ * @callback dropRejectedCb
+ * @param {File[]} files List of rejected files that do not meet the given criteria
+ * (`accept`, `multiple`, `minSize`, `maxSize`)
+ * @param {(DragEvent|Event)} event A drag event or input change event (if files were selected via the file dialog)
+ */
+
+/**
+ * A function that is used aggregate files,
+ * in a asynchronous fashion, from drag or input change events.
+ *
+ * @callback getFilesFromEvent
+ * @param {(DragEvent|Event)} event A drag event or input change event (if files were selected via the file dialog)
+ * @returns {(File[]|Promise<File[]>)}
+ */
+
+/**
+ * An object with the current dropzone state and some helper functions.
+ *
+ * @typedef {object} DropzoneState
+ * @property {Function} getRootProps Returns the props you should apply to the root drop container you render
+ * @property {Function} getInputProps Returns the props you should apply to hidden file input you render
+ * @property {Function} open Open the native file selection dialog
+ * @property {boolean} isFocused Dropzone area is in focus
+ * @property {boolean} isFileDialogActive File dialog is opened
+ * @property {boolean} isDragActive Active drag is in progress
+ * @property {boolean} isDragAccept Dragged files are accepted
+ * @property {boolean} isDragReject Some dragged files are rejected
+ * @property {File[]} draggedFiles Files in active drag
+ * @property {File[]} acceptedFiles Accepted files
+ * @property {FileRejection[]} fileRejections Rejected files and why they were rejected
+ */
+
+var initialState = {
+  isFocused: false,
+  isFileDialogActive: false,
+  isDragActive: false,
+  isDragAccept: false,
+  isDragReject: false,
+  draggedFiles: [],
+  acceptedFiles: [],
+  fileRejections: []
+};
+/**
+ * A React hook that creates a drag 'n' drop area.
+ *
+ * ```jsx
+ * function MyDropzone(props) {
+ *   const {getRootProps, getInputProps} = useDropzone({
+ *     onDrop: acceptedFiles => {
+ *       // do something with the File objects, e.g. upload to some server
+ *     }
+ *   });
+ *   return (
+ *     <div {...getRootProps()}>
+ *       <input {...getInputProps()} />
+ *       <p>Drag and drop some files here, or click to select files</p>
+ *     </div>
+ *   )
+ * }
+ * ```
+ *
+ * @function useDropzone
+ *
+ * @param {object} props
+ * @param {string|string[]} [props.accept] Set accepted file types.
+ * See https://github.com/okonet/attr-accept for more information.
+ * Keep in mind that mime type determination is not reliable across platforms. CSV files,
+ * for example, are reported as text/plain under macOS but as application/vnd.ms-excel under
+ * Windows. In some cases there might not be a mime type set at all.
+ * See: https://github.com/react-dropzone/react-dropzone/issues/276
+ * @param {boolean} [props.multiple=true] Allow drag 'n' drop (or selection from the file dialog) of multiple files
+ * @param {boolean} [props.preventDropOnDocument=true] If false, allow dropped items to take over the current browser window
+ * @param {boolean} [props.noClick=false] If true, disables click to open the native file selection dialog
+ * @param {boolean} [props.noKeyboard=false] If true, disables SPACE/ENTER to open the native file selection dialog.
+ * Note that it also stops tracking the focus state.
+ * @param {boolean} [props.noDrag=false] If true, disables drag 'n' drop
+ * @param {boolean} [props.noDragEventsBubbling=false] If true, stops drag event propagation to parents
+ * @param {number} [props.minSize=0] Minimum file size (in bytes)
+ * @param {number} [props.maxSize=Infinity] Maximum file size (in bytes)
+ * @param {boolean} [props.disabled=false] Enable/disable the dropzone
+ * @param {getFilesFromEvent} [props.getFilesFromEvent] Use this to provide a custom file aggregator
+ * @param {Function} [props.onFileDialogCancel] Cb for when closing the file dialog with no selection
+ * @param {boolean} [props.useFsAccessApi] Set to true to use the https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API
+ * to open the file picker instead of using an `<input type="file">` click event.
+ * @param {Function} [props.onFileDialogOpen] Cb for when opening the file dialog
+ * @param {dragCb} [props.onDragEnter] Cb for when the `dragenter` event occurs.
+ * @param {dragCb} [props.onDragLeave] Cb for when the `dragleave` event occurs
+ * @param {dragCb} [props.onDragOver] Cb for when the `dragover` event occurs
+ * @param {dropCb} [props.onDrop] Cb for when the `drop` event occurs.
+ * Note that this callback is invoked after the `getFilesFromEvent` callback is done.
+ *
+ * Files are accepted or rejected based on the `accept`, `multiple`, `minSize` and `maxSize` props.
+ * `accept` must be a valid [MIME type](http://www.iana.org/assignments/media-types/media-types.xhtml) according to [input element specification](https://www.w3.org/wiki/HTML/Elements/input/file) or a valid file extension.
+ * If `multiple` is set to false and additional files are dropped,
+ * all files besides the first will be rejected.
+ * Any file which does not have a size in the [`minSize`, `maxSize`] range, will be rejected as well.
+ *
+ * Note that the `onDrop` callback will always be invoked regardless if the dropped files were accepted or rejected.
+ * If you'd like to react to a specific scenario, use the `onDropAccepted`/`onDropRejected` props.
+ *
+ * `onDrop` will provide you with an array of [File](https://developer.mozilla.org/en-US/docs/Web/API/File) objects which you can then process and send to a server.
+ * For example, with [SuperAgent](https://github.com/visionmedia/superagent) as a http/ajax library:
+ *
+ * ```js
+ * function onDrop(acceptedFiles) {
+ *   const req = request.post('/upload')
+ *   acceptedFiles.forEach(file => {
+ *     req.attach(file.name, file)
+ *   })
+ *   req.end(callback)
+ * }
+ * ```
+ * @param {dropAcceptedCb} [props.onDropAccepted]
+ * @param {dropRejectedCb} [props.onDropRejected]
+ *
+ * @returns {DropzoneState}
+ */
+
+function useDropzone() {
+  var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+  var _defaultProps$options = _objectSpread(_objectSpread({}, defaultProps), options),
+      accept = _defaultProps$options.accept,
+      disabled = _defaultProps$options.disabled,
+      getFilesFromEvent = _defaultProps$options.getFilesFromEvent,
+      maxSize = _defaultProps$options.maxSize,
+      minSize = _defaultProps$options.minSize,
+      multiple = _defaultProps$options.multiple,
+      maxFiles = _defaultProps$options.maxFiles,
+      onDragEnter = _defaultProps$options.onDragEnter,
+      onDragLeave = _defaultProps$options.onDragLeave,
+      onDragOver = _defaultProps$options.onDragOver,
+      onDrop = _defaultProps$options.onDrop,
+      onDropAccepted = _defaultProps$options.onDropAccepted,
+      onDropRejected = _defaultProps$options.onDropRejected,
+      onFileDialogCancel = _defaultProps$options.onFileDialogCancel,
+      onFileDialogOpen = _defaultProps$options.onFileDialogOpen,
+      useFsAccessApi = _defaultProps$options.useFsAccessApi,
+      preventDropOnDocument = _defaultProps$options.preventDropOnDocument,
+      noClick = _defaultProps$options.noClick,
+      noKeyboard = _defaultProps$options.noKeyboard,
+      noDrag = _defaultProps$options.noDrag,
+      noDragEventsBubbling = _defaultProps$options.noDragEventsBubbling,
+      validator = _defaultProps$options.validator;
+
+  var onFileDialogOpenCb = Object(react__WEBPACK_IMPORTED_MODULE_0__["useMemo"])(function () {
+    return typeof onFileDialogOpen === 'function' ? onFileDialogOpen : noop;
+  }, [onFileDialogOpen]);
+  var onFileDialogCancelCb = Object(react__WEBPACK_IMPORTED_MODULE_0__["useMemo"])(function () {
+    return typeof onFileDialogCancel === 'function' ? onFileDialogCancel : noop;
+  }, [onFileDialogCancel]);
+  var rootRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
+  var inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
+
+  var _useReducer = Object(react__WEBPACK_IMPORTED_MODULE_0__["useReducer"])(reducer, initialState),
+      _useReducer2 = _slicedToArray(_useReducer, 2),
+      state = _useReducer2[0],
+      dispatch = _useReducer2[1];
+
+  var isFocused = state.isFocused,
+      isFileDialogActive = state.isFileDialogActive,
+      draggedFiles = state.draggedFiles; // Update file dialog active state when the window is focused on
+
+  var onWindowFocus = function onWindowFocus() {
+    // Execute the timeout only if the file dialog is opened in the browser
+    if (isFileDialogActive) {
+      setTimeout(function () {
+        if (inputRef.current) {
+          var files = inputRef.current.files;
+
+          if (!files.length) {
+            dispatch({
+              type: 'closeDialog'
+            });
+            onFileDialogCancelCb();
+          }
+        }
+      }, 300);
     }
   };
-  var previousButton = {
-    enabled: isWithMandat,
-    label: t('managePayments.validate.button_dashboard'),
-    align: 'left',
-    onClick: handlePreviousClick
-  };
-  var nextButton = {
-    label: isWithMandat ? t('managePayments.validate.button_mandate') : t('managePayments.validate.button_dashboard'),
-    align: 'right',
-    onClick: handleNextClick,
-    loader: isLoadingMandate
-  };
-  var managePaymentObs = Object(_app_hooks_useQueryObserver__WEBPACK_IMPORTED_MODULE_14__["default"])('getManagePayment');
-  var getIbanObs = Object(_app_hooks_useQueryObserver__WEBPACK_IMPORTED_MODULE_14__["default"])('getIban');
-  var hasIbanFromApis = !!((_b = managePaymentObs.data) === null || _b === void 0 ? void 0 : _b.data.content.contractData.iban) || !!((_c = getIbanObs.data) === null || _c === void 0 ? void 0 : _c.data.iban);
+
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    track('PAYMENT_5', {
-      mode_paiement: (payment === null || payment === void 0 ? void 0 : payment.paymentMode) ? _app_hooks_useGA_tags_payment__WEBPACK_IMPORTED_MODULE_13__["PAYMENT_MODE_GA_LIST"][payment.paymentMode] : '',
-      iban_mandat: (hasIbanFromApis ? 'avec_iban' : 'sans_iban') + ' ' + (isWithMandat ? 'avec_mandat' : 'sans_mandat')
+    if (useFsAccessApi && Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["canUseFileSystemAccessAPI"])()) {
+      return function () {};
+    }
+
+    window.addEventListener('focus', onWindowFocus, false);
+    return function () {
+      window.removeEventListener('focus', onWindowFocus, false);
+    };
+  }, [inputRef, isFileDialogActive, onFileDialogCancelCb, useFsAccessApi]);
+  var dragTargetsRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])([]);
+
+  var onDocumentDrop = function onDocumentDrop(event) {
+    if (rootRef.current && rootRef.current.contains(event.target)) {
+      // If we intercepted an event for our instance, let it propagate down to the instance's onDrop handler
+      return;
+    }
+
+    event.preventDefault();
+    dragTargetsRef.current = [];
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    if (preventDropOnDocument) {
+      document.addEventListener('dragover', _utils_index__WEBPACK_IMPORTED_MODULE_3__["onDocumentDragOver"], false);
+      document.addEventListener('drop', onDocumentDrop, false);
+    }
+
+    return function () {
+      if (preventDropOnDocument) {
+        document.removeEventListener('dragover', _utils_index__WEBPACK_IMPORTED_MODULE_3__["onDocumentDragOver"]);
+        document.removeEventListener('drop', onDocumentDrop);
+      }
+    };
+  }, [rootRef, preventDropOnDocument]);
+  var onDragEnterCb = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function (event) {
+    event.preventDefault(); // Persist here because we need the event later after getFilesFromEvent() is done
+
+    event.persist();
+    stopPropagation(event);
+    dragTargetsRef.current = [].concat(_toConsumableArray(dragTargetsRef.current), [event.target]);
+
+    if (Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["isEvtWithFiles"])(event)) {
+      Promise.resolve(getFilesFromEvent(event)).then(function (draggedFiles) {
+        if (Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["isPropagationStopped"])(event) && !noDragEventsBubbling) {
+          return;
+        }
+
+        dispatch({
+          draggedFiles: draggedFiles,
+          isDragActive: true,
+          type: 'setDraggedFiles'
+        });
+
+        if (onDragEnter) {
+          onDragEnter(event);
+        }
+      });
+    }
+  }, [getFilesFromEvent, onDragEnter, noDragEventsBubbling]);
+  var onDragOverCb = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function (event) {
+    event.preventDefault();
+    event.persist();
+    stopPropagation(event);
+    var hasFiles = Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["isEvtWithFiles"])(event);
+
+    if (hasFiles && event.dataTransfer) {
+      try {
+        event.dataTransfer.dropEffect = 'copy';
+      } catch (_unused) {}
+      /* eslint-disable-line no-empty */
+
+    }
+
+    if (hasFiles && onDragOver) {
+      onDragOver(event);
+    }
+
+    return false;
+  }, [onDragOver, noDragEventsBubbling]);
+  var onDragLeaveCb = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function (event) {
+    event.preventDefault();
+    event.persist();
+    stopPropagation(event); // Only deactivate once the dropzone and all children have been left
+
+    var targets = dragTargetsRef.current.filter(function (target) {
+      return rootRef.current && rootRef.current.contains(target);
+    }); // Make sure to remove a target present multiple times only once
+    // (Firefox may fire dragenter/dragleave multiple times on the same element)
+
+    var targetIdx = targets.indexOf(event.target);
+
+    if (targetIdx !== -1) {
+      targets.splice(targetIdx, 1);
+    }
+
+    dragTargetsRef.current = targets;
+
+    if (targets.length > 0) {
+      return;
+    }
+
+    dispatch({
+      isDragActive: false,
+      type: 'setDraggedFiles',
+      draggedFiles: []
+    });
+
+    if (Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["isEvtWithFiles"])(event) && onDragLeave) {
+      onDragLeave(event);
+    }
+  }, [rootRef, onDragLeave, noDragEventsBubbling]);
+  var setFiles = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function (files, event) {
+    var acceptedFiles = [];
+    var fileRejections = [];
+    files.forEach(function (file) {
+      var _fileAccepted = Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["fileAccepted"])(file, accept),
+          _fileAccepted2 = _slicedToArray(_fileAccepted, 2),
+          accepted = _fileAccepted2[0],
+          acceptError = _fileAccepted2[1];
+
+      var _fileMatchSize = Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["fileMatchSize"])(file, minSize, maxSize),
+          _fileMatchSize2 = _slicedToArray(_fileMatchSize, 2),
+          sizeMatch = _fileMatchSize2[0],
+          sizeError = _fileMatchSize2[1];
+
+      var customErrors = validator ? validator(file) : null;
+
+      if (accepted && sizeMatch && !customErrors) {
+        acceptedFiles.push(file);
+      } else {
+        var errors = [acceptError, sizeError];
+
+        if (customErrors) {
+          errors = errors.concat(customErrors);
+        }
+
+        fileRejections.push({
+          file: file,
+          errors: errors.filter(function (e) {
+            return e;
+          })
+        });
+      }
+    });
+
+    if (!multiple && acceptedFiles.length > 1 || multiple && maxFiles >= 1 && acceptedFiles.length > maxFiles) {
+      // Reject everything and empty accepted files
+      acceptedFiles.forEach(function (file) {
+        fileRejections.push({
+          file: file,
+          errors: [_utils_index__WEBPACK_IMPORTED_MODULE_3__["TOO_MANY_FILES_REJECTION"]]
+        });
+      });
+      acceptedFiles.splice(0);
+    }
+
+    dispatch({
+      acceptedFiles: acceptedFiles,
+      fileRejections: fileRejections,
+      type: 'setFiles'
+    });
+
+    if (onDrop) {
+      onDrop(acceptedFiles, fileRejections, event);
+    }
+
+    if (fileRejections.length > 0 && onDropRejected) {
+      onDropRejected(fileRejections, event);
+    }
+
+    if (acceptedFiles.length > 0 && onDropAccepted) {
+      onDropAccepted(acceptedFiles, event);
+    }
+  }, [dispatch, multiple, accept, minSize, maxSize, maxFiles, onDrop, onDropAccepted, onDropRejected, validator]);
+  var onDropCb = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function (event) {
+    event.preventDefault(); // Persist here because we need the event later after getFilesFromEvent() is done
+
+    event.persist();
+    stopPropagation(event);
+    dragTargetsRef.current = [];
+
+    if (Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["isEvtWithFiles"])(event)) {
+      Promise.resolve(getFilesFromEvent(event)).then(function (files) {
+        if (Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["isPropagationStopped"])(event) && !noDragEventsBubbling) {
+          return;
+        }
+
+        setFiles(files, event);
+      });
+    }
+
+    dispatch({
+      type: 'reset'
+    });
+  }, [getFilesFromEvent, setFiles, noDragEventsBubbling]); // Fn for opening the file dialog programmatically
+
+  var openFileDialog = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function () {
+    if (useFsAccessApi && Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["canUseFileSystemAccessAPI"])()) {
+      dispatch({
+        type: 'openDialog'
+      });
+      onFileDialogOpenCb(); // https://developer.mozilla.org/en-US/docs/Web/API/window/showOpenFilePicker
+
+      var opts = {
+        multiple: multiple,
+        types: Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["filePickerOptionsTypes"])(accept)
+      };
+      window.showOpenFilePicker(opts).then(function (handles) {
+        return getFilesFromEvent(handles);
+      }).then(function (files) {
+        return setFiles(files, null);
+      }).catch(function (e) {
+        return onFileDialogCancelCb(e);
+      }).finally(function () {
+        return dispatch({
+          type: 'closeDialog'
+        });
+      });
+      return;
+    }
+
+    if (inputRef.current) {
+      dispatch({
+        type: 'openDialog'
+      });
+      onFileDialogOpenCb();
+      inputRef.current.value = null;
+      inputRef.current.click();
+    }
+  }, [dispatch, onFileDialogOpenCb, onFileDialogCancelCb, useFsAccessApi, setFiles, accept, multiple]); // Cb to open the file dialog when SPACE/ENTER occurs on the dropzone
+
+  var onKeyDownCb = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function (event) {
+    // Ignore keyboard events bubbling up the DOM tree
+    if (!rootRef.current || !rootRef.current.isEqualNode(event.target)) {
+      return;
+    }
+
+    if (event.keyCode === 32 || event.keyCode === 13) {
+      event.preventDefault();
+      openFileDialog();
+    }
+  }, [rootRef, inputRef, openFileDialog]); // Update focus state for the dropzone
+
+  var onFocusCb = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function () {
+    dispatch({
+      type: 'focus'
     });
   }, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PaymentBox__WEBPACK_IMPORTED_MODULE_10__["default"], null, loadIngEfacture ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_7___default.a, {
-    width: isMobile ? 256 : 622,
-    height: 46,
-    className: "mb-3"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_7___default.a, {
-    width: isMobile ? 256 : 622,
-    height: 150
-  })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_Confirmation__WEBPACK_IMPORTED_MODULE_4__["Confirmation"], {
-    isSuccess: isSuccess,
-    title: title,
-    desc: description,
-    previousButton: previousButton,
-    nextButton: nextButton
-  })));
-};
-
-/***/ }),
-
-/***/ "./assets/js/pages/payment/steps/Error.tsx":
-/*!*************************************************!*\
-  !*** ./assets/js/pages/payment/steps/Error.tsx ***!
-  \*************************************************/
-/*! exports provided: Error */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Error", function() { return Error; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _app_components_AlertBox__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/components/AlertBox */ "./assets/js/components/AlertBox/index.tsx");
-/* harmony import */ var _app_components_FormButtons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/components/FormButtons */ "./assets/js/components/FormButtons/index.tsx");
-/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @app/constants */ "./assets/js/constants/index.ts");
-/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @suezenv/react-theme-components */ "./node_modules/@suezenv/react-theme-components/build/index.js");
-/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _PaymentBox__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../PaymentBox */ "./assets/js/pages/payment/PaymentBox.tsx");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
-
-
-
-var Error = function Error() {
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useHistory"])();
-  var _useTranslation = Object(react_i18next__WEBPACK_IMPORTED_MODULE_1__["useTranslation"])(),
-    t = _useTranslation.t;
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-    _useState2 = _slicedToArray(_useState, 2),
-    isLoading = _useState2[0],
-    setIsLoading = _useState2[1];
-  var handlePreviousClick = function handlePreviousClick() {
-    window.location.href = _app_constants__WEBPACK_IMPORTED_MODULE_5__["ROUTES"].CUSTOMER_SERVICE;
-  };
-  var handleNextClick = function handleNextClick() {
-    setIsLoading(true);
-    history.push(_app_constants__WEBPACK_IMPORTED_MODULE_5__["ROUTES"].DASHBOARD);
-  };
-  var previousButton = {
-    enabled: true,
-    label: t('payment.error.back_customer_service'),
-    align: 'left',
-    alignIcon: 'right',
-    onClick: handlePreviousClick
-  };
-  var nextButton = {
-    enabled: true,
-    label: t('payment.error.back_dashboard'),
-    align: 'right',
-    loader: isLoading,
-    onClick: handleNextClick
-  };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PaymentBox__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    "data-cy": "my-payment-error"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_6__["SzTypographie"], {
-    variant: "H3",
-    size: "L",
-    weight: "medium",
-    className: "mb-3 mb-lg-4"
-  }, t('payment.error.title')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_AlertBox__WEBPACK_IMPORTED_MODULE_3__["AlertBox"], {
-    children: t('payment.error.message'),
-    variant: "alert"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_FormButtons__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    next: nextButton,
-    previous: previousButton
-  }));
-};
-
-/***/ }),
-
-/***/ "./assets/js/pages/payment/steps/ErrorCB.tsx":
-/*!***************************************************!*\
-  !*** ./assets/js/pages/payment/steps/ErrorCB.tsx ***!
-  \***************************************************/
-/*! exports provided: ErrorCB */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ErrorCB", function() { return ErrorCB; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
-/* harmony import */ var _app_components_Confirmation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/components/Confirmation */ "./assets/js/components/Confirmation/index.tsx");
-/* harmony import */ var _hooks_useResetButtons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../hooks/useResetButtons */ "./assets/js/pages/payment/hooks/useResetButtons.tsx");
-/* harmony import */ var _app_hooks_useInterweave__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/hooks/useInterweave */ "./assets/js/hooks/useInterweave.jsx");
-/* harmony import */ var interweave__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! interweave */ "./node_modules/interweave/esm/index.js");
-/* harmony import */ var _PaymentBox__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../PaymentBox */ "./assets/js/pages/payment/PaymentBox.tsx");
-/* harmony import */ var react_loading_skeleton__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-loading-skeleton */ "./node_modules/react-loading-skeleton/lib/index.js");
-/* harmony import */ var react_loading_skeleton__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _app_hooks_useResponsive__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @app/hooks/useResponsive */ "./assets/js/hooks/useResponsive.ts");
-/* harmony import */ var _hooks_useModeListPayment__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../hooks/useModeListPayment */ "./assets/js/pages/payment/hooks/useModeListPayment.ts");
-
-
-
-
-
-
-
-
-
-
-var ErrorCB = function ErrorCB() {
-  var _useResetButtons = Object(_hooks_useResetButtons__WEBPACK_IMPORTED_MODULE_3__["useResetButtons"])(),
-    previousBtn = _useResetButtons.previousBtn,
-    nextBtn = _useResetButtons.nextBtn;
-  var isMobile = Object(_app_hooks_useResponsive__WEBPACK_IMPORTED_MODULE_8__["useIsMobile"])();
-  var _useInterweave = Object(_app_hooks_useInterweave__WEBPACK_IMPORTED_MODULE_4__["default"])(),
-    transform = _useInterweave.transform;
-  var _useTranslation = Object(react_i18next__WEBPACK_IMPORTED_MODULE_1__["useTranslation"])(),
-    t = _useTranslation.t;
-  var _useModeListPayment = Object(_hooks_useModeListPayment__WEBPACK_IMPORTED_MODULE_9__["default"])(),
-    modeListPaymentData = _useModeListPayment.modeListPaymentData,
-    isLoading = _useModeListPayment.isLoading;
-  var amount = (modeListPaymentData === null || modeListPaymentData === void 0 ? void 0 : modeListPaymentData.balanceAmount) || '';
-  var descTransError = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(interweave__WEBPACK_IMPORTED_MODULE_5__["Markup"], {
-    transform: transform,
-    content: t('payment.confirmation_cb.message_error')
-  });
-  if (isLoading) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PaymentBox__WEBPACK_IMPORTED_MODULE_6__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_7___default.a, {
-      width: isMobile ? 256 : 622,
-      height: 46,
-      className: "mb-3"
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_7___default.a, {
-      width: isMobile ? 256 : 622,
-      height: 150
-    }));
-  }
-  var keyError = amount ? 'error' : 'error_no_amount';
-  var title = t('payment.confirmation_cb.title', {
-    amount: amount,
-    context: keyError
-  });
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PaymentBox__WEBPACK_IMPORTED_MODULE_6__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_Confirmation__WEBPACK_IMPORTED_MODULE_2__["Confirmation"], {
-    isSuccess: false,
-    title: title,
-    subTitle: t('payment.confirmation_cb.sub_title_error'),
-    descTransError: descTransError,
-    previousButton: previousBtn,
-    nextButton: nextBtn
-  }));
-};
-
-/***/ }),
-
-/***/ "./assets/js/pages/payment/steps/ErrorEtip.tsx":
-/*!*****************************************************!*\
-  !*** ./assets/js/pages/payment/steps/ErrorEtip.tsx ***!
-  \*****************************************************/
-/*! exports provided: ErrorEtip */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ErrorEtip", function() { return ErrorEtip; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _app_components_AlertBox__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/components/AlertBox */ "./assets/js/components/AlertBox/index.tsx");
-/* harmony import */ var _app_components_FormButtons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/components/FormButtons */ "./assets/js/components/FormButtons/index.tsx");
-/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @app/constants */ "./assets/js/constants/index.ts");
-/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @suezenv/react-theme-components */ "./node_modules/@suezenv/react-theme-components/build/index.js");
-/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _PaymentBox__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../PaymentBox */ "./assets/js/pages/payment/PaymentBox.tsx");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
-
-
-
-var ErrorEtip = function ErrorEtip() {
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useHistory"])();
-  var _useTranslation = Object(react_i18next__WEBPACK_IMPORTED_MODULE_1__["useTranslation"])(),
-    t = _useTranslation.t;
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-    _useState2 = _slicedToArray(_useState, 2),
-    isLoading = _useState2[0],
-    setIsLoading = _useState2[1];
-  var handleNextClick = function handleNextClick() {
-    setIsLoading(true);
-    history.push(_app_constants__WEBPACK_IMPORTED_MODULE_5__["ROUTES"].PAYMENT.INDEX);
-  };
-  var nextButton = {
-    enabled: true,
-    label: t('payment.error.back_retry'),
-    align: 'right',
-    loader: isLoading,
-    onClick: handleNextClick
-  };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PaymentBox__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    "data-cy": "my-payment-error"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_6__["SzTypographie"], {
-    variant: "H3",
-    size: "L",
-    weight: "medium",
-    className: "mb-3 mb-lg-4"
-  }, t('payment.error.title_etip')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_AlertBox__WEBPACK_IMPORTED_MODULE_3__["AlertBox"], {
-    children: t('payment.error.message_etip'),
-    variant: "alert"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_FormButtons__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    next: nextButton
-  }));
-};
-
-/***/ }),
-
-/***/ "./assets/js/pages/payment/steps/MyPaymentMode.tsx":
-/*!*********************************************************!*\
-  !*** ./assets/js/pages/payment/steps/MyPaymentMode.tsx ***!
-  \*********************************************************/
-/*! exports provided: PAYMENT_MODE_ACTION, ORIGIN_MY_PAYMENT_MODE, ORIGIN_MANAGE, CheckEfactureParam, PaymentModeList, PaymentModeManage, MyPaymentMode */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PAYMENT_MODE_ACTION", function() { return PAYMENT_MODE_ACTION; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ORIGIN_MY_PAYMENT_MODE", function() { return ORIGIN_MY_PAYMENT_MODE; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ORIGIN_MANAGE", function() { return ORIGIN_MANAGE; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CheckEfactureParam", function() { return CheckEfactureParam; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PaymentModeList", function() { return PaymentModeList; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PaymentModeManage", function() { return PaymentModeManage; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MyPaymentMode", function() { return MyPaymentMode; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
-/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/esm/react-router.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! formik */ "./node_modules/formik/dist/formik.esm.js");
-/* harmony import */ var _app_form_FormError__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @app/form/FormError */ "./assets/js/form/FormError.tsx");
-/* harmony import */ var _app_form_PhoneForm_model__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @app/form/PhoneForm/model */ "./assets/js/form/PhoneForm/model.js");
-/* harmony import */ var _app_form_PhoneForm_PhoneInput__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @app/form/PhoneForm/PhoneInput */ "./assets/js/form/PhoneForm/PhoneInput.tsx");
-/* harmony import */ var _app_models_IbanSepa__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @app/models/IbanSepa */ "./assets/js/models/IbanSepa/index.ts");
-/* harmony import */ var _app_models_IbanSepa_checkboxVerified__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @app/models/IbanSepa/checkboxVerified */ "./assets/js/models/IbanSepa/checkboxVerified.js");
-/* harmony import */ var _app_services_Utils__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @app/services/Utils */ "./assets/js/services/Utils.js");
-/* harmony import */ var _app_components_FormButtons__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @app/components/FormButtons */ "./assets/js/components/FormButtons/index.tsx");
-/* harmony import */ var _app_components_Links_Link__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @app/components/Links/Link */ "./assets/js/components/Links/Link.jsx");
-/* harmony import */ var _app_components_RegisteredIbanBlock_index__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @app/components/RegisteredIbanBlock/index */ "./assets/js/components/RegisteredIbanBlock/index.tsx");
-/* harmony import */ var _app_components_Skeleton_Payment_MyPaymentMode__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @app/components/Skeleton/Payment/MyPaymentMode */ "./assets/js/components/Skeleton/Payment/MyPaymentMode/index.tsx");
-/* harmony import */ var _app_components_Skeleton_PaymentModePromotion_paymentModePromotion__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @app/components/Skeleton/PaymentModePromotion/paymentModePromotion */ "./assets/js/components/Skeleton/PaymentModePromotion/paymentModePromotion.tsx");
-/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @app/constants */ "./assets/js/constants/index.ts");
-/* harmony import */ var _app_hooks_useQueryObserver__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @app/hooks/useQueryObserver */ "./assets/js/hooks/useQueryObserver.ts");
-/* harmony import */ var _app_pages_payment_hooks_useModeListPayment__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @app/pages/payment/hooks/useModeListPayment */ "./assets/js/pages/payment/hooks/useModeListPayment.ts");
-/* harmony import */ var _app_pages_payment_hooks_usePaymentParams__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @app/pages/payment/hooks/usePaymentParams */ "./assets/js/pages/payment/hooks/usePaymentParams.ts");
-/* harmony import */ var _app_pages_payment_hooks_usePostPaymentMessage__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @app/pages/payment/hooks/usePostPaymentMessage */ "./assets/js/pages/payment/hooks/usePostPaymentMessage.ts");
-/* harmony import */ var _app_pages_payment_hooks_usePostDocapostContractIban__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @app/pages/payment/hooks/usePostDocapostContractIban */ "./assets/js/pages/payment/hooks/usePostDocapostContractIban.ts");
-/* harmony import */ var _hooks_usePostDocapostSendOtp__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../hooks/usePostDocapostSendOtp */ "./assets/js/pages/payment/hooks/usePostDocapostSendOtp.ts");
-/* harmony import */ var _app_pages_payment_PaymentBox__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @app/pages/payment/PaymentBox */ "./assets/js/pages/payment/PaymentBox.tsx");
-/* harmony import */ var _app_pages_payment_steps_PaymentList__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @app/pages/payment/steps/PaymentList */ "./assets/js/pages/payment/steps/PaymentList.tsx");
-/* harmony import */ var _app_pages_payment_steps_PromotionBlock__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @app/pages/payment/steps/PromotionBlock */ "./assets/js/pages/payment/steps/PromotionBlock.tsx");
-/* harmony import */ var _app_pages_payment_SummaryBox__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @app/pages/payment/SummaryBox */ "./assets/js/pages/payment/SummaryBox.tsx");
-/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @suezenv/react-theme-components */ "./node_modules/@suezenv/react-theme-components/build/index.js");
-/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_27___default = /*#__PURE__*/__webpack_require__.n(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_27__);
-/* harmony import */ var _app_components_tsme_react_components_components_IbanForm__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! @app/components/tsme-react-components/components/IbanForm */ "./assets/js/components/tsme-react-components/components/IbanForm/index.jsx");
-/* harmony import */ var _app_components_tsme_react_components_components_IbanForm_iban_form_model__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! @app/components/tsme-react-components/components/IbanForm/iban-form-model */ "./assets/js/components/tsme-react-components/components/IbanForm/iban-form-model.jsx");
-/* harmony import */ var _SignMandate__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./SignMandate */ "./assets/js/pages/payment/steps/SignMandate.tsx");
-/* harmony import */ var _app_components_payment_PaylineMonext__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! @app/components/payment/PaylineMonext */ "./assets/js/components/payment/PaylineMonext.tsx");
-/* harmony import */ var _app_hooks__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! @app/hooks */ "./assets/js/hooks/index.ts");
-var _PAYMENT_MODE_ACTION;
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
-function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
-var __rest = undefined && undefined.__rest || function (s, e) {
-  var t = {};
-  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
-  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
-  }
-  return t;
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var E_FACTURE_PARAM = 'e-facture';
-var MENSUALISATION_PARAM = '?payment_mode=' + _app_constants__WEBPACK_IMPORTED_MODULE_16__["PAYMENT_MODE_MENSU"];
-var PRELEVEMENT_PARAM = '?payment_mode=' + _app_constants__WEBPACK_IMPORTED_MODULE_16__["PAYMENT_MODE_PRELEV"];
-var KEY_MANDAT_COMPLIANT = 'Compliant';
-var KEY_MANDAT_VALID = 'Valid';
-var PAYMENT_MODE_ACTION = (_PAYMENT_MODE_ACTION = {}, _defineProperty(_PAYMENT_MODE_ACTION, _app_constants__WEBPACK_IMPORTED_MODULE_16__["PAYMENT_MODE_MENSU"], 'M'), _defineProperty(_PAYMENT_MODE_ACTION, _app_constants__WEBPACK_IMPORTED_MODULE_16__["PAYMENT_MODE_PRELEV"], 'P'), _defineProperty(_PAYMENT_MODE_ACTION, _app_constants__WEBPACK_IMPORTED_MODULE_16__["PAYMENT_MODE_ETIP"], 'E'), _PAYMENT_MODE_ACTION);
-var ORIGIN_MY_PAYMENT_MODE = 'originMyPaymentMode';
-var ORIGIN_MANAGE = 'manage';
-var CheckEfactureParam = function CheckEfactureParam() {
-  var _useLocation = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["useLocation"])(),
-    search = _useLocation.search;
-  var params = new URLSearchParams(search);
-  var eFacture = params.get(E_FACTURE_PARAM);
-  return eFacture === 'false' || !eFacture ? '' : '&e-facture=true';
-};
-var PaymentModeList = function PaymentModeList() {
-  var _a, _b, _c, _d, _e, _f, _g, _h;
-  var _useTranslation = Object(react_i18next__WEBPACK_IMPORTED_MODULE_1__["useTranslation"])(),
-    t = _useTranslation.t;
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["useHistory"])();
-  var eFactureParam = CheckEfactureParam();
-  var _useModeListPayment = Object(_app_pages_payment_hooks_useModeListPayment__WEBPACK_IMPORTED_MODULE_18__["default"])(),
-    modeListPaymentData = _useModeListPayment.modeListPaymentData,
-    isLoading = _useModeListPayment.isLoading;
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-    _useState2 = _slicedToArray(_useState, 2),
-    runPaymentCB = _useState2[0],
-    setRunPaymentCB = _useState2[1];
-  if (isLoading || !modeListPaymentData) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_pages_payment_PaymentBox__WEBPACK_IMPORTED_MODULE_23__["default"], {
-      "data-cy": "my-payment-promo-loading"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_Skeleton_PaymentModePromotion_paymentModePromotion__WEBPACK_IMPORTED_MODULE_15__["default"], null));
-  }
-  var _modeListPaymentData$ = modeListPaymentData.paymentModesList,
-    monthlyPayment = _modeListPaymentData$.monthlyPayment,
-    directDebitPayment = _modeListPaymentData$.directDebitPayment;
-  if (monthlyPayment && !directDebitPayment) {
-    history.push(_app_constants__WEBPACK_IMPORTED_MODULE_16__["ROUTES"].PAYMENT.MY_PAYMENT_METHOD + MENSUALISATION_PARAM + eFactureParam, {
-      origin: ORIGIN_MY_PAYMENT_MODE
+  var onBlurCb = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function () {
+    dispatch({
+      type: 'blur'
     });
-  } else if (!monthlyPayment && directDebitPayment) {
-    history.push(_app_constants__WEBPACK_IMPORTED_MODULE_16__["ROUTES"].PAYMENT.MY_PAYMENT_METHOD + PRELEVEMENT_PARAM + eFactureParam, {
-      origin: ORIGIN_MY_PAYMENT_MODE
-    });
-  } else if (!monthlyPayment && !directDebitPayment) {
-    history.push(_app_constants__WEBPACK_IMPORTED_MODULE_16__["ROUTES"].PAYMENT_INDEX);
-  }
-  var currentPaymentModeCode = modeListPaymentData === null || modeListPaymentData === void 0 ? void 0 : modeListPaymentData.currentPaymentModeCode;
-  var summaryBoxContentProps = {
-    name: (_a = modeListPaymentData === null || modeListPaymentData === void 0 ? void 0 : modeListPaymentData.contractBlock) === null || _a === void 0 ? void 0 : _a.name,
-    address: (_b = modeListPaymentData === null || modeListPaymentData === void 0 ? void 0 : modeListPaymentData.contractBlock) === null || _b === void 0 ? void 0 : _b.siteAddress,
-    reference: (_c = modeListPaymentData === null || modeListPaymentData === void 0 ? void 0 : modeListPaymentData.contractBlock) === null || _c === void 0 ? void 0 : _c.fullReference,
-    titleCode: (_d = modeListPaymentData === null || modeListPaymentData === void 0 ? void 0 : modeListPaymentData.grayBlock) === null || _d === void 0 ? void 0 : _d.titleCode,
-    amount: (_f = (_e = modeListPaymentData === null || modeListPaymentData === void 0 ? void 0 : modeListPaymentData.grayBlock) === null || _e === void 0 ? void 0 : _e.content) === null || _f === void 0 ? void 0 : _f.amount,
-    date: (_h = (_g = modeListPaymentData === null || modeListPaymentData === void 0 ? void 0 : modeListPaymentData.grayBlock) === null || _g === void 0 ? void 0 : _g.content) === null || _h === void 0 ? void 0 : _h.date,
-    showEtip: modeListPaymentData === null || modeListPaymentData === void 0 ? void 0 : modeListPaymentData.hasEtipSignedValidMandate,
-    paymentModeShow: false,
-    paymentModeLabel: t('payment.summary_box.payment_mode_label', {
-      context: t('payment.summary_box.actual')
-    }),
-    paymentModeValue: t('payment.summary_box.debit_type', {
-      context: currentPaymentModeCode
-    })
-  };
-  var listPayment = {
-    monthlyPayment: true,
-    directDebitPayment: true
-  };
-  var listProps = {
-    paymentModesList: listPayment,
-    hasEtipSignedValidMandate: modeListPaymentData === null || modeListPaymentData === void 0 ? void 0 : modeListPaymentData.hasEtipSignedValidMandate,
-    monthlyPaymentAmount: modeListPaymentData === null || modeListPaymentData === void 0 ? void 0 : modeListPaymentData.monthlyPaymentAmount,
-    allModes: true,
-    from: ORIGIN_MY_PAYMENT_MODE
-  };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_pages_payment_PaymentBox__WEBPACK_IMPORTED_MODULE_23__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_payment_PaylineMonext__WEBPACK_IMPORTED_MODULE_31__["default"], {
-    launch: runPaymentCB,
-    setRunPaymentCB: setRunPaymentCB
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_pages_payment_SummaryBox__WEBPACK_IMPORTED_MODULE_26__["SummaryBoxContent"], Object.assign({}, summaryBoxContentProps)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_pages_payment_steps_PaymentList__WEBPACK_IMPORTED_MODULE_24__["default"], Object.assign({
-    setRunPaymentCB: setRunPaymentCB
-  }, listProps)));
-};
-var PaymentModeManage = function PaymentModeManage() {
-  var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x;
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["useHistory"])();
-  var _useTranslation2 = Object(react_i18next__WEBPACK_IMPORTED_MODULE_1__["useTranslation"])(),
-    t = _useTranslation2.t;
-  var _useGA = Object(_app_hooks__WEBPACK_IMPORTED_MODULE_32__["useGA"])(),
-    track = _useGA.track;
-  var _ref = (_c = (_b = (_a = window.tsme_data) === null || _a === void 0 ? void 0 : _a.footer) === null || _b === void 0 ? void 0 : _b.links_bottom) === null || _c === void 0 ? void 0 : _c.privacy_policy,
-    link = _ref.link;
-  var _useLocation2 = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["useLocation"])(),
-    _useLocation2$state = _useLocation2.state,
-    state = _useLocation2$state === void 0 ? {} : _useLocation2$state,
-    pathname = _useLocation2.pathname;
-  var myPmtModeDatas = state.myPmtModeDatas;
-  var isEtip = pathname.includes(_app_constants__WEBPACK_IMPORTED_MODULE_16__["ROUTES"].PAYMENT.ETIP);
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-    _useState4 = _slicedToArray(_useState3, 2),
-    displayInternationalIban = _useState4[0],
-    setDisplayInternationalIban = _useState4[1];
-  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-    _useState6 = _slicedToArray(_useState5, 2),
-    isIbanInProgress = _useState6[0],
-    setIsIbanInProgress = _useState6[1];
-  var _usePaymentParams = Object(_app_pages_payment_hooks_usePaymentParams__WEBPACK_IMPORTED_MODULE_19__["default"])(),
-    paymentMode = _usePaymentParams.paymentMode,
-    eFacture = _usePaymentParams.eFacture;
-  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
-    _useState8 = _slicedToArray(_useState7, 2),
-    isIbanOk = _useState8[0],
-    setIsIbanOk = _useState8[1];
-  var managePaymentObs = Object(_app_hooks_useQueryObserver__WEBPACK_IMPORTED_MODULE_17__["default"])('getManagePayment');
-  var getIbanObs = Object(_app_hooks_useQueryObserver__WEBPACK_IMPORTED_MODULE_17__["default"])('getIban');
-  var hasIbanFromApis = !!((_d = managePaymentObs.data) === null || _d === void 0 ? void 0 : _d.data.content.contractData.iban) || !!((_e = getIbanObs.data) === null || _e === void 0 ? void 0 : _e.data.iban);
-  var displayExistingIban = isIbanOk === undefined ? hasIbanFromApis : isIbanOk;
-  var getIbanData = (_f = getIbanObs === null || getIbanObs === void 0 ? void 0 : getIbanObs.data) === null || _f === void 0 ? void 0 : _f.data;
-  var isFirstLastName = isEtip && (getIbanData === null || getIbanData === void 0 ? void 0 : getIbanData.has_mandate) && (getIbanData === null || getIbanData === void 0 ? void 0 : getIbanData.status_mandate) === KEY_MANDAT_VALID && (getIbanData === null || getIbanData === void 0 ? void 0 : getIbanData.is_iban_different_with_search_mandate) === true;
-  var mngPmtFromGetIban = {
-    hasMandate: (getIbanData === null || getIbanData === void 0 ? void 0 : getIbanData.has_mandate) && (getIbanData === null || getIbanData === void 0 ? void 0 : getIbanData.status_mandate) !== KEY_MANDAT_COMPLIANT || false,
-    contractData: {
-      reference: (getIbanData === null || getIbanData === void 0 ? void 0 : getIbanData.reference) || '',
-      iban: (getIbanData === null || getIbanData === void 0 ? void 0 : getIbanData.iban) || '',
-      ibanHolder: (getIbanData === null || getIbanData === void 0 ? void 0 : getIbanData.titulaire) || '',
-      contractName: (getIbanData === null || getIbanData === void 0 ? void 0 : getIbanData.name) || '',
-      balanceAmount: (getIbanData === null || getIbanData === void 0 ? void 0 : getIbanData.balance) || '',
-      siteAddress: (getIbanData === null || getIbanData === void 0 ? void 0 : getIbanData.site_address) || '',
-      balanceDate: ''
-    },
-    monthlyPaymentData: {
-      amount: '',
-      computationModeLabel: '',
-      computationModeCode: ''
-    }
-  };
-  var managePayment = ((_g = managePaymentObs.data) === null || _g === void 0 ? void 0 : _g.data.content) ? managePaymentObs.data.data.content : mngPmtFromGetIban;
-  var ibanProcessed = (_h = state === null || state === void 0 ? void 0 : state.myPmtModeDatas) === null || _h === void 0 ? void 0 : _h.iban;
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    if ((ibanProcessed === null || ibanProcessed === void 0 ? void 0 : ibanProcessed.match(/((X{4} ){5})/g)) === null) {
-      setIsIbanOk(false);
-    }
-    if (ibanProcessed && !(ibanProcessed === null || ibanProcessed === void 0 ? void 0 : ibanProcessed.match(/(^FR|^..XX)/g))) {
-      setDisplayInternationalIban(true);
-    }
-  }, [ibanProcessed]);
-  var firstOrigin = state === null || state === void 0 ? void 0 : state.origin;
-  var postPaymentMessage = Object(_app_pages_payment_hooks_usePostPaymentMessage__WEBPACK_IMPORTED_MODULE_20__["default"])({
-    managePayment: managePayment,
-    paymentMode: paymentMode,
-    eFacture: eFacture,
-    firstOrigin: firstOrigin
-  });
-  var postDocapostContractIban = Object(_app_pages_payment_hooks_usePostDocapostContractIban__WEBPACK_IMPORTED_MODULE_21__["default"])();
-  var postDocapostSendOtp = Object(_hooks_usePostDocapostSendOtp__WEBPACK_IMPORTED_MODULE_22__["default"])();
-  var isMandatOk = !!(managePayment === null || managePayment === void 0 ? void 0 : managePayment.hasMandate);
-  var isComplete = displayExistingIban && !isMandatOk;
-  var isValidate = displayExistingIban && isMandatOk && !isFirstLastName;
-  var formContext = 'edit';
-  if (isIbanInProgress) {
-    formContext = 'modify';
-  } else if (isComplete) {
-    formContext = 'complete';
-  } else if (isValidate) {
-    formContext = 'validate';
-  }
-  var myPaymentModeSchema = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function () {
-    var ibanSchema = displayInternationalIban ? Object(_app_components_tsme_react_components_components_IbanForm_iban_form_model__WEBPACK_IMPORTED_MODULE_29__["internationalIbanInputSchema"])(t) : Object(_app_components_tsme_react_components_components_IbanForm_iban_form_model__WEBPACK_IMPORTED_MODULE_29__["ibanInputSchema"])(t);
-    var phoneInputSchema = isEtip ? Object(_app_form_PhoneForm_model__WEBPACK_IMPORTED_MODULE_6__["frenchMobilePhoneInputSchema"])() : Object(_app_form_PhoneForm_model__WEBPACK_IMPORTED_MODULE_6__["phoneNumberInputSchema"])(t);
-    if (isFirstLastName && hasIbanFromApis) {
-      return _app_models_IbanSepa__WEBPACK_IMPORTED_MODULE_8__["accountOwnerSchema"].concat(_app_models_IbanSepa_checkboxVerified__WEBPACK_IMPORTED_MODULE_9__["checkboxVerifiedSchema"]);
-    } else if (isFirstLastName && !hasIbanFromApis) {
-      return _app_models_IbanSepa__WEBPACK_IMPORTED_MODULE_8__["accountOwnerSchema"].concat(ibanSchema);
-    } else if (isValidate) {
-      return _app_models_IbanSepa_checkboxVerified__WEBPACK_IMPORTED_MODULE_9__["checkboxVerifiedSchema"];
-    } else if (isComplete) {
-      return _app_models_IbanSepa__WEBPACK_IMPORTED_MODULE_8__["accountOwnerSchema"].concat(phoneInputSchema).concat(_app_models_IbanSepa_checkboxVerified__WEBPACK_IMPORTED_MODULE_9__["checkboxVerifiedSchema"]);
-    } else if (!displayExistingIban && isMandatOk) {
-      return _app_models_IbanSepa__WEBPACK_IMPORTED_MODULE_8__["accountOwnerSchema"].concat(ibanSchema);
-    } else if (!displayExistingIban && !isMandatOk) {
-      return _app_models_IbanSepa__WEBPACK_IMPORTED_MODULE_8__["accountOwnerSchema"].concat(phoneInputSchema).concat(ibanSchema);
-    }
-  }, [isFirstLastName, isValidate, isComplete, isMandatOk, displayInternationalIban, displayExistingIban]);
-  var nextButton = {
-    label: isEtip && isMandatOk ? t('managePayments.form.validate_and_pay') : t('managePayments.form.goNext'),
-    align: 'right',
-    loader: isEtip ? postDocapostContractIban.isLoading || postDocapostSendOtp.isLoading : postPaymentMessage.isLoading
-  };
-  var eFactureParam = CheckEfactureParam();
-  var eFactFirstParam = eFactureParam !== '' ? '?e-facture=true' : '';
-  var handlePreviousClick = function handlePreviousClick() {
-    var _a;
-    var origin = (_a = state.origin) !== null && _a !== void 0 ? _a : state.firstOrigin;
-    if (!displayExistingIban && isIbanInProgress) {
-      setIsIbanOk(true);
-      setIsIbanInProgress(false);
-    } else if (origin === _app_pages_payment_steps_PromotionBlock__WEBPACK_IMPORTED_MODULE_25__["ORIGIN_PROMOTION_BLOCK"]) {
-      history.push(_app_constants__WEBPACK_IMPORTED_MODULE_16__["ROUTES"].PAYMENT_INDEX + eFactFirstParam);
-    } else if (origin === ORIGIN_MY_PAYMENT_MODE) {
-      history.push(Object(react_router__WEBPACK_IMPORTED_MODULE_2__["generatePath"])(_app_constants__WEBPACK_IMPORTED_MODULE_16__["ROUTES"].PAYMENT.MY_PAYMENT_METHOD + eFactFirstParam));
-    }
-  };
-  var previousButton = {
-    enabled: true,
-    disabled: postPaymentMessage.isLoading,
-    label: t('managePayments.form.goBack'),
-    align: 'left',
-    onClick: handlePreviousClick
-  };
-  var onClickModifyIban = function onClickModifyIban() {
-    track('PAYMENT_6');
-    setIsIbanOk(false);
-    setIsIbanInProgress(true);
-  };
-  var handleSubmit = function handleSubmit(_a, _b) {
-    var _c, _d, _e;
-    var iban = _a.iban,
-      surname = _a.surname,
-      name = _a.name,
-      phoneNumber = _a.phoneNumber,
-      values = __rest(_a, ["iban", "surname", "name", "phoneNumber"]);
-    var setFieldError = _b.setFieldError;
-    var isMensuPrelev = _app_constants__WEBPACK_IMPORTED_MODULE_16__["PAYMENT_MODE_ETIP"] !== paymentMode;
-    var ibanTemp = iban || ((_c = managePayment === null || managePayment === void 0 ? void 0 : managePayment.contractData) === null || _c === void 0 ? void 0 : _c.iban) || '';
-    var currentIban = Object(_app_services_Utils__WEBPACK_IMPORTED_MODULE_10__["concatIban"])(values, 'iban_field', _app_constants__WEBPACK_IMPORTED_MODULE_16__["IBAN_FIELDS"]);
-    if (isMensuPrelev) {
-      var params = {
-        paymentMode: PAYMENT_MODE_ACTION[paymentMode],
-        iban: currentIban || ibanTemp
-      };
-      if (surname) {
-        params['firstName'] = surname;
-      }
-      if (name) {
-        params['lastName'] = name;
-      }
-      if (phoneNumber) {
-        params['mobilePhone'] = phoneNumber;
-      }
-      postPaymentMessage.mutate(params, {
-        onError: function onError(_ref2) {
-          var response = _ref2.response;
-          var _a;
-          var data = response.data,
-            status = response.status;
-          if (status === 400 && ((_a = data === null || data === void 0 ? void 0 : data.validation_errors) === null || _a === void 0 ? void 0 : _a.mobilePhone)) {
-            setFieldError('phoneNumber', t('phoneNumber.errors.invalid'));
-          } else if (status >= 500) {
-            history.push(_app_constants__WEBPACK_IMPORTED_MODULE_16__["ROUTES"].PAYMENT.ERROR);
-          }
-        }
-      });
+  }, []); // Cb to open the file dialog when click occurs on the dropzone
+
+  var onClickCb = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function () {
+    if (noClick) {
+      return;
+    } // In IE11/Edge the file-browser dialog is blocking, therefore, use setTimeout()
+    // to ensure React can handle state changes
+    // See: https://github.com/react-dropzone/react-dropzone/issues/450
+
+
+    if (Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["isIeOrEdge"])()) {
+      setTimeout(openFileDialog, 0);
     } else {
-      // eTIP payment
-      var _params = {};
-      if (surname) {
-        _params.first_name = surname;
-      }
-      if (name) {
-        _params.last_name = name;
-      }
-      if (phoneNumber) {
-        _params.mobile_phone = Object(_app_services_Utils__WEBPACK_IMPORTED_MODULE_10__["frenchMobileShort"])(phoneNumber);
-      }
-      if (!surname && !name && ((_d = managePayment === null || managePayment === void 0 ? void 0 : managePayment.contractData) === null || _d === void 0 ? void 0 : _d.ibanHolder)) {
-        _params.holder = (_e = managePayment === null || managePayment === void 0 ? void 0 : managePayment.contractData) === null || _e === void 0 ? void 0 : _e.ibanHolder;
-      }
-      if (values.iban_field_1) {
-        for (var _i2 = 0, _Object$entries = Object.entries(values); _i2 < _Object$entries.length; _i2++) {
-          var _Object$entries$_i = _slicedToArray(_Object$entries[_i2], 2),
-            key = _Object$entries$_i[0],
-            value = _Object$entries$_i[1];
-          if (key.includes('iban_field_')) {
-            _params[key] = value;
-          }
-        }
-      }
-      postDocapostContractIban.mutate(_params, {
-        onSuccess: function onSuccess(_ref3) {
-          var data = _ref3.data;
-          var _ref4 = data || '',
-            message = _ref4.message;
-          if (message !== _app_constants__WEBPACK_IMPORTED_MODULE_16__["CODES"].OK) {
-            history.push({
-              pathname: _app_constants__WEBPACK_IMPORTED_MODULE_16__["ROUTES"].PAYMENT.ERROR_ETIP
-            });
-            return;
-          }
-          if (managePayment === null || managePayment === void 0 ? void 0 : managePayment.hasMandate) {
-            var search = "?payment_mode=etip&mandat=false";
-            history.push({
-              pathname: _app_constants__WEBPACK_IMPORTED_MODULE_16__["ROUTES"].PAYMENT.CONFIRMATION,
-              search: search
-            });
-          } else {
-            postDocapostSendOtp.mutate(null, {
-              onSuccess: function onSuccess() {
-                var myPmtModeDatas = Object.assign({}, _params);
-                if (_params.hasOwnProperty('first_name')) {
-                  myPmtModeDatas.firstName = _params.first_name;
-                }
-                if (_params.hasOwnProperty('last_name')) {
-                  myPmtModeDatas.lastName = _params.last_name;
-                }
-                if (_params.hasOwnProperty('mobile_phone')) {
-                  myPmtModeDatas.mobilePhone = _params.mobile_phone;
-                }
-                history.push({
-                  pathname: _app_constants__WEBPACK_IMPORTED_MODULE_16__["ROUTES"].PAYMENT.ETIP,
-                  state: {
-                    origin: ORIGIN_MANAGE,
-                    firstOrigin: firstOrigin,
-                    myPmtModeDatas: myPmtModeDatas
-                  }
-                });
-              }
-            });
-          }
+      openFileDialog();
+    }
+  }, [inputRef, noClick, openFileDialog]);
+
+  var composeHandler = function composeHandler(fn) {
+    return disabled ? null : fn;
+  };
+
+  var composeKeyboardHandler = function composeKeyboardHandler(fn) {
+    return noKeyboard ? null : composeHandler(fn);
+  };
+
+  var composeDragHandler = function composeDragHandler(fn) {
+    return noDrag ? null : composeHandler(fn);
+  };
+
+  var stopPropagation = function stopPropagation(event) {
+    if (noDragEventsBubbling) {
+      event.stopPropagation();
+    }
+  };
+
+  var getRootProps = Object(react__WEBPACK_IMPORTED_MODULE_0__["useMemo"])(function () {
+    return function () {
+      var _ref2 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+          _ref2$refKey = _ref2.refKey,
+          refKey = _ref2$refKey === void 0 ? 'ref' : _ref2$refKey,
+          role = _ref2.role,
+          onKeyDown = _ref2.onKeyDown,
+          onFocus = _ref2.onFocus,
+          onBlur = _ref2.onBlur,
+          onClick = _ref2.onClick,
+          onDragEnter = _ref2.onDragEnter,
+          onDragOver = _ref2.onDragOver,
+          onDragLeave = _ref2.onDragLeave,
+          onDrop = _ref2.onDrop,
+          rest = _objectWithoutProperties(_ref2, _excluded3);
+
+      return _objectSpread(_objectSpread(_defineProperty({
+        onKeyDown: composeKeyboardHandler(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["composeEventHandlers"])(onKeyDown, onKeyDownCb)),
+        onFocus: composeKeyboardHandler(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["composeEventHandlers"])(onFocus, onFocusCb)),
+        onBlur: composeKeyboardHandler(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["composeEventHandlers"])(onBlur, onBlurCb)),
+        onClick: composeHandler(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["composeEventHandlers"])(onClick, onClickCb)),
+        onDragEnter: composeDragHandler(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["composeEventHandlers"])(onDragEnter, onDragEnterCb)),
+        onDragOver: composeDragHandler(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["composeEventHandlers"])(onDragOver, onDragOverCb)),
+        onDragLeave: composeDragHandler(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["composeEventHandlers"])(onDragLeave, onDragLeaveCb)),
+        onDrop: composeDragHandler(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["composeEventHandlers"])(onDrop, onDropCb)),
+        role: typeof role === 'string' && role !== '' ? role : 'button'
+      }, refKey, rootRef), !disabled && !noKeyboard ? {
+        tabIndex: 0
+      } : {}), rest);
+    };
+  }, [rootRef, onKeyDownCb, onFocusCb, onBlurCb, onClickCb, onDragEnterCb, onDragOverCb, onDragLeaveCb, onDropCb, noKeyboard, noDrag, disabled]);
+  var onInputElementClick = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function (event) {
+    event.stopPropagation();
+  }, []);
+  var getInputProps = Object(react__WEBPACK_IMPORTED_MODULE_0__["useMemo"])(function () {
+    return function () {
+      var _ref3 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+          _ref3$refKey = _ref3.refKey,
+          refKey = _ref3$refKey === void 0 ? 'ref' : _ref3$refKey,
+          onChange = _ref3.onChange,
+          onClick = _ref3.onClick,
+          rest = _objectWithoutProperties(_ref3, _excluded4);
+
+      var inputProps = _defineProperty({
+        accept: accept,
+        multiple: multiple,
+        type: 'file',
+        style: {
+          display: 'none'
         },
-        onError: function onError(_ref5) {
-          var response = _ref5.response;
-          var _a;
-          var data = response.data,
-            status = response.status;
-          if (status === 400 && ((_a = data === null || data === void 0 ? void 0 : data.validation_errors) === null || _a === void 0 ? void 0 : _a.mobilePhone)) {
-            setFieldError('phoneNumber', t('phoneNumber.errors.invalid'));
-          } else if (status >= 500) {
-            history.push(_app_constants__WEBPACK_IMPORTED_MODULE_16__["ROUTES"].PAYMENT.ERROR_ETIP);
-          } else {
-            history.push(_app_constants__WEBPACK_IMPORTED_MODULE_16__["ROUTES"].PAYMENT.ERROR_ETIP);
-          }
-        }
-      });
-    }
-  };
-  if (!managePayment.contractData.reference) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_pages_payment_PaymentBox__WEBPACK_IMPORTED_MODULE_23__["default"], {
-      "data-cy": "my-payment-loading"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_Skeleton_Payment_MyPaymentMode__WEBPACK_IMPORTED_MODULE_14__["default"], null));
-  }
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_pages_payment_PaymentBox__WEBPACK_IMPORTED_MODULE_23__["default"], {
-    "data-cy": "my-payment-mode"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_27__["SzTypographie"], {
-    variant: "H3",
-    size: "L",
-    weight: "medium",
-    className: "mb-3 mb-lg-4"
-  }, t('payment.IBANForm.title', {
-    context: formContext
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_4__["Formik"], {
-    initialValues: {
-      surname: (_k = (_j = myPmtModeDatas === null || myPmtModeDatas === void 0 ? void 0 : myPmtModeDatas.firstName) !== null && _j !== void 0 ? _j : myPmtModeDatas === null || myPmtModeDatas === void 0 ? void 0 : myPmtModeDatas.first_name) !== null && _k !== void 0 ? _k : '',
-      name: (_m = (_l = myPmtModeDatas === null || myPmtModeDatas === void 0 ? void 0 : myPmtModeDatas.lastName) !== null && _l !== void 0 ? _l : myPmtModeDatas === null || myPmtModeDatas === void 0 ? void 0 : myPmtModeDatas.last_name) !== null && _m !== void 0 ? _m : '',
-      phoneNumber: (_p = (_o = myPmtModeDatas === null || myPmtModeDatas === void 0 ? void 0 : myPmtModeDatas.mobilePhone) !== null && _o !== void 0 ? _o : myPmtModeDatas === null || myPmtModeDatas === void 0 ? void 0 : myPmtModeDatas.mobile_phone) !== null && _p !== void 0 ? _p : '',
-      iban: (_q = myPmtModeDatas === null || myPmtModeDatas === void 0 ? void 0 : myPmtModeDatas.iban) !== null && _q !== void 0 ? _q : '',
-      iban_field_1: (_r = myPmtModeDatas === null || myPmtModeDatas === void 0 ? void 0 : myPmtModeDatas.iban_field_1) !== null && _r !== void 0 ? _r : '',
-      iban_field_2: (_s = myPmtModeDatas === null || myPmtModeDatas === void 0 ? void 0 : myPmtModeDatas.iban_field_2) !== null && _s !== void 0 ? _s : '',
-      iban_field_3: (_t = myPmtModeDatas === null || myPmtModeDatas === void 0 ? void 0 : myPmtModeDatas.iban_field_3) !== null && _t !== void 0 ? _t : '',
-      iban_field_4: (_u = myPmtModeDatas === null || myPmtModeDatas === void 0 ? void 0 : myPmtModeDatas.iban_field_4) !== null && _u !== void 0 ? _u : '',
-      iban_field_5: (_v = myPmtModeDatas === null || myPmtModeDatas === void 0 ? void 0 : myPmtModeDatas.iban_field_5) !== null && _v !== void 0 ? _v : '',
-      iban_field_6: (_w = myPmtModeDatas === null || myPmtModeDatas === void 0 ? void 0 : myPmtModeDatas.iban_field_6) !== null && _w !== void 0 ? _w : '',
-      iban_field_7: (_x = myPmtModeDatas === null || myPmtModeDatas === void 0 ? void 0 : myPmtModeDatas.iban_field_7) !== null && _x !== void 0 ? _x : '',
-      checkboxVerified: false
-    },
-    validationSchema: myPaymentModeSchema,
-    validateOnBlur: true,
-    validateOnChange: false,
-    onSubmit: handleSubmit
-  }, function (_ref6) {
-    var errors = _ref6.errors,
-      touched = _ref6.touched,
-      handleBlur = _ref6.handleBlur,
-      handleChange = _ref6.handleChange,
-      handleSubmit = _ref6.handleSubmit,
-      values = _ref6.values,
-      setFieldValue = _ref6.setFieldValue;
-    var _a, _b, _c, _d, _e, _f, _g, _h;
-    var onToggleVerified = function onToggleVerified(_ref7) {
-      var target = _ref7.target;
-      setFieldValue('checkboxVerified', target.checked, true);
+        onChange: composeHandler(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["composeEventHandlers"])(onChange, onDropCb)),
+        onClick: composeHandler(Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["composeEventHandlers"])(onClick, onInputElementClick)),
+        autoComplete: 'off',
+        tabIndex: -1
+      }, refKey, inputRef);
+
+      return _objectSpread(_objectSpread({}, inputProps), rest);
     };
-    var onChangeText = function onChangeText(e) {
-      var value = e.target.value;
-      e.target.value = Object(_app_services_Utils__WEBPACK_IMPORTED_MODULE_10__["capitalizeValue"])(value);
-      handleChange(e);
-    };
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-      onSubmit: handleSubmit
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      id: "owner-info"
-    }, (!displayExistingIban || !isMandatOk || isFirstLastName) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "col-12 col-lg-9 mb-3 px-0"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_27__["SzInput"], {
-      name: "name",
-      id: "name",
-      value: values.name,
-      autocomplete: "family-name",
-      onChange: onChangeText,
-      onBlur: handleBlur,
-      label: t('payment.IBANForm.ownerName'),
-      placeholder: t('customerService.placeholder_lastName'),
-      variant: "outlined",
-      valid: !errors.name
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_form_FormError__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      customDisplay: touched.name && errors.name,
-      field: "name"
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "col-12 col-lg-9 mb-3 px-0"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_27__["SzInput"], {
-      name: "surname",
-      id: "surname",
-      value: values.surname,
-      autocomplete: "given-name",
-      onChange: onChangeText,
-      onBlur: handleBlur,
-      label: t('payment.IBANForm.ownerSurname'),
-      placeholder: t('customerService.placeholder_firstName'),
-      variant: "outlined",
-      valid: !errors.surname
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_form_FormError__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      customDisplay: touched.surname && errors.surname,
-      field: "surname"
-    }))), !isValidate && !isMandatOk && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "mb-3"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_form_PhoneForm_PhoneInput__WEBPACK_IMPORTED_MODULE_7__["default"], {
-      info: t('phoneNumber.info'),
-      label: isEtip ? 'payment.etip.mobile_phone_label' : 'payment.IBANForm.phoneNumber',
-      onlyFrenchMobile: isEtip
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "mb-3"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "col-12 col-lg-10 px-0",
-      "data-cy": "privacy-policy"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_27__["SzTypographie"], {
-      variant: "caption",
-      size: "M",
-      weight: "light"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_i18next__WEBPACK_IMPORTED_MODULE_1__["Trans"], {
-      i18nKey: "payment.IBANForm.privacy_policy",
-      components: {
-        redirect: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_Links_Link__WEBPACK_IMPORTED_MODULE_12__["default"], {
-          decorate: true,
-          to: link,
-          target: "_blank",
-          className: "sz-typo-caption font-family-medium"
-        })
-      }
-    })))))), displayExistingIban ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_RegisteredIbanBlock_index__WEBPACK_IMPORTED_MODULE_13__["RegisteredIbanBlock"], {
-      showOwner: isValidate,
-      holderValue: ((_a = managePayment === null || managePayment === void 0 ? void 0 : managePayment.contractData) === null || _a === void 0 ? void 0 : _a.ibanHolder) || undefined,
-      ibanValue: (_c = (_b = state === null || state === void 0 ? void 0 : state.myPmtModeDatas) === null || _b === void 0 ? void 0 : _b.iban) !== null && _c !== void 0 ? _c : (_d = managePayment === null || managePayment === void 0 ? void 0 : managePayment.contractData) === null || _d === void 0 ? void 0 : _d.iban
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_27__["SzButton"], {
-      id: "ibanModify",
-      onClick: onClickModifyIban,
-      variant: "outlined",
-      border: "soft",
-      className: "mt-3",
-      isDisabled: postPaymentMessage.isLoading
-    }, t('payment.IBANForm.ibanModify')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "mt-5 border-bottom border-light"
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_27__["SzCheckbox"], {
-      name: "checkboxVerified",
-      id: "checkboxVerified",
-      label: t('payment.IBANForm.checkboxValidateData'),
-      type: "checkbox",
-      checked: values.checkboxVerified,
-      onChange: onToggleVerified,
-      className: "mt-3 mb-2"
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_form_FormError__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      customDisplay: touched.checkboxVerified && errors.checkboxVerified,
-      field: "checkboxVerified"
-    })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_tsme_react_components_components_IbanForm__WEBPACK_IMPORTED_MODULE_28__["default"], {
-      isInternational: !isEtip,
-      displayInternationalIban: displayInternationalIban,
-      setDisplayInternationalIban: setDisplayInternationalIban,
-      disabledInternationalIban: postPaymentMessage.isLoading,
-      validationError: (postPaymentMessage === null || postPaymentMessage === void 0 ? void 0 : postPaymentMessage.isError) && ((_h = (_g = (_f = (_e = postPaymentMessage === null || postPaymentMessage === void 0 ? void 0 : postPaymentMessage.error) === null || _e === void 0 ? void 0 : _e.response) === null || _f === void 0 ? void 0 : _f.data) === null || _g === void 0 ? void 0 : _g.validation_errors) === null || _h === void 0 ? void 0 : _h.iban),
-      resetValidationError: function resetValidationError() {
-        return postPaymentMessage.reset();
-      }
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_FormButtons__WEBPACK_IMPORTED_MODULE_11__["default"], {
-      next: nextButton,
-      previous: previousButton
-    }));
-  })));
-};
-var MyPaymentMode = function MyPaymentMode() {
-  var _useLocation3 = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["useLocation"])(),
-    state = _useLocation3.state;
-  var _usePaymentParams2 = Object(_app_pages_payment_hooks_usePaymentParams__WEBPACK_IMPORTED_MODULE_19__["default"])(),
-    paymentMode = _usePaymentParams2.paymentMode;
-  if ((state === null || state === void 0 ? void 0 : state.origin) === ORIGIN_MANAGE) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SignMandate__WEBPACK_IMPORTED_MODULE_30__["default"], null);
-  } else if (paymentMode) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PaymentModeManage, null);
-  }
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PaymentModeList, null);
-};
-
-/***/ }),
-
-/***/ "./assets/js/pages/payment/steps/PaymentList.tsx":
-/*!*******************************************************!*\
-  !*** ./assets/js/pages/payment/steps/PaymentList.tsx ***!
-  \*******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PaymentList; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! formik */ "./node_modules/formik/dist/formik.esm.js");
-/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/constants */ "./assets/js/constants/index.ts");
-/* harmony import */ var _app_form_FormError__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @app/form/FormError */ "./assets/js/form/FormError.tsx");
-/* harmony import */ var _app_hooks_useGetAvailablePaymentModes__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @app/hooks/useGetAvailablePaymentModes */ "./assets/js/hooks/useGetAvailablePaymentModes.ts");
-/* harmony import */ var _app_models_IbanSepa_SelectPaymentMode__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @app/models/IbanSepa/SelectPaymentMode */ "./assets/js/models/IbanSepa/SelectPaymentMode.js");
-/* harmony import */ var _app_pages_payment_steps_MyPaymentMode__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @app/pages/payment/steps/MyPaymentMode */ "./assets/js/pages/payment/steps/MyPaymentMode.tsx");
-/* harmony import */ var _app_components_BlockRadio__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @app/components/BlockRadio */ "./assets/js/components/BlockRadio/index.tsx");
-/* harmony import */ var _app_components_FormButtons__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @app/components/FormButtons */ "./assets/js/components/FormButtons/index.tsx");
-/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @suezenv/react-theme-components */ "./node_modules/@suezenv/react-theme-components/build/index.js");
-/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-query */ "./node_modules/react-query/es/index.js");
-/* harmony import */ var _app_hooks__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @app/hooks */ "./assets/js/hooks/index.ts");
-/* harmony import */ var _app_hooks_useGA_tags_payment__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @app/hooks/useGA/tags/payment */ "./assets/js/hooks/useGA/tags/payment.ts");
-/* harmony import */ var _app_AppContext__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @app/AppContext */ "./assets/js/AppContext.tsx");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
-function _toArray(arr) { return _arrayWithHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function PaymentList(props) {
-  var _useTranslation = Object(react_i18next__WEBPACK_IMPORTED_MODULE_1__["useTranslation"])(),
-    t = _useTranslation.t;
-  var _useGA = Object(_app_hooks__WEBPACK_IMPORTED_MODULE_13__["useGA"])(),
-    track = _useGA.track;
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useHistory"])();
-  var paymentModesList = props.paymentModesList,
-    hasEtipSignedValidMandate = props.hasEtipSignedValidMandate,
-    monthlyPaymentAmount = props.monthlyPaymentAmount,
-    allModes = props.allModes,
-    from = props.from,
-    setRunPaymentCB = props.setRunPaymentCB;
-  var paymentModesFromApi = Object(_app_hooks_useGetAvailablePaymentModes__WEBPACK_IMPORTED_MODULE_6__["default"])(paymentModesList, hasEtipSignedValidMandate, monthlyPaymentAmount, allModes);
-  var _paymentModesFromApi = _toArray(paymentModesFromApi),
-    firstPaymentMode = _paymentModesFromApi[0],
-    restPaymentModes = _paymentModesFromApi.slice(1);
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-    _useState2 = _slicedToArray(_useState, 2),
-    isLoading = _useState2[0],
-    setIsLoading = _useState2[1];
-  var eFactureParam = Object(_app_pages_payment_steps_MyPaymentMode__WEBPACK_IMPORTED_MODULE_8__["CheckEfactureParam"])();
-  var isMutatingBankCard = Object(react_query__WEBPACK_IMPORTED_MODULE_12__["useIsMutating"])({
-    mutationKey: ['getBankCard']
+  }, [inputRef, accept, multiple, onDropCb, disabled]);
+  var fileCount = draggedFiles.length;
+  var isDragAccept = fileCount > 0 && Object(_utils_index__WEBPACK_IMPORTED_MODULE_3__["allFilesAccepted"])({
+    files: draggedFiles,
+    accept: accept,
+    minSize: minSize,
+    maxSize: maxSize,
+    multiple: multiple,
+    maxFiles: maxFiles
   });
-  var isIntranet = window.tsme_data.isIntranet;
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_app_AppContext__WEBPACK_IMPORTED_MODULE_15__["AppContext"]),
-    setPayment = _useContext.setPayment;
-  var nextButton = {
-    className: 'choose-paiement-mode',
-    label: t('payment.promotion.button'),
-    align: 'right',
-    loader: isLoading || isMutatingBankCard === 1,
-    disabled: isIntranet
-  };
-  var onSubmit = function onSubmit(_ref) {
-    var paymentMode = _ref.paymentMode;
-    setPayment({
-      paymentMode: paymentMode
-    });
-    track('PAYMENT_3', {
-      mode_paiement: _app_hooks_useGA_tags_payment__WEBPACK_IMPORTED_MODULE_14__["PAYMENT_MODE_GA_LIST"][paymentMode]
-    });
-    if (paymentMode !== _app_constants__WEBPACK_IMPORTED_MODULE_4__["PAYMENT_MODE_LIST"].BANK_CARD_PAYMENT) {
-      setIsLoading(true);
-    }
-    switch (paymentMode) {
-      case _app_constants__WEBPACK_IMPORTED_MODULE_4__["PAYMENT_MODE_LIST"].MONTHLY_PAYMENT:
-        history.push(_app_constants__WEBPACK_IMPORTED_MODULE_4__["ROUTES"].PAYMENT.MY_PAYMENT_METHOD + '?payment_mode=' + _app_constants__WEBPACK_IMPORTED_MODULE_4__["PAYMENT_MODE_MENSU"] + eFactureParam, {
-          origin: from
-        });
-        break;
-      case _app_constants__WEBPACK_IMPORTED_MODULE_4__["PAYMENT_MODE_LIST"].DIRECT_DEBIT_PAYMENT:
-        history.push(_app_constants__WEBPACK_IMPORTED_MODULE_4__["ROUTES"].PAYMENT.MY_PAYMENT_METHOD + '?payment_mode=' + _app_constants__WEBPACK_IMPORTED_MODULE_4__["PAYMENT_MODE_PRELEV"] + eFactureParam, {
-          origin: from
-        });
-        break;
-      case _app_constants__WEBPACK_IMPORTED_MODULE_4__["PAYMENT_MODE_LIST"].ETIP:
-        history.push(_app_constants__WEBPACK_IMPORTED_MODULE_4__["ROUTES"].PAYMENT.ETIP, {
-          origin: from
-        });
-        break;
-      case _app_constants__WEBPACK_IMPORTED_MODULE_4__["PAYMENT_MODE_LIST"].TIPI:
-        window.location.href = _app_constants__WEBPACK_IMPORTED_MODULE_4__["ROUTES"].MANAGE_PAYMENTS_URL.TIPI;
-        break;
-      case _app_constants__WEBPACK_IMPORTED_MODULE_4__["PAYMENT_MODE_LIST"].BANK_CARD_PAYMENT:
-        setRunPaymentCB(true);
-        break;
-    }
-  };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "mt-4",
-    "data-cy": "payment-list-title"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_11__["SzTypographie"], {
-    variant: "H2",
-    size: "M",
-    weight: "medium",
-    className: "text-dark mb-0"
-  }, t("payment.list.title"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_3__["Formik"], {
-    initialValues: {
-      paymentMode: 'monthlyPayment'
-    },
-    validationSchema: _app_models_IbanSepa_SelectPaymentMode__WEBPACK_IMPORTED_MODULE_7__["SelectPaymentModeSchema"],
-    validateOnBlur: true,
-    validateOnChange: false,
-    onSubmit: onSubmit
-  }, function (_ref2) {
-    var handleSubmit = _ref2.handleSubmit,
-      values = _ref2.values,
-      setFieldValue = _ref2.setFieldValue,
-      errors = _ref2.errors;
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-      onSubmit: handleSubmit
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "my-4",
-      "data-cy": "promoted-pmt-mode"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_BlockRadio__WEBPACK_IMPORTED_MODULE_9__["BlockRadio"], {
-      id: firstPaymentMode.value,
-      name: firstPaymentMode.value,
-      label: firstPaymentMode.label,
-      value: firstPaymentMode.value,
-      isReco: true
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_11__["SzTypographie"], {
-      variant: "body",
-      size: "M",
-      weight: "regular",
-      className: "text-dark mt-1"
-    }, firstPaymentMode.text), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "border-top-gray sz-border-1"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "d-flex align-items-center mt-2"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_11__["SzIcon"], {
-      variant: "line",
-      icon: "information-circle",
-      className: "sz-typo-body sm text-dark mr-2"
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_11__["SzTypographie"], {
-      variant: "caption",
-      size: "M",
-      weight: "light",
-      className: "text-dark"
-    }, firstPaymentMode.info))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      "data-cy": "other-pmt-mode-list"
-    }, restPaymentModes.length && restPaymentModes.map(function (item, index) {
-      var label = item.label,
-        value = item.value,
-        text = item.text;
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_BlockRadio__WEBPACK_IMPORTED_MODULE_9__["BlockRadio"], {
-        id: value,
-        key: index,
-        name: value,
-        label: label,
-        value: value,
-        className: "my-4"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_11__["SzTypographie"], {
-        variant: "caption",
-        size: "M",
-        weight: "regular",
-        className: "text-dark mt-1"
-      }, text));
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_form_FormError__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      field: "paymentMode",
-      customDisplay: errors.paymentMode
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_FormButtons__WEBPACK_IMPORTED_MODULE_10__["default"], {
-      next: nextButton
-    }));
-  }));
+  var isDragReject = fileCount > 0 && !isDragAccept;
+  return _objectSpread(_objectSpread({}, state), {}, {
+    isDragAccept: isDragAccept,
+    isDragReject: isDragReject,
+    isFocused: isFocused && !disabled,
+    getRootProps: getRootProps,
+    getInputProps: getInputProps,
+    rootRef: rootRef,
+    inputRef: inputRef,
+    open: composeHandler(openFileDialog)
+  });
 }
 
+function reducer(state, action) {
+  /* istanbul ignore next */
+  switch (action.type) {
+    case 'focus':
+      return _objectSpread(_objectSpread({}, state), {}, {
+        isFocused: true
+      });
+
+    case 'blur':
+      return _objectSpread(_objectSpread({}, state), {}, {
+        isFocused: false
+      });
+
+    case 'openDialog':
+      return _objectSpread(_objectSpread({}, initialState), {}, {
+        isFileDialogActive: true
+      });
+
+    case 'closeDialog':
+      return _objectSpread(_objectSpread({}, state), {}, {
+        isFileDialogActive: false
+      });
+
+    case 'setDraggedFiles':
+      /* eslint no-case-declarations: 0 */
+      var isDragActive = action.isDragActive,
+          draggedFiles = action.draggedFiles;
+      return _objectSpread(_objectSpread({}, state), {}, {
+        draggedFiles: draggedFiles,
+        isDragActive: isDragActive
+      });
+
+    case 'setFiles':
+      return _objectSpread(_objectSpread({}, state), {}, {
+        acceptedFiles: action.acceptedFiles,
+        fileRejections: action.fileRejections
+      });
+
+    case 'reset':
+      return _objectSpread({}, initialState);
+
+    default:
+      return state;
+  }
+}
+
+function noop() {}
+
+
+
 /***/ }),
 
-/***/ "./assets/js/pages/payment/steps/PromotionBlock.tsx":
-/*!**********************************************************!*\
-  !*** ./assets/js/pages/payment/steps/PromotionBlock.tsx ***!
-  \**********************************************************/
-/*! exports provided: MODE_MENSUALISATION, MODE_PRELEVEMENT, PAYMENT_MODE_KEY, ORIGIN_PROMOTION_BLOCK, PromotionBlock */
+/***/ "./node_modules/react-dropzone/dist/es/utils/index.js":
+/*!************************************************************!*\
+  !*** ./node_modules/react-dropzone/dist/es/utils/index.js ***!
+  \************************************************************/
+/*! exports provided: FILE_INVALID_TYPE, FILE_TOO_LARGE, FILE_TOO_SMALL, TOO_MANY_FILES, ErrorCode, getInvalidTypeRejectionErr, getTooLargeRejectionErr, getTooSmallRejectionErr, TOO_MANY_FILES_REJECTION, fileAccepted, fileMatchSize, allFilesAccepted, isPropagationStopped, isEvtWithFiles, isKindFile, onDocumentDragOver, isIeOrEdge, composeEventHandlers, canUseFileSystemAccessAPI, filePickerOptionsTypes */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MODE_MENSUALISATION", function() { return MODE_MENSUALISATION; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MODE_PRELEVEMENT", function() { return MODE_PRELEVEMENT; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PAYMENT_MODE_KEY", function() { return PAYMENT_MODE_KEY; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ORIGIN_PROMOTION_BLOCK", function() { return ORIGIN_PROMOTION_BLOCK; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PromotionBlock", function() { return PromotionBlock; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @suezenv/react-theme-components */ "./node_modules/@suezenv/react-theme-components/build/index.js");
-/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _app_components_AlertBox__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/components/AlertBox */ "./assets/js/components/AlertBox/index.tsx");
-/* harmony import */ var _app_components_FormButtons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @app/components/FormButtons */ "./assets/js/components/FormButtons/index.tsx");
-/* harmony import */ var _app_components_Skeleton_PaymentModePromotion_paymentModePromotion__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @app/components/Skeleton/PaymentModePromotion/paymentModePromotion */ "./assets/js/components/Skeleton/PaymentModePromotion/paymentModePromotion.tsx");
-/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @app/constants */ "./assets/js/constants/index.ts");
-/* harmony import */ var _app_ez_components_modules_Tips__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @app/ez-components/modules/Tips */ "./assets/js/ez-components/modules/Tips.jsx");
-/* harmony import */ var _app_pages_payment_steps_PaymentList__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @app/pages/payment/steps/PaymentList */ "./assets/js/pages/payment/steps/PaymentList.tsx");
-/* harmony import */ var _app_pages_payment_PaymentBox__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @app/pages/payment/PaymentBox */ "./assets/js/pages/payment/PaymentBox.tsx");
-/* harmony import */ var _SummaryBox__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../SummaryBox */ "./assets/js/pages/payment/SummaryBox.tsx");
-/* harmony import */ var _app_pages_payment_hooks_useModeListPayment__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @app/pages/payment/hooks/useModeListPayment */ "./assets/js/pages/payment/hooks/useModeListPayment.ts");
-/* harmony import */ var _app_components_payment_PaylineMonext__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @app/components/payment/PaylineMonext */ "./assets/js/components/payment/PaylineMonext.tsx");
-/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react-query */ "./node_modules/react-query/es/index.js");
-/* harmony import */ var _app_hooks__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @app/hooks */ "./assets/js/hooks/index.ts");
-/* harmony import */ var _app_hooks_useGA_tags_payment__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @app/hooks/useGA/tags/payment */ "./assets/js/hooks/useGA/tags/payment.ts");
-/* harmony import */ var _app_AppContext__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @app/AppContext */ "./assets/js/AppContext.tsx");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FILE_INVALID_TYPE", function() { return FILE_INVALID_TYPE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FILE_TOO_LARGE", function() { return FILE_TOO_LARGE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FILE_TOO_SMALL", function() { return FILE_TOO_SMALL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TOO_MANY_FILES", function() { return TOO_MANY_FILES; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ErrorCode", function() { return ErrorCode; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getInvalidTypeRejectionErr", function() { return getInvalidTypeRejectionErr; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getTooLargeRejectionErr", function() { return getTooLargeRejectionErr; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getTooSmallRejectionErr", function() { return getTooSmallRejectionErr; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TOO_MANY_FILES_REJECTION", function() { return TOO_MANY_FILES_REJECTION; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fileAccepted", function() { return fileAccepted; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fileMatchSize", function() { return fileMatchSize; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "allFilesAccepted", function() { return allFilesAccepted; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isPropagationStopped", function() { return isPropagationStopped; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isEvtWithFiles", function() { return isEvtWithFiles; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isKindFile", function() { return isKindFile; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "onDocumentDragOver", function() { return onDocumentDragOver; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isIeOrEdge", function() { return isIeOrEdge; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "composeEventHandlers", function() { return composeEventHandlers; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "canUseFileSystemAccessAPI", function() { return canUseFileSystemAccessAPI; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "filePickerOptionsTypes", function() { return filePickerOptionsTypes; });
+/* harmony import */ var attr_accept__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! attr-accept */ "./node_modules/attr-accept/dist/es/index.js");
+/* harmony import */ var attr_accept__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(attr_accept__WEBPACK_IMPORTED_MODULE_0__);
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var MODE_MENSUALISATION = 'M';
-var MODE_PRELEVEMENT = 'P';
-var PAYMENT_MODE_KEY = '?payment_mode=';
-var ORIGIN_PROMOTION_BLOCK = 'promotionBlock';
-var PromotionBlock = function PromotionBlock() {
-  var _useTranslation = Object(react_i18next__WEBPACK_IMPORTED_MODULE_1__["useTranslation"])(),
-    t = _useTranslation.t;
-  var _useGA = Object(_app_hooks__WEBPACK_IMPORTED_MODULE_15__["useGA"])(),
-    track = _useGA.track;
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useHistory"])();
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-    _useState2 = _slicedToArray(_useState, 2),
-    isLoaderButton = _useState2[0],
-    setIsLoaderButton = _useState2[1];
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-    _useState4 = _slicedToArray(_useState3, 2),
-    runPaymentCB = _useState4[0],
-    setRunPaymentCB = _useState4[1];
-  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-    _useState6 = _slicedToArray(_useState5, 2),
-    showList = _useState6[0],
-    setShowList = _useState6[1];
-  var _useModeListPayment = Object(_app_pages_payment_hooks_useModeListPayment__WEBPACK_IMPORTED_MODULE_12__["default"])(),
-    modeListPaymentData = _useModeListPayment.modeListPaymentData,
-    isLoading = _useModeListPayment.isLoading,
-    promotedValue = _useModeListPayment.promotedValue;
-  var isMutatingBankCard = Object(react_query__WEBPACK_IMPORTED_MODULE_14__["useIsMutating"])({
-    mutationKey: ['getBankCard']
-  });
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_app_AppContext__WEBPACK_IMPORTED_MODULE_17__["AppContext"]),
-    setPayment = _useContext.setPayment;
-  if (isLoading || !modeListPaymentData) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_pages_payment_PaymentBox__WEBPACK_IMPORTED_MODULE_10__["default"], {
-      "data-cy": "my-payment-promo-loading"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_Skeleton_PaymentModePromotion_paymentModePromotion__WEBPACK_IMPORTED_MODULE_6__["default"], null));
-  }
-  var currentPaymentModeCode = modeListPaymentData.currentPaymentModeCode;
-  var isPaymentModeMorP = [MODE_MENSUALISATION, MODE_PRELEVEMENT].includes(currentPaymentModeCode);
-  if (!promotedValue && !isPaymentModeMorP) {
-    track('PAYMENT_4', {
-      mode_paiement: '',
-      iban_mandat: '',
-      code_erreur: 'paiements_indisponibles'
-    });
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Redirect"], {
-      to: _app_constants__WEBPACK_IMPORTED_MODULE_7__["ROUTES"].PAYMENT.UNAVAILABLE_PMT_MODE
-    });
-  }
-  var summaryBoxContentProps = {
-    name: modeListPaymentData.contractBlock.name,
-    address: modeListPaymentData.contractBlock.siteAddress,
-    reference: modeListPaymentData.contractBlock.fullReference,
-    titleCode: modeListPaymentData.grayBlock.titleCode,
-    amount: modeListPaymentData.grayBlock.content.amount,
-    date: modeListPaymentData.grayBlock.content.date,
-    showEtip: modeListPaymentData.hasEtipSignedValidMandate,
-    paymentModeShow: showList ? false : isPaymentModeMorP,
-    paymentModeLabel: t('payment.summary_box.payment_mode_label', {
-      context: t('payment.summary_box.actual')
-    }),
-    paymentModeValue: t('payment.summary_box.debit_type', {
-      context: currentPaymentModeCode
-    })
-  };
-  var listProps = {
-    paymentModesList: modeListPaymentData.paymentModesList,
-    hasEtipSignedValidMandate: modeListPaymentData === null || modeListPaymentData === void 0 ? void 0 : modeListPaymentData.hasEtipSignedValidMandate,
-    monthlyPaymentAmount: modeListPaymentData === null || modeListPaymentData === void 0 ? void 0 : modeListPaymentData.monthlyPaymentAmount,
-    allModes: true,
-    from: ORIGIN_PROMOTION_BLOCK
-  };
-  var count = Object.values(modeListPaymentData.paymentModesList).filter(function (item) {
-    return item;
-  }).length;
-  var showListButton = count >= 2;
-  var textAlreadyBestMode = !promotedValue ? t('payment.promotion.alreadyBestMode', {
-    context: currentPaymentModeCode === MODE_MENSUALISATION ? MODE_MENSUALISATION : MODE_PRELEVEMENT
-  }) : '';
-  var promotedValueContext = {
-    context: promotedValue
-  };
-  var textTip = t('payment.promotion.tips', promotedValueContext);
-  var showTips = promotedValue && !['etip', 'bankCardPayment'].includes(promotedValue);
-  var textOtherInfoEtip = t('payment.promotion.text_other_info_etip', {
-    context: modeListPaymentData.hasEtipSignedValidMandate ? 'mandat' : 'no_mandat'
-  });
-  var handleNextClick = function handleNextClick() {
-    if (null !== promotedValue) {
-      setPayment({
-        paymentMode: promotedValue
-      });
-      track('PAYMENT_1', {
-        mode_paiement: _app_hooks_useGA_tags_payment__WEBPACK_IMPORTED_MODULE_16__["PAYMENT_MODE_GA_LIST"][promotedValue]
-      });
-    }
-    if (promotedValue !== _app_constants__WEBPACK_IMPORTED_MODULE_7__["PAYMENT_MODE_LIST"].BANK_CARD_PAYMENT) {
-      setIsLoaderButton(true);
-    }
-    switch (promotedValue) {
-      case _app_constants__WEBPACK_IMPORTED_MODULE_7__["PAYMENT_MODE_LIST"].MONTHLY_PAYMENT:
-        history.push({
-          pathname: _app_constants__WEBPACK_IMPORTED_MODULE_7__["ROUTES"].PAYMENT.MY_PAYMENT_METHOD,
-          search: PAYMENT_MODE_KEY + _app_constants__WEBPACK_IMPORTED_MODULE_7__["PAYMENT_MODE_MENSU"],
-          state: {
-            origin: ORIGIN_PROMOTION_BLOCK
-          }
-        });
-        break;
-      case _app_constants__WEBPACK_IMPORTED_MODULE_7__["PAYMENT_MODE_LIST"].DIRECT_DEBIT_PAYMENT:
-        history.push({
-          pathname: _app_constants__WEBPACK_IMPORTED_MODULE_7__["ROUTES"].PAYMENT.MY_PAYMENT_METHOD,
-          search: PAYMENT_MODE_KEY + _app_constants__WEBPACK_IMPORTED_MODULE_7__["PAYMENT_MODE_PRELEV"],
-          state: {
-            origin: ORIGIN_PROMOTION_BLOCK
-          }
-        });
-        break;
-      case _app_constants__WEBPACK_IMPORTED_MODULE_7__["PAYMENT_MODE_LIST"].ETIP:
-        window.location.href = _app_constants__WEBPACK_IMPORTED_MODULE_7__["ROUTES"].PAYMENT.ETIP;
-        break;
-      case _app_constants__WEBPACK_IMPORTED_MODULE_7__["PAYMENT_MODE_LIST"].TIPI:
-        window.location.href = _app_constants__WEBPACK_IMPORTED_MODULE_7__["ROUTES"].MANAGE_PAYMENTS_URL.TIPI;
-        break;
-      case _app_constants__WEBPACK_IMPORTED_MODULE_7__["PAYMENT_MODE_LIST"].BANK_CARD_PAYMENT:
-        setRunPaymentCB(true);
-        break;
-    }
-  };
-  var nextButton = {
-    label: t('payment.promotion.button'),
-    align: 'right',
-    loader: isLoaderButton || isMutatingBankCard === 1,
-    onClick: handleNextClick
-  };
-  var handleOtherPaymentsClick = function handleOtherPaymentsClick() {
-    track('PAYMENT_2');
-    setShowList(true);
-  };
-  var otherPaymentsButton = {
-    id: 'allPaymentMods',
-    label: t('payment.promotion.buttonOtherPayments'),
-    align: 'right',
-    variant: 'tertiary',
-    arrow: true,
-    onClick: handleOtherPaymentsClick
-  };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_pages_payment_PaymentBox__WEBPACK_IMPORTED_MODULE_10__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_payment_PaylineMonext__WEBPACK_IMPORTED_MODULE_13__["default"], {
-    launch: runPaymentCB,
-    setRunPaymentCB: setRunPaymentCB
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SummaryBox__WEBPACK_IMPORTED_MODULE_11__["SummaryBoxContent"], Object.assign({}, summaryBoxContentProps)), showList ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_pages_payment_steps_PaymentList__WEBPACK_IMPORTED_MODULE_9__["default"], Object.assign({
-    setRunPaymentCB: setRunPaymentCB
-  }, listProps)) : promotedValue ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "promotionBlock border sz-border-1 border-expert-blue rounded-2 px-4 py-3 mt-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_3__["SzTypographie"], {
-    variant: "H3",
-    size: "L",
-    weight: "medium",
-    className: "mb-1"
-  }, t('payment.promotion.title', promotedValueContext)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_3__["SzTypographie"], {
-    variant: "body",
-    className: "text-dark mb-3"
-  }, t('payment.promotion.description', Object.assign(Object.assign({}, promotedValueContext), {
-    monthlyAmount: modeListPaymentData.monthlyPaymentAmount
-  }))), showTips && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_ez_components_modules_Tips__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    isGoodToKnow: false,
-    className: "mb-3"
-  }, textTip), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "d-flex flex-row align-items-center top-grey-line pt-2"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_3__["SzIcon"], {
-    variant: "line",
-    icon: "information-circle",
-    className: "mr-3 mb-3 promotion-info-icon"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_3__["SzTypographie"], {
-    variant: "body",
-    className: "text-dark promotion-info-text"
-  }, t('payment.promotion.other_info', Object.assign(Object.assign({}, promotedValueContext), {
-    text_other_info_etip: textOtherInfoEtip
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_FormButtons__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    next: nextButton
-  })), showListButton && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_FormButtons__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    next: otherPaymentsButton
-  })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_AlertBox__WEBPACK_IMPORTED_MODULE_4__["AlertBox"], {
-    variant: "info",
-    className: "mt-4"
-  }, textAlreadyBestMode));
-};
-
-/***/ }),
-
-/***/ "./assets/js/pages/payment/steps/SignMandate.tsx":
-/*!*******************************************************!*\
-  !*** ./assets/js/pages/payment/steps/SignMandate.tsx ***!
-  \*******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SignMandate; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/constants */ "./assets/js/constants/index.ts");
-/* harmony import */ var _PaymentBox__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../PaymentBox */ "./assets/js/pages/payment/PaymentBox.tsx");
-/* harmony import */ var _app_form_MandateForm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/form/MandateForm */ "./assets/js/form/MandateForm.tsx");
-/* harmony import */ var _app_components_DownloadMandate__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @app/components/DownloadMandate */ "./assets/js/components/DownloadMandate.tsx");
-/* harmony import */ var _app_hooks_useSetOtp__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @app/hooks/useSetOtp */ "./assets/js/hooks/useSetOtp.ts");
-/* harmony import */ var _app_pages_payment_hooks_usePaymentParams__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @app/pages/payment/hooks/usePaymentParams */ "./assets/js/pages/payment/hooks/usePaymentParams.ts");
-/* harmony import */ var _app_hooks_useSearchParams__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @app/hooks/useSearchParams */ "./assets/js/hooks/useSearchParams.ts");
-/* harmony import */ var _app_components_Skeleton_Payment_MyPaymentMode__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @app/components/Skeleton/Payment/MyPaymentMode */ "./assets/js/components/Skeleton/Payment/MyPaymentMode/index.tsx");
-/* harmony import */ var _app_pages_payment__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @app/pages/payment */ "./assets/js/pages/payment/index.tsx");
-/* harmony import */ var _app_services_Utils__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @app/services/Utils */ "./assets/js/services/Utils.js");
-/* harmony import */ var _app_hooks__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @app/hooks */ "./assets/js/hooks/index.ts");
-/* harmony import */ var _app_hooks_useGA_tags_payment__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @app/hooks/useGA/tags/payment */ "./assets/js/hooks/useGA/tags/payment.ts");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
-function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
+ // Error codes
 
+var FILE_INVALID_TYPE = 'file-invalid-type';
+var FILE_TOO_LARGE = 'file-too-large';
+var FILE_TOO_SMALL = 'file-too-small';
+var TOO_MANY_FILES = 'too-many-files';
+var ErrorCode = {
+  FileInvalidType: FILE_INVALID_TYPE,
+  FileTooLarge: FILE_TOO_LARGE,
+  FileTooSmall: FILE_TOO_SMALL,
+  TooManyFiles: TOO_MANY_FILES
+}; // File Errors
 
-
-
-
-
-
-
-
-
-
-
-
-function SignMandate() {
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
-  var _useGA = Object(_app_hooks__WEBPACK_IMPORTED_MODULE_12__["useGA"])(),
-    track = _useGA.track;
-  var _usePaymentParams = Object(_app_pages_payment_hooks_usePaymentParams__WEBPACK_IMPORTED_MODULE_7__["default"])(),
-    eFacture = _usePaymentParams.eFacture,
-    isRouteEtip = _usePaymentParams.isRouteEtip,
-    paymentMode = _usePaymentParams.paymentMode;
-  var _useLocation = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useLocation"])(),
-    state = _useLocation.state,
-    search = _useLocation.search;
-  var mobilePhone = state.myPmtModeDatas.mobilePhone;
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_app_pages_payment__WEBPACK_IMPORTED_MODULE_10__["PaymentContext"]),
-    managePayment = _useContext.managePayment;
-  var searchParams = Object(_app_hooks_useSearchParams__WEBPACK_IMPORTED_MODULE_8__["default"])();
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-    _useState2 = _slicedToArray(_useState, 2),
-    errorReset = _useState2[0],
-    setErrorReset = _useState2[1];
-  var finalizePaymentMessage = Object(_app_hooks_useSetOtp__WEBPACK_IMPORTED_MODULE_6__["default"])({
-    url: isRouteEtip ? _app_constants__WEBPACK_IMPORTED_MODULE_2__["API"].DOCAPOSTE.SIGN_MANDATE : _app_constants__WEBPACK_IMPORTED_MODULE_2__["API"].PAYMENT.FINALIZE_PAYMENT_MSG,
-    onSuccess: function onSuccess(_ref) {
-      var data = _ref.data;
-      var _ref2 = data || '',
-        code = _ref2.code,
-        message = _ref2.message;
-      if (!isRouteEtip) {
-        if (message !== _app_constants__WEBPACK_IMPORTED_MODULE_2__["CODES"].OK && message !== _app_constants__WEBPACK_IMPORTED_MODULE_2__["CODES"].KO_CODE_OTP) {
-          history.push(_app_constants__WEBPACK_IMPORTED_MODULE_2__["ROUTES"].PAYMENT.ERROR);
-          return;
-        } else if (message === _app_constants__WEBPACK_IMPORTED_MODULE_2__["CODES"].KO_CODE_OTP) {
-          setErrorReset(true);
-        }
-      } else {
-        if (code !== _app_constants__WEBPACK_IMPORTED_MODULE_2__["CODES"].SUCCESS && code !== _app_constants__WEBPACK_IMPORTED_MODULE_2__["CODES"].INCORRECT_INPUT) {
-          history.push(_app_constants__WEBPACK_IMPORTED_MODULE_2__["ROUTES"].PAYMENT.ERROR_ETIP);
-          return;
-        }
-        if (code === _app_constants__WEBPACK_IMPORTED_MODULE_2__["CODES"].INCORRECT_INPUT) {
-          setErrorReset(true);
-        }
-      }
-      if (isRouteEtip ? code === _app_constants__WEBPACK_IMPORTED_MODULE_2__["CODES"].SUCCESS : message === _app_constants__WEBPACK_IMPORTED_MODULE_2__["CODES"].OK) {
-        if (eFacture) {
-          searchParams.set('e-facture', 'true');
-        }
-        if (isRouteEtip) {
-          searchParams.set('payment_mode', 'etip');
-        }
-        searchParams.set('mandat', 'true');
-        history.push({
-          pathname: _app_constants__WEBPACK_IMPORTED_MODULE_2__["ROUTES"].PAYMENT.CONFIRMATION,
-          search: searchParams.toString()
-        });
-      }
-    },
-    onError: function onError(_ref3) {
-      var response = _ref3.response;
-      var _a;
-      track('PAYMENT_4', {
-        mode_paiement: paymentMode ? _app_hooks_useGA_tags_payment__WEBPACK_IMPORTED_MODULE_13__["PAYMENT_MODE_GA_LIST"][paymentMode] : '',
-        iban_mandat: 'has_iban no_mandate',
-        code_erreur: (_a = response === null || response === void 0 ? void 0 : response.data) === null || _a === void 0 ? void 0 : _a.code
-      });
-      if (isRouteEtip && response.status === 502 && response.data.code === _app_constants__WEBPACK_IMPORTED_MODULE_2__["CODES"].INCORRECT_INPUT || !isRouteEtip && response.data.message === _app_constants__WEBPACK_IMPORTED_MODULE_2__["CODES"].KO_CODE_OTP) {
-        setErrorReset(true);
-      } else {
-        isRouteEtip ? history.push(_app_constants__WEBPACK_IMPORTED_MODULE_2__["ROUTES"].PAYMENT.ERROR_ETIP) : history.push(_app_constants__WEBPACK_IMPORTED_MODULE_2__["ROUTES"].PAYMENT.ERROR);
-      }
-    }
-  });
-  var onPrevClick = function onPrevClick() {
-    var myPmtModeDatas = state.myPmtModeDatas,
-      firstOrigin = state.firstOrigin;
-    if (isRouteEtip) {
-      history.push({
-        pathname: _app_constants__WEBPACK_IMPORTED_MODULE_2__["ROUTES"].PAYMENT.ETIP,
-        state: {
-          myPmtModeDatas: myPmtModeDatas,
-          firstOrigin: firstOrigin
-        }
-      });
-    } else {
-      history.push({
-        pathname: _app_constants__WEBPACK_IMPORTED_MODULE_2__["ROUTES"].PAYMENT.MY_PAYMENT_METHOD,
-        search: searchParams.toString(),
-        state: {
-          myPmtModeDatas: myPmtModeDatas,
-          firstOrigin: firstOrigin
-        }
-      });
-    }
+var getInvalidTypeRejectionErr = function getInvalidTypeRejectionErr(accept) {
+  accept = Array.isArray(accept) && accept.length === 1 ? accept[0] : accept;
+  var messageSuffix = Array.isArray(accept) ? "one of ".concat(accept.join(', ')) : accept;
+  return {
+    code: FILE_INVALID_TYPE,
+    message: "File type must be ".concat(messageSuffix)
   };
-  var onSubmit = function onSubmit(props) {
-    var paramName = isRouteEtip ? 'sms_code' : 'otpCode';
-    finalizePaymentMessage.mutate(_defineProperty({}, paramName, props === null || props === void 0 ? void 0 : props.input));
+};
+var getTooLargeRejectionErr = function getTooLargeRejectionErr(maxSize) {
+  return {
+    code: FILE_TOO_LARGE,
+    message: "File is larger than ".concat(maxSize, " ").concat(maxSize === 1 ? 'byte' : 'bytes')
   };
-  var url = isRouteEtip ? _app_constants__WEBPACK_IMPORTED_MODULE_2__["API"].DOCAPOSTE.DOWNLOAD_MANDATE_TPL : _app_constants__WEBPACK_IMPORTED_MODULE_2__["API"].PAYMENT.GET_TEMPLATE_PAYMENT;
-  var onSuccess = function onSuccess(response) {
-    _app_services_Utils__WEBPACK_IMPORTED_MODULE_11__["download"].fromFile(response);
+};
+var getTooSmallRejectionErr = function getTooSmallRejectionErr(minSize) {
+  return {
+    code: FILE_TOO_SMALL,
+    message: "File is smaller than ".concat(minSize, " ").concat(minSize === 1 ? 'byte' : 'bytes')
   };
-  if (!managePayment) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PaymentBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      "data-cy": "sign-mandate-loading"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_Skeleton_Payment_MyPaymentMode__WEBPACK_IMPORTED_MODULE_9__["default"], null));
+};
+var TOO_MANY_FILES_REJECTION = {
+  code: TOO_MANY_FILES,
+  message: 'Too many files'
+}; // Firefox versions prior to 53 return a bogus MIME type for every file drag, so dragovers with
+// that MIME type will always be accepted
+
+function fileAccepted(file, accept) {
+  var isAcceptable = file.type === 'application/x-moz-file' || attr_accept__WEBPACK_IMPORTED_MODULE_0___default()(file, accept);
+  return [isAcceptable, isAcceptable ? null : getInvalidTypeRejectionErr(accept)];
+}
+function fileMatchSize(file, minSize, maxSize) {
+  if (isDefined(file.size)) {
+    if (isDefined(minSize) && isDefined(maxSize)) {
+      if (file.size > maxSize) return [false, getTooLargeRejectionErr(maxSize)];
+      if (file.size < minSize) return [false, getTooSmallRejectionErr(minSize)];
+    } else if (isDefined(minSize) && file.size < minSize) return [false, getTooSmallRejectionErr(minSize)];else if (isDefined(maxSize) && file.size > maxSize) return [false, getTooLargeRejectionErr(maxSize)];
   }
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PaymentBox__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_DownloadMandate__WEBPACK_IMPORTED_MODULE_5__["DownloadMandate"], {
-    url: url,
-    pathname: _app_constants__WEBPACK_IMPORTED_MODULE_2__["ROUTES"].PAYMENT.ERROR,
-    search: search,
-    mobilePhone: mobilePhone,
-    isBlob: isRouteEtip,
-    onSuccess: isRouteEtip ? onSuccess : undefined
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_form_MandateForm__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    onPrevClick: onPrevClick,
-    onSubmit: onSubmit,
-    mobilePhone: mobilePhone,
-    errorReset: errorReset,
-    setErrorReset: setErrorReset,
-    loadingSubmit: finalizePaymentMessage.isLoading
-  }));
+
+  return [true, null];
 }
 
-/***/ }),
+function isDefined(value) {
+  return value !== undefined && value !== null;
+}
 
-/***/ "./assets/js/pages/payment/steps/SuccessCB.tsx":
-/*!*****************************************************!*\
-  !*** ./assets/js/pages/payment/steps/SuccessCB.tsx ***!
-  \*****************************************************/
-/*! exports provided: SuccessCB */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+function allFilesAccepted(_ref) {
+  var files = _ref.files,
+      accept = _ref.accept,
+      minSize = _ref.minSize,
+      maxSize = _ref.maxSize,
+      multiple = _ref.multiple,
+      maxFiles = _ref.maxFiles;
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SuccessCB", function() { return SuccessCB; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/constants */ "./assets/js/constants/index.ts");
-/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
-/* harmony import */ var _app_components_Confirmation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/components/Confirmation */ "./assets/js/components/Confirmation/index.tsx");
-/* harmony import */ var _PaymentBox__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../PaymentBox */ "./assets/js/pages/payment/PaymentBox.tsx");
-/* harmony import */ var react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-loading-skeleton */ "./node_modules/react-loading-skeleton/lib/index.js");
-/* harmony import */ var react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _app_hooks_useResponsive__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @app/hooks/useResponsive */ "./assets/js/hooks/useResponsive.ts");
-/* harmony import */ var _hooks_useModeListPayment__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../hooks/useModeListPayment */ "./assets/js/pages/payment/hooks/useModeListPayment.ts");
-
-
-
-
-
-
-
-
-
-var SuccessCB = function SuccessCB() {
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
-  var _useTranslation = Object(react_i18next__WEBPACK_IMPORTED_MODULE_3__["useTranslation"])(),
-    t = _useTranslation.t;
-  var isMobile = Object(_app_hooks_useResponsive__WEBPACK_IMPORTED_MODULE_7__["useIsMobile"])();
-  var _useLocation = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useLocation"])(),
-    state = _useLocation.state;
-  var _ref = state || '',
-    solde = _ref.solde;
-  var handlePreviousClick = function handlePreviousClick() {
-    history.push(_app_constants__WEBPACK_IMPORTED_MODULE_2__["ROUTES"].DASHBOARD);
-  };
-  var _useModeListPayment = Object(_hooks_useModeListPayment__WEBPACK_IMPORTED_MODULE_8__["default"])(),
-    modeListPaymentData = _useModeListPayment.modeListPaymentData,
-    isLoading = _useModeListPayment.isLoading;
-  var soldeApi = (modeListPaymentData === null || modeListPaymentData === void 0 ? void 0 : modeListPaymentData.balanceAmount) || '';
-  var handleNextClick = function handleNextClick() {
-    window.open(_app_constants__WEBPACK_IMPORTED_MODULE_2__["API"].PAYMENT.DOWNLOAD_TICKET, '_blank');
-  };
-  var previousButton = {
-    label: t('managePayments.validate.button_dashboard'),
-    align: 'left',
-    onClick: handlePreviousClick,
-    enabled: true
-  };
-  var nextButton = {
-    label: t('managePayments.validate.button_download_ticket_payline'),
-    align: 'right',
-    onClick: handleNextClick
-  };
-  var amount = solde ? solde : soldeApi;
-  var keySuccess = amount ? 'success' : 'success_no_amount';
-  var title = t('payment.confirmation_cb.title', {
-    amount: amount,
-    context: keySuccess
-  });
-  if (isLoading) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PaymentBox__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, {
-      width: isMobile ? 256 : 622,
-      height: 46,
-      className: "mb-3"
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loading_skeleton__WEBPACK_IMPORTED_MODULE_6___default.a, {
-      width: isMobile ? 256 : 622,
-      height: 150
-    }));
+  if (!multiple && files.length > 1 || multiple && maxFiles >= 1 && files.length > maxFiles) {
+    return false;
   }
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PaymentBox__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_Confirmation__WEBPACK_IMPORTED_MODULE_4__["Confirmation"], {
-    isSuccess: true,
-    title: title,
-    desc: t('payment.confirmation_cb.message_success'),
-    previousButton: previousButton,
-    nextButton: nextButton
-  }));
-};
 
-/***/ }),
+  return files.every(function (file) {
+    var _fileAccepted = fileAccepted(file, accept),
+        _fileAccepted2 = _slicedToArray(_fileAccepted, 1),
+        accepted = _fileAccepted2[0];
 
-/***/ "./assets/js/pages/payment/steps/UnavailablePmtMode.tsx":
-/*!**************************************************************!*\
-  !*** ./assets/js/pages/payment/steps/UnavailablePmtMode.tsx ***!
-  \**************************************************************/
-/*! exports provided: UnavailablePmtMode */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+    var _fileMatchSize = fileMatchSize(file, minSize, maxSize),
+        _fileMatchSize2 = _slicedToArray(_fileMatchSize, 1),
+        sizeMatch = _fileMatchSize2[0];
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UnavailablePmtMode", function() { return UnavailablePmtMode; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @app/constants */ "./assets/js/constants/index.ts");
-/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
-/* harmony import */ var _app_components_FormButtons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/components/FormButtons */ "./assets/js/components/FormButtons/index.tsx");
-/* harmony import */ var _app_components_AlertBox__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/components/AlertBox */ "./assets/js/components/AlertBox/index.tsx");
-/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @suezenv/react-theme-components */ "./node_modules/@suezenv/react-theme-components/build/index.js");
-/* harmony import */ var _suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _app_pages_payment_PaymentBox__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @app/pages/payment/PaymentBox */ "./assets/js/pages/payment/PaymentBox.tsx");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+    return accepted && sizeMatch;
+  });
+} // React's synthetic events has event.isPropagationStopped,
+// but to remain compatibility with other libs (Preact) fall back
+// to check event.cancelBubble
+
+function isPropagationStopped(event) {
+  if (typeof event.isPropagationStopped === 'function') {
+    return event.isPropagationStopped();
+  } else if (typeof event.cancelBubble !== 'undefined') {
+    return event.cancelBubble;
+  }
+
+  return false;
+}
+function isEvtWithFiles(event) {
+  if (!event.dataTransfer) {
+    return !!event.target && !!event.target.files;
+  } // https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/types
+  // https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API/Recommended_drag_types#file
 
 
+  return Array.prototype.some.call(event.dataTransfer.types, function (type) {
+    return type === 'Files' || type === 'application/x-moz-file';
+  });
+}
+function isKindFile(item) {
+  return _typeof(item) === 'object' && item !== null && item.kind === 'file';
+} // allow the entire document to be a drag target
 
+function onDocumentDragOver(event) {
+  event.preventDefault();
+}
 
+function isIe(userAgent) {
+  return userAgent.indexOf('MSIE') !== -1 || userAgent.indexOf('Trident/') !== -1;
+}
 
+function isEdge(userAgent) {
+  return userAgent.indexOf('Edge/') !== -1;
+}
 
+function isIeOrEdge() {
+  var userAgent = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : window.navigator.userAgent;
+  return isIe(userAgent) || isEdge(userAgent);
+}
+/**
+ * This is intended to be used to compose event handlers
+ * They are executed in order until one of them calls `event.isPropagationStopped()`.
+ * Note that the check is done on the first invoke too,
+ * meaning that if propagation was stopped before invoking the fns,
+ * no handlers will be executed.
+ *
+ * @param {Function} fns the event hanlder functions
+ * @return {Function} the event handler to add to an element
+ */
 
-var UnavailablePmtMode = function UnavailablePmtMode() {
-  var _useTranslation = Object(react_i18next__WEBPACK_IMPORTED_MODULE_2__["useTranslation"])(),
-    t = _useTranslation.t;
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-    _useState2 = _slicedToArray(_useState, 2),
-    isLoading = _useState2[0],
-    setIsLoading = _useState2[1];
-  var handleNextClick = function handleNextClick() {
-    setIsLoading(true);
-    window.location.href = _app_constants__WEBPACK_IMPORTED_MODULE_1__["ROUTES"].CUSTOMER_SERVICE;
+function composeEventHandlers() {
+  for (var _len = arguments.length, fns = new Array(_len), _key = 0; _key < _len; _key++) {
+    fns[_key] = arguments[_key];
+  }
+
+  return function (event) {
+    for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+      args[_key2 - 1] = arguments[_key2];
+    }
+
+    return fns.some(function (fn) {
+      if (!isPropagationStopped(event) && fn) {
+        fn.apply(void 0, [event].concat(args));
+      }
+
+      return isPropagationStopped(event);
+    });
   };
-  var nextButton = {
-    enabled: true,
-    label: t('payment.error.back_customer_service'),
-    align: 'right',
-    loader: isLoading,
-    onClick: handleNextClick
-  };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_pages_payment_PaymentBox__WEBPACK_IMPORTED_MODULE_6__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_suezenv_react_theme_components__WEBPACK_IMPORTED_MODULE_5__["SzTypographie"], {
-    variant: "H3",
-    size: "L",
-    weight: "medium",
-    className: "mb-3 mb-lg-4"
-  }, t('payment.unavailable.title')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_AlertBox__WEBPACK_IMPORTED_MODULE_4__["AlertBox"], {
-    children: t('payment.unavailable.message'),
-    variant: "alert"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app_components_FormButtons__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    next: nextButton
-  }));
-};
+}
+/**
+ * canUseFileSystemAccessAPI checks if the [File System Access API](https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API)
+ * is supported by the browser.
+ * @returns {boolean}
+ */
+
+function canUseFileSystemAccessAPI() {
+  return 'showOpenFilePicker' in window;
+}
+/**
+ * filePickerOptionsTypes returns the {types} option for https://developer.mozilla.org/en-US/docs/Web/API/window/showOpenFilePicker
+ * based on the accept attr (see https://github.com/react-dropzone/attr-accept)
+ * E.g: converts ['image/*', 'text/*'] to {'image/*': [], 'text/*': []}
+ * @param {string|string[]} accept
+ */
+
+function filePickerOptionsTypes(accept) {
+  accept = typeof accept === 'string' ? accept.split(',') : accept;
+  return [{
+    description: 'everything',
+    // TODO: Need to handle filtering more elegantly than this!
+    accept: Array.isArray(accept) // Accept just MIME types as per spec
+    // NOTE: accept can be https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#unique_file_type_specifiers
+    ? accept.filter(function (item) {
+      return item === 'audio/*' || item === 'video/*' || item === 'image/*' || item === 'text/*' || /\w+\/[-+.\w]+/g.test(item);
+    }).reduce(function (a, b) {
+      return _objectSpread(_objectSpread({}, a), {}, _defineProperty({}, b, []));
+    }, {}) : {}
+  }];
+}
 
 /***/ })
 

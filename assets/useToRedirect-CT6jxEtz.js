@@ -1,0 +1,1 @@
+import{a,b as c}from"./react-spring-web.esm-BXduOQz-.js";import"./index-Djf8kdDz.js";import"./index-BAjkLHRS.js";function R(){const e=a();return{toRedirect:o=>{const{isMixedPage:s}=window.tsme_data,i=c(o),{isLinkExternal:r,isReactRoute:n,pathname:t}=i;!r&&!s&&n?e.push(t):window.location.href=t}}}export{R as u};
